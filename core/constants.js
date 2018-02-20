@@ -263,6 +263,7 @@ Blockly.REPLACEMENT_GLOW_RADIUS = 2;
  * @const
  */
 Blockly.Categories = {
+  "robot":"robot", //modified_by_Yaroslav //robot category
   "motion": "motion",
   "looks": "looks",
   "sound": "sounds",
