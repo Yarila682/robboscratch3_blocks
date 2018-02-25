@@ -30,13 +30,13 @@ goog.require('Blockly.Blocks');
 
 Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: none">'+
  '<category name="Robot" colour="#4C97FF" secondaryColour="#3373CC">'+
- '<block type="robot_movesteps" id="robot_movesteps">'+
-   '<value name="STEPS">'+
-     '<shadow type="math_number">'+
-       '<field name="NUM">20</field>'+
-     '</shadow>'+
-   '</value>'+
- '</block>'+
+ '<block type="robot_motors_on_for_seconds">'+
+          '<value name="SECONDS">'+
+              '<shadow type="math_number">'+
+                  '<field name="NUM">1</field>'+
+              '</shadow>'+
+          '</value>'+
+      '</block>'+
  '</category>'+
  '<category name="Motion" colour="#4C97FF" secondaryColour="#3373CC">'+
     '<block type="motion_movesteps" id="motion_movesteps">'+
