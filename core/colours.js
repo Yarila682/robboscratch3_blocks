@@ -27,7 +27,7 @@ Blockly.Colours = {
   // To add an opacity, this must be specified as a separate property (for SVG fill-opacity)
   "robot": {
     "primary": "#00AF41",    //modified_by_Yaroslav //robot category
-    "secondary": "#00AF41",
+    "secondary": "#AAAAAA",
     "tertiary": "#00AF41"
   },
   "motion": {
