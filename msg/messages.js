@@ -1279,3 +1279,74 @@ Blockly.Msg.ROBOT_POSITION3       =            'position3';
 Blockly.Msg.ROBOT_POSITION4       =            'position4';
 Blockly.Msg.ROBOT_POSITION5       =            'position5';
 Blockly.Msg.ROBOT_CLAW_STATE = "Claw %1";
+
+ Blockly.Msg.LAB_LED_TURN_ON = "turn Lab led %1 on";
+ Blockly.Msg.LAB_LED_TURN_OFF = "turn Lab led %1 off";
+
+ Blockly.Msg.LAB_LED_NUM_0    =                           '0';
+ Blockly.Msg.LAB_LED_NUM_1    =                           '1';
+ Blockly.Msg.LAB_LED_NUM_2    =                           '2';
+ Blockly.Msg.LAB_LED_NUM_3    =                           '3';
+ Blockly.Msg.LAB_LED_NUM_4    =                           '4';
+ Blockly.Msg.LAB_LED_NUM_5    =                           '5';
+ Blockly.Msg.LAB_LED_NUM_6    =                           '6';
+ Blockly.Msg.LAB_LED_NUM_7    =                           '7';
+
+ Blockly.Msg.LAB_COLOR_LED_TURN_ON    =  "turn Lab %1 led on";
+ Blockly.Msg.LAB_COLOR_LED_TURN_OFF   =  "turn Lab %1 led off";
+
+ Blockly.Msg.LAB_COLOR_LED_RED        =                           'red';
+ Blockly.Msg.LAB_COLOR_LED_YELLOW     =                           'yellow';
+ Blockly.Msg.LAB_COLOR_LED_GREEN      =                           'green';
+
+  Blockly.Msg.LAB_SENSOR  = "Lab %1";
+
+  Blockly.Msg.LAB_SENSOR_LIGHT         =                           'light sensor';
+  Blockly.Msg.LAB_SENSOR_SOUND         =                           'sound sensor';
+  Blockly.Msg.LAB_SENSOR_SLIDER        =                           'slider';
+
+  Blockly.Msg.LAB_BUTTON_PRESSED = 'Lab button %1 pressed';
+
+  Blockly.Msg.LAB_BUTTON_NUM_0         =                      '0';
+  Blockly.Msg.LAB_BUTTON_NUM_1         =                      '1';
+  Blockly.Msg.LAB_BUTTON_NUM_2         =                      '2';
+  Blockly.Msg.LAB_BUTTON_NUM_3         =                      '3';
+  Blockly.Msg.LAB_BUTTON_NUM_4         =                      '4';
+  Blockly.Msg.LAB_BUTTON_NUM_5         =                      '5';
+
+  Blockly.Msg.LAB_EXTERNAL_SENSOR      =   "Lab ext %1";
+
+  Blockly.Msg.LAB_EXTERNAL_SENSOR_A0   =                             'A0';
+  Blockly.Msg.LAB_EXTERNAL_SENSOR_A1   =                             'A1';
+
+  Blockly.Msg.LAB_ANALOG_PIN  = "Lab pin %1";
+
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_0      =                         'A0';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_1      =                         'A1';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_2      =                         'A2';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_3      =                         'A3';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_4      =                         'A4';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_5      =                         'A5';
+
+  Blockly.Msg.LAB_DIGITAL_PIN = "Lab pin %1";
+
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_8     =                          'D8';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_9     =                          'D9';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_10    =                          'D10';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_11    =                          'D11';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_12    =                          'D12';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_13    =                          'D13';
+
+  Blockly.Msg.LAB_DIGITAL_PIN_SET_ON_OFF = "set Lab pin %1 %2";
+
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_2      =                         'D2';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_3      =                         'D3';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_4      =                         'D4';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_5      =                         'D5';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_6      =                         'D6';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_7      =                         'D7';
+
+  Blockly.Msg.LAB_DIGITAL_PIN_STATE_ON    =                            'on';
+  Blockly.Msg.LAB_DIGITAL_PIN_STATE_OFF   =                            'off';
+
+Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE = "set Lab pin %1 PWM value %2";
