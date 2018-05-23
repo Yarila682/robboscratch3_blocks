@@ -238,7 +238,7 @@ Blockly.Blocks['button_numbers'] = {
           "type": "field_dropdown",
           "name": "BUTTON_NUMBERS",
           "options": [
-            [Blockly.Msg.LAB_BUTTON_NUM_0,                               '0'],
+          
             [Blockly.Msg.LAB_BUTTON_NUM_1,                               '1'],
             [Blockly.Msg.LAB_BUTTON_NUM_2,                               '2'],
             [Blockly.Msg.LAB_BUTTON_NUM_3,                               '3'],
