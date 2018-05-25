@@ -238,7 +238,7 @@ Blockly.Blocks['button_numbers'] = {
           "type": "field_dropdown",
           "name": "BUTTON_NUMBERS",
           "options": [
-          
+
             [Blockly.Msg.LAB_BUTTON_NUM_1,                               '1'],
             [Blockly.Msg.LAB_BUTTON_NUM_2,                               '2'],
             [Blockly.Msg.LAB_BUTTON_NUM_3,                               '3'],
@@ -636,4 +636,27 @@ Blockly.Blocks['lab_digital_pin_set_pwm_value'] = {
     });
   }
 
+};
+
+
+
+Blockly.Blocks['lab_play_note'] = {
+  /**
+   * Block to motors on for some seconds.
+   * @this Blockly.Block
+   */
+  init: function() {
+
+    this.jsonInit({
+      "message0": Blockly.Msg.LAB_PLAY_NOTE,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "LAB_NOTE"
+        }
+      ],
+      "category": Blockly.Categories.laboratory,
+      "extensions": ["colours_laboratory", "shape_statement"]
+    });
+  }
 };

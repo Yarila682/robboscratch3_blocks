@@ -1350,3 +1350,5 @@ Blockly.Msg.ROBOT_CLAW_STATE = "Claw %1";
   Blockly.Msg.LAB_DIGITAL_PIN_STATE_OFF   =                            'off';
 
 Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE = "set Lab pin %1 PWM value %2";
+
+Blockly.Msg.LAB_PLAY_NOTE = "Play note on lab %1";
