@@ -1352,3 +1352,20 @@ Blockly.Msg.ROBOT_CLAW_STATE = "Claw %1";
 Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE = "set Lab pin %1 PWM value %2";
 
 Blockly.Msg.LAB_PLAY_NOTE = "Play note on lab %1";
+
+Blockly.Msg.COPTER_FLY_UP  = "Fly up";
+Blockly.Msg.COPTER_LAND    = "Land";
+Blockly.Msg.COPTER_STATUS  = "Status";
+Blockly.Msg.COPTER_FLY_FORWARD = "Fly forward %1 cm";
+Blockly.Msg.COPTER_FLY_BACKWARD = "Fly backward %1 cm";
+Blockly.Msg.COPTER_CHANGE_X_BY = "Change x by %1";
+Blockly.Msg.COPTER_CHANGE_Y_BY = "Change y by %1";
+Blockly.Msg.COPTER_CHANGE_Z_BY = "Change z by %1";
+Blockly.Msg.COPTER_X_COORD = "x position";
+Blockly.Msg.COPTER_Y_COORD = "y position";
+Blockly.Msg.COPTER_Z_COORD = "z position";
+Blockly.Msg.COPTER_FLY_FOR_SECONDS_TO_COORDS = "Fly %1 seconds to x: %2 y: %3 z: %4 ";
+Blockly.Msg.COPTER_FLY_TO_COORDS = "Fly to x: %1 y: %2 z: %3";
+Blockly.Msg.COPTER_ROTATE = "Rotate %1 degrees";
+Blockly.Msg.COPTER_SET_DIRECTION = "Set direction to %1";
+Blockly.Msg.COPTER_DIRECTION = "direction";

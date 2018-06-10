@@ -223,7 +223,7 @@ Blockly.ScratchBlocks.VerticalExtensions.SCRATCH_EXTENSION = function() {
 Blockly.ScratchBlocks.VerticalExtensions.registerAll = function() {
   var categoryNames =
       ['control', 'data', 'data_lists', 'sounds', 'motion', 'looks', 'event',
-      'sensing', 'pen', 'operators', 'more','robot','laboratory']; //modified_by_Yaroslav
+      'sensing', 'pen', 'operators', 'more','robot','laboratory','quadcopter']; //modified_by_Yaroslav
   // Register functions for all category colours.
   for (var i = 0; i < categoryNames.length; i++) {
     name = categoryNames[i];
