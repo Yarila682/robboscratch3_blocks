@@ -43,6 +43,22 @@ Blockly.Blocks['copter_land'] = {
   }
 };
 
+Blockly.Blocks['copter_stop'] = {
+  /**
+   * Block to land.
+   * @this Blockly.Block
+   */
+  init: function() {
+
+    this.jsonInit({
+      "message0":  Blockly.Msg.COPTER_STOP,
+
+      "category": Blockly.Categories.quadcopter,
+      "extensions": ["colours_quadcopter", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['copter_status'] = {
   /**
    * Block to land.
@@ -61,7 +77,7 @@ Blockly.Blocks['copter_status'] = {
 
 
 
-Blockly.Blocks['copter_fly_forward'] = {
+Blockly.Blocks['copter_fly_distance'] = {
   /**
    * Block to land.
    * @this Blockly.Block
@@ -69,12 +85,62 @@ Blockly.Blocks['copter_fly_forward'] = {
   init: function() {
 
     this.jsonInit({
-      "message0":  Blockly.Msg.COPTER_FLY_FORWARD,
+      "message0":  Blockly.Msg.COPTER_FLY_DISTANCE,
       "args0": [
         {
           "type": "input_value",
           "name": "CENTIMETERS"
         }
+      ],
+      "category": Blockly.Categories.quadcopter,
+      "extensions": ["colours_quadcopter", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['copter_fly_time'] = {
+  /**
+   * Block to land.
+   * @this Blockly.Block
+   */
+  init: function() {
+
+    this.jsonInit({
+      "message0":  Blockly.Msg.COPTER_FLY_TIME,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "SECONDS"
+        }
+      ],
+      "category": Blockly.Categories.quadcopter,
+      "extensions": ["colours_quadcopter", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['copter_fly_for_time_with_speed'] = {
+  /**
+   * Block to land.
+   * @this Blockly.Block
+   */
+  init: function() {
+
+    this.jsonInit({
+      "message0":  Blockly.Msg.COPTER_FLY_FOR_TIME_WITH_SPEED,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "SECONDS"
+        },
+        {
+          "type": "input_value",
+          "name": "X_SPEED"
+        },
+        {
+          "type": "input_value",
+          "name": "Y_SPEED"
+        },
       ],
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "shape_statement"]
@@ -295,6 +361,36 @@ Blockly.Blocks['copter_rotate'] = {
       ],
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['copter_directions'] = {
+  /**
+   * Block to motors off.
+   * @this Blockly.Block
+   */
+  init: function() {
+
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "COPTER_DIRECTIONS",
+          "options": [
+            [Blockly.Msg.COPTER_DIRECTION_FORWARD,   'direction_forward'],
+            [Blockly.Msg.COPTER_DIRECTION_BACKWARD,  'direction_backward'],
+            [Blockly.Msg.COPTER_DIRECTION_LEFT,      'direction_left'],
+            [Blockly.Msg.COPTER_DIRECTION_RIGHT,     'direction_right']
+          ]
+        }
+      ],
+
+      "colour": Blockly.Colours.quadcopter.secondary,
+      "colourSecondary": Blockly.Colours.quadcopter.secondary,
+      "colourTertiary": Blockly.Colours.quadcopter.tertiary,
+      "extensions": ["output_string"]
     });
   }
 };

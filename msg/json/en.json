@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-06-15 12:33:39.505356",
+		"lastupdated": "2018-06-19 19:27:36.951703",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -451,5 +451,9 @@
 	"ROBOT_POSITION2": "position2",
 	"ROBOT_POSITION3": "position3",
 	"ROBOT_POSITION4": "position4",
-	"ROBOT_POSITION5": "position5"
+	"ROBOT_POSITION5": "position5",
+	"COPTER_DIRECTION_FORWARD": "Forward",
+	"COPTER_DIRECTION_BACKWARD": "Backward",
+	"COPTER_DIRECTION_LEFT": "Left",
+	"COPTER_DIRECTION_RIGHT": "Right"
 }
