@@ -60,7 +60,7 @@ Blockly.Blocks['data_setvariableto'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "set %1 to %2",
+      "message0": "Установить %1 в %2",
       "args0": [
         {
           "type": "field_variable",
@@ -84,7 +84,7 @@ Blockly.Blocks['data_changevariableby'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "change %1 by %2",
+      "message0": "Изменить %1 на %2",
       "args0": [
         {
           "type": "field_variable",
@@ -108,7 +108,7 @@ Blockly.Blocks['data_showvariable'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "show variable %1",
+      "message0": "Показать переменную %1",
       "args0": [
         {
           "type": "field_variable",
@@ -189,8 +189,8 @@ Blockly.Blocks['data_listindexall'] = {
           "precision": 1,
           "options": [
             ["1", "1"],
-            ["last", "last"],
-            ["all", "all"]
+            ["последий", "last"],
+            ["все", "all"]
           ]
         }
       ],
@@ -217,8 +217,8 @@ Blockly.Blocks['data_listindexrandom'] = {
           "precision": 1,
           "options": [
             ["1", "1"],
-            ["last", "last"],
-            ["random", "random"]
+            ["последний", "last"],
+            ["случайный", "random"]
           ]
         }
       ],
@@ -235,7 +235,7 @@ Blockly.Blocks['data_addtolist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "add %1 to %2",
+      "message0": "Добавить %1 к %2",
       "args0": [
         {
           "type": "input_value",
@@ -260,7 +260,7 @@ Blockly.Blocks['data_deleteoflist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "delete %1 of %2",
+      "message0": "Удалить %1 из %2",
       "args0": [
         {
           "type": "input_value",
@@ -285,7 +285,7 @@ Blockly.Blocks['data_insertatlist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "insert %1 at %2 of %3",
+      "message0": "Вставить %1 в %2 из %3",
       "args0": [
         {
           "type": "input_value",
@@ -314,7 +314,7 @@ Blockly.Blocks['data_replaceitemoflist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "replace item %1 of %2 with %3",
+      "message0": "Заменить элемент %1 в %2 на %3",
       "args0": [
         {
           "type": "input_value",
@@ -343,7 +343,7 @@ Blockly.Blocks['data_itemoflist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "item %1 of %2",
+      "message0": "Элемент %1 из %2",
       "args0": [
         {
           "type": "input_value",
@@ -370,7 +370,7 @@ Blockly.Blocks['data_lengthoflist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "length of %1",
+      "message0": "Длинна списка %1",
       "args0": [
         {
           "type": "field_variable",
@@ -391,7 +391,7 @@ Blockly.Blocks['data_listcontainsitem'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 contains %2?",
+      "message0": "%1 содержит %2?",
       "args0": [
         {
           "type": "field_variable",
@@ -416,7 +416,7 @@ Blockly.Blocks['data_showlist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "show list %1",
+      "message0": "Показать список %1",
       "args0": [
         {
           "type": "field_variable",
@@ -437,7 +437,7 @@ Blockly.Blocks['data_hidelist'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "hide list %1",
+      "message0": "Скрыть список %1",
       "args0": [
         {
           "type": "field_variable",

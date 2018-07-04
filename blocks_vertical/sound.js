@@ -69,7 +69,7 @@ Blockly.Blocks['sound_play'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "start sound %1",
+      "message0": "Играй мелодию %1",
       "args0": [
         {
           "type": "input_value",
@@ -89,7 +89,7 @@ Blockly.Blocks['sound_playuntildone'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "play sound %1 until done",
+      "message0": "Играй мелодию %1 пока не кончится",
       "args0": [
         {
           "type": "input_value",
@@ -108,7 +108,7 @@ Blockly.Blocks['sound_stopallsounds'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "stop all sounds",
+      "message0": "Вырубить музыку",
       "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
@@ -165,7 +165,7 @@ Blockly.Blocks['sound_playdrumforbeats'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "play drum %1 for %2 beats",
+      "message0": "Барабану %1 играть %2 тактов",
       "args0": [
         {
           "type": "input_value",
@@ -189,7 +189,7 @@ Blockly.Blocks['sound_restforbeats'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "rest for %1 beats",
+      "message0": "Подождать %1 тактов",
       "args0": [
         {
           "type": "input_value",
@@ -209,7 +209,7 @@ Blockly.Blocks['sound_playnoteforbeats'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "play note %1 for %2 beats",
+      "message0": "Играть ноту %1 %2 тактов",
       "args0": [
         {
           "type": "input_value",
@@ -238,7 +238,7 @@ Blockly.Blocks['sound_seteffectto'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "set %1 effect to %2",
+      "message0": "Установить %1 эффект в %2",
       "args0": [
         {
           "type": "field_dropdown",
@@ -263,7 +263,7 @@ Blockly.Blocks['sound_changeeffectby'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "change %1 effect by %2",
+      "message0": "Изменить %1 эффект на %2",
       "args0": [
         {
           "type": "field_dropdown",
@@ -287,7 +287,7 @@ Blockly.Blocks['sound_cleareffects'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "clear sound effects",
+      "message0": "Очистить звуковые эффекты",
       "extensions": ["colours_sounds", "shape_statement"]
     });
   }
@@ -346,7 +346,7 @@ Blockly.Blocks['sound_setinstrumentto'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "set instrument to %1",
+      "message0": "Установить инструмент %1",
       "args0": [
         {
           "type": "input_value",
@@ -366,7 +366,7 @@ Blockly.Blocks['sound_changevolumeby'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "change volume by %1",
+      "message0": "Изменить громкость на %1",
       "args0": [
         {
           "type": "input_value",
@@ -386,7 +386,7 @@ Blockly.Blocks['sound_setvolumeto'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "set volume to %1%",
+      "message0": "Установить громкость в %1%",
       "args0": [
         {
           "type": "input_value",
@@ -406,7 +406,7 @@ Blockly.Blocks['sound_volume'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "volume",
+      "message0": "Громкость",
       "category": Blockly.Categories.sound,
       "checkboxInFlyout": true,
       "extensions": ["colours_sounds", "output_number"]
@@ -421,7 +421,7 @@ Blockly.Blocks['sound_changetempoby'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "change tempo by %1",
+      "message0": "Изменить темп на %1",
       "args0": [
         {
           "type": "input_value",
@@ -441,7 +441,7 @@ Blockly.Blocks['sound_settempotobpm'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "set tempo to %1 bpm",
+      "message0": "Установить темп в %1 bpm",
       "args0": [
         {
           "type": "input_value",
@@ -461,7 +461,7 @@ Blockly.Blocks['sound_tempo'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "tempo",
+      "message0": "Темп",
       "category": Blockly.Categories.sound,
       "checkboxInFlyout": true,
       "extensions": ["colours_sounds", "output_number"]

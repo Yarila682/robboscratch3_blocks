@@ -136,7 +136,7 @@ Blockly.Blocks['operator_random'] = {
   init: function() {
     this.jsonInit(
       {
-        "message0": "pick random %1 to %2",
+        "message0": "Выбрать случайное от %1 до %2",
         "args0": [
           {
             "type": "input_value",
@@ -232,7 +232,7 @@ Blockly.Blocks['operator_and'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 and %2",
+      "message0": "%1 и %2",
       "args0": [
         {
           "type": "input_value",
@@ -258,7 +258,7 @@ Blockly.Blocks['operator_or'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 or %2",
+      "message0": "%1 или %2",
       "args0": [
         {
           "type": "input_value",
@@ -284,7 +284,7 @@ Blockly.Blocks['operator_not'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "not %1",
+      "message0": "Не %1",
       "args0": [
         {
           "type": "input_value",
@@ -305,7 +305,7 @@ Blockly.Blocks['operator_join'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "join %1 %2",
+      "message0": "Присоединить %1 %2",
       "args0": [
         {
           "type": "input_value",
@@ -329,7 +329,7 @@ Blockly.Blocks['operator_letter_of'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "letter %1 of %2",
+      "message0": "Буква %1 из %2",
       "args0": [
         {
           "type": "input_value",
@@ -353,7 +353,7 @@ Blockly.Blocks['operator_length'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "length of %1",
+      "message0": "Длинна %1",
       "args0": [
         {
           "type": "input_value",
@@ -374,7 +374,7 @@ Blockly.Blocks['operator_contains'] = {
   init: function() {
     this.jsonInit(
       {
-        "message0": "%1 contains %2?",
+        "message0": "%1 содержит %2?",
         "args0": [
           {
             "type": "input_value",
@@ -424,7 +424,7 @@ Blockly.Blocks['operator_round'] = {
   init: function() {
     this.jsonInit(
       {
-        "message0": "round %1",
+        "message0": "Округлить %1",
         "args0": [
           {
             "type": "input_value",
@@ -445,22 +445,22 @@ Blockly.Blocks['operator_mathop'] = {
   init: function() {
     this.jsonInit(
       {
-        "message0": "%1 of %2",
+        "message0": "%1 от %2",
         "args0": [
           {
             "type": "field_dropdown",
             "name": "OPERATOR",
             "options": [
-              ['abs', 'abs'],
-              ['floor', 'floor'],
-              ['ceiling', 'ceiling'],
-              ['sqrt', 'sqrt'],
-              ['sin', 'sin'],
-              ['cos', 'cos'],
-              ['tan', 'tan'],
-              ['asin', 'asin'],
-              ['acos', 'acos'],
-              ['atan', 'atan'],
+              ['модуль', 'abs'],
+              ['округлить вниз', 'floor'],
+              ['окурглить вверх', 'ceiling'],
+              ['корень', 'sqrt'],
+              ['синус', 'sin'],
+              ['косинус', 'cos'],
+              ['тангенс', 'tan'],
+              ['арксинус', 'asin'],
+              ['арккосинус', 'acos'],
+              ['арктангенс', 'atan'],
               ['ln', 'ln'],
               ['log', 'log'],
               ['e ^', 'e ^'],

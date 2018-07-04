@@ -33,7 +33,7 @@ Blockly.Blocks['extension_pen_down'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 pen down",
+      "message0": "%1 %2 перо опущенно",
       "args0": [
         {
           "type": "field_image",
@@ -57,7 +57,7 @@ Blockly.Blocks['extension_music_drum'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 play drum %3",
+      "message0": "%1 %2 играть %3",
       "args0": [
         {
           "type": "field_image",
