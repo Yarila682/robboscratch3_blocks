@@ -1238,7 +1238,8 @@ Blockly.Msg.PROCEDURES_IFRETURN_HELPURL = 'http://c2.com/cgi/wiki?GuardClause';
 /// warning - This appears if the user tries to use this block outside of a function definition.
 Blockly.Msg.PROCEDURES_IFRETURN_WARNING = 'Warning: This block may be used only within a function definition.';
 
-
+/*if(LANGUEGE_OF_BLOCKS=="ENG" || LANGUEGE_OF_BLOCKS == undefined)
+{
 Blockly.Msg.MOTORS_ON_FOR_SECONDS = 'Motors on for %1 seconds';
 Blockly.Msg.MOTORS_ON = 'Motors on';
 Blockly.Msg.MOTORS_OFF = 'Motors off';
@@ -1353,7 +1354,7 @@ Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE = "set Lab pin %1 PWM value %2";
 
 Blockly.Msg.LAB_PLAY_NOTE = "Play note on lab %1";
 
-Blockly.Msg.COPTER_FLY_UP  = "Fly up";
+Blockly.Msg.COPTER_FLY_UP  = "";
 Blockly.Msg.COPTER_LAND    = "Land";
 Blockly.Msg.COPTER_STATUS  = "Status";
 Blockly.Msg.COPTER_FLY_DISTANCE = "Fly  %1 cm";
@@ -1376,3 +1377,144 @@ Blockly.Msg.COPTER_DIRECTION_FORWARD = 'Forward';
 Blockly.Msg.COPTER_DIRECTION_BACKWARD = 'Backward';
 Blockly.Msg.COPTER_DIRECTION_LEFT = 'Left';
 Blockly.Msg.COPTER_DIRECTION_RIGHT = 'Right';
+} */
+//else if(LANGUEGE_OF_BLOCKS=="RUS")
+//{
+Blockly.Msg.MOTORS_ON_FOR_SECONDS = 'Моторы вкл на %1 секунд';
+Blockly.Msg.MOTORS_ON = 'Моторы вкл';
+Blockly.Msg.MOTORS_OFF = 'Моторы выкл';
+Blockly.Msg.SET_ROBOT_DIRECTION = 'Уст направление робота %1';
+Blockly.Msg.DIRECTION_FORWARD = 'Вперёд';
+Blockly.Msg.DIRECTION_BACKWARD = 'Назад';
+Blockly.Msg.DIRECTION_LEFT = 'Налево';
+Blockly.Msg.DIRECTION_RIGHT = 'Направо';
+Blockly.Msg.SET_ROBOT_MOTORS_ON_FOR_STEPS = 'Моторы вкл на %1 шагов';
+Blockly.Msg.ROBOT_RESET_TRIP_METERS = 'Обнулить счётчик пути';
+Blockly.Msg.ROBOT_TURN_RIGHT = 'Повернуть на %1 на %2 градусов';
+Blockly.Msg.ROBOT_TURN_LEFT  = 'Повернуть %1 на %2 градусов';
+Blockly.Msg.ROBOT_SET_MOTORS_POWER = 'Уст мощность моторов %1 %';
+ Blockly.Msg.ROBOT_SET_MOTORS_POWER_LEFT_RIGHT_SEPARATELY = 'Уст мощность моторов Л %1 П %2 %';
+Blockly.Msg.ROBOT_SET_MOTORS_LEFT_RIGHT_POWER_AND_DIRECTION_SEPARATELY = 'Л %1 П %2 уст мощность Л %3  П %4 %';
+Blockly.Msg.ROBOT_GET_SENSOR_DATA = 'Робот %1';
+Blockly.Msg.ROBOT_SENSOR1                      =          'Датчик1';
+Blockly.Msg.ROBOT_SENSOR2                      =          'Датчик2';
+Blockly.Msg.ROBOT_SENSOR3                      =          'Датчик3';
+Blockly.Msg.ROBOT_SENSOR4                      =          'Датчик4';
+Blockly.Msg.ROBOT_SENSOR5                      =          'Датчик5';
+Blockly.Msg.ROBOT_SENSOR_TRIP_METER_LEFT       =          'Счётчик пути Л';
+Blockly.Msg.ROBOT_SENSOR_TRIP_METER_RIGHT      =          'Счётчик пути П';
+Blockly.Msg.ROBOT_RGB_RED                      =          'Красный';
+Blockly.Msg.ROBOT_RGB_GREEN                    =          'Зелёный';
+Blockly.Msg.ROBOT_RGB_BLUE                     =          'Синий';
+Blockly.Msg.ROBOT_GET_RGB_SENSOR_DATA = 'Датчик цвета RGB %1 %2';
+Blockly.Msg.ROBOT_START_BUTTON_PRESSED = 'Кнопка start на Роботе нажата?';
+Blockly.Msg.ROBOT_TURN_LED_ON = 'Вкл светодиод на роботе %1';
+Blockly.Msg.ROBOT_TURN_LED_OFF = 'Выкл светодиод на роботе %1';
+Blockly.Msg.ROBOT_CLAW_CLOSED = 'Клешня закрыта на %1 %';
+Blockly.Msg.ROBOT_CLAW_OPEN_STATE =                               'Открыта';
+Blockly.Msg.ROBOT_CLAW_HALF_OPEN_STATE =                          'Полуоткрыта';
+Blockly.Msg.ROBOT_CLAW_CLOSED_STATE =                             'Закрыта';
+Blockly.Msg.ROBOT_POSITION1       =            'Позиция1';
+Blockly.Msg.ROBOT_POSITION2       =            'Позиция2';
+Blockly.Msg.ROBOT_POSITION3       =            'Позиция3';
+Blockly.Msg.ROBOT_POSITION4       =            'Позиция4';
+Blockly.Msg.ROBOT_POSITION5       =            'Позиция5';
+Blockly.Msg.ROBOT_CLAW_STATE = "Клешня %1";
+
+ Blockly.Msg.LAB_LED_TURN_ON = "Вкл светодиод на Лабаратории %1";
+ Blockly.Msg.LAB_LED_TURN_OFF = "Выкл светодиод на Лабаратории %1";
+
+ Blockly.Msg.LAB_LED_NUM_0    =                           '0';
+ Blockly.Msg.LAB_LED_NUM_1    =                           '1';
+ Blockly.Msg.LAB_LED_NUM_2    =                           '2';
+ Blockly.Msg.LAB_LED_NUM_3    =                           '3';
+ Blockly.Msg.LAB_LED_NUM_4    =                           '4';
+ Blockly.Msg.LAB_LED_NUM_5    =                           '5';
+ Blockly.Msg.LAB_LED_NUM_6    =                           '6';
+ Blockly.Msg.LAB_LED_NUM_7    =                           '7';
+
+ Blockly.Msg.LAB_COLOR_LED_TURN_ON    =  "Вкл цветной светодиод на Лабаратории %1";
+ Blockly.Msg.LAB_COLOR_LED_TURN_OFF   =  "Выкл цветной светодиод на Лабаратории %1";
+
+ Blockly.Msg.LAB_COLOR_LED_RED        =                           'красный';
+ Blockly.Msg.LAB_COLOR_LED_YELLOW     =                           'жёлтый';
+ Blockly.Msg.LAB_COLOR_LED_GREEN      =                           'зелёный';
+
+  Blockly.Msg.LAB_SENSOR  = "Лаборатория %1";
+
+  Blockly.Msg.LAB_SENSOR_LIGHT         =                           'свет';
+  Blockly.Msg.LAB_SENSOR_SOUND         =                           'звук';
+  Blockly.Msg.LAB_SENSOR_SLIDER        =                           'слайдер';
+
+  Blockly.Msg.LAB_BUTTON_PRESSED = 'Кнопка на Лаборатории %1 нажата?';
+
+  Blockly.Msg.LAB_BUTTON_NUM_0         =                      '0';
+  Blockly.Msg.LAB_BUTTON_NUM_1         =                      '1';
+  Blockly.Msg.LAB_BUTTON_NUM_2         =                      '2';
+  Blockly.Msg.LAB_BUTTON_NUM_3         =                      '3';
+  Blockly.Msg.LAB_BUTTON_NUM_4         =                      '4';
+  Blockly.Msg.LAB_BUTTON_NUM_5         =                      '5';
+
+  Blockly.Msg.LAB_EXTERNAL_SENSOR      =   "Лаборатория вход %1";
+
+  Blockly.Msg.LAB_EXTERNAL_SENSOR_A0   =                             'A0';
+  Blockly.Msg.LAB_EXTERNAL_SENSOR_A1   =                             'A1';
+
+  Blockly.Msg.LAB_ANALOG_PIN  = "Лаборатория вход %1";
+
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_0      =                         'A0';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_1      =                         'A1';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_2      =                         'A2';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_3      =                         'A3';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_4      =                         'A4';
+  Blockly.Msg.LAB_ANALOG_PIN_NUM_5      =                         'A5';
+
+  Blockly.Msg.LAB_DIGITAL_PIN = "Лаборатория вход %1";
+
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_8     =                          'D8';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_9     =                          'D9';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_10    =                          'D10';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_11    =                          'D11';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_12    =                          'D12';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_13    =                          'D13';
+
+  Blockly.Msg.LAB_DIGITAL_PIN_SET_ON_OFF = "set Lab pin %1 %2";
+
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_2      =                         'D2';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_3      =                         'D3';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_4      =                         'D4';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_5      =                         'D5';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_6      =                         'D6';
+  Blockly.Msg.LAB_DIGITAL_PIN_NUM_7      =                         'D7';
+
+  Blockly.Msg.LAB_DIGITAL_PIN_STATE_ON    =                            'on';
+  Blockly.Msg.LAB_DIGITAL_PIN_STATE_OFF   =                            'off';
+
+Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE = "Уст выход Лаборатории %1 в ШИМ значение %2";
+
+Blockly.Msg.LAB_PLAY_NOTE = "Играть ноту на Лабаратории %1";
+
+Blockly.Msg.COPTER_FLY_UP  = "Взлёт";
+Blockly.Msg.COPTER_LAND    = "Посадка";
+Blockly.Msg.COPTER_STATUS  = "Статус";
+Blockly.Msg.COPTER_FLY_DISTANCE = "Лететь %1 см";
+Blockly.Msg.COPTER_FLY_BACKWARD = "Лететь назад %1 см";
+Blockly.Msg.COPTER_FLY_TIME =  "Лететь %1 секунд";
+Blockly.Msg.COPTER_FLY_FOR_TIME_WITH_SPEED = "Лететь %1 секунд со скоростью по х %2 по у %3";
+Blockly.Msg.COPTER_CHANGE_X_BY = "Изменить координату по x на %1";
+Blockly.Msg.COPTER_CHANGE_Y_BY = "Изменить координату по у на %1";
+Blockly.Msg.COPTER_CHANGE_Z_BY = "Изменить координату по z на %1";
+Blockly.Msg.COPTER_X_COORD = "Координата по x";
+Blockly.Msg.COPTER_Y_COORD = "Координата по y";
+Blockly.Msg.COPTER_Z_COORD = "Высота";
+Blockly.Msg.COPTER_FLY_FOR_SECONDS_TO_COORDS = "Лететь %1 секунд к x: %2 y: %3 z: %4";
+Blockly.Msg.COPTER_FLY_TO_COORDS = "Дететь к x: %1 y: %2 z: %3";
+Blockly.Msg.COPTER_ROTATE = "Повернуть на %1 градусов";
+Blockly.Msg.COPTER_SET_DIRECTION = "Установить направление %1";
+Blockly.Msg.COPTER_DIRECTION = "Направление";
+Blockly.Msg.COPTER_STOP = "СТОП!";
+Blockly.Msg.COPTER_DIRECTION_FORWARD = 'Вперёд';
+Blockly.Msg.COPTER_DIRECTION_BACKWARD = 'Назад';
+Blockly.Msg.COPTER_DIRECTION_LEFT = 'Налево';
+Blockly.Msg.COPTER_DIRECTION_RIGHT = 'Направо';
+//}
