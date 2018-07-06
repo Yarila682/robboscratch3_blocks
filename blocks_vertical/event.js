@@ -33,10 +33,10 @@ Blockly.Blocks['event_whenflagclicked'] = {
    * Block for when flag clicked.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "event_whenflagclicked",
-      "message0": "Когда %1 нажата",
+      "message0":  Blockly["Msg"][locale]["WHEN_CLICKED"] ,
       "args0": [
         {
           "type": "field_image",
@@ -57,9 +57,9 @@ Blockly.Blocks['event_whenthisspriteclicked'] = {
    * Block for when this sprite clicked.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Когда этот спрайт нажат",
+      "message0": Blockly["Msg"][locale]["WHEN_SPRITE_CLICKED"]  ,
       "category": Blockly.Categories.event,
       "extensions": ["colours_event", "shape_hat"]
     });
@@ -71,10 +71,10 @@ Blockly.Blocks['event_whenbroadcastreceived'] = {
    * Block for when broadcast received.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "event_whenbroadcastreceived",
-      "message0": "Когда получил %1",
+      "message0":  Blockly["Msg"][locale]["WHEN_RECIEVE"] ,
       "args0": [
         {
           "type": "field_variable",
@@ -94,9 +94,9 @@ Blockly.Blocks['event_whenbackdropswitchesto'] = {
    * Block for when the current backdrop switched to a selected backdrop.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Когда фон меняется на %1",
+      "message0":  Blockly["Msg"][locale]["WHEN_BACK_SWITCH"] ,
       "args0": [
         {
           "type": "field_dropdown",
@@ -117,9 +117,9 @@ Blockly.Blocks['event_whengreaterthan'] = {
    * Block for when loudness/timer/video motion is greater than the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Когда %1 > %2",
+      "message0": Blockly["Msg"][locale]["WHEN_MORE"]  ,
       "args0": [
         {
           "type": "field_dropdown",
@@ -144,7 +144,7 @@ Blockly.Blocks['event_broadcast_menu'] = {
    * Broadcast drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -169,10 +169,10 @@ Blockly.Blocks['event_broadcast'] = {
    * Block to send a broadcast.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "event_broadcast",
-      "message0": "Передать %1",
+      "message0": Blockly["Msg"][locale]["BROAD"]  ,
       "args0": [
         {
           "type": "input_value",
@@ -190,9 +190,9 @@ Blockly.Blocks['event_broadcastandwait'] = {
    * Block to send a broadcast.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Передать %1 и ждать",
+      "message0": Blockly["Msg"][locale]["BROAD_WAIT"]  ,
       "args0": [
         {
           "type":"input_value",
@@ -210,10 +210,10 @@ Blockly.Blocks['event_whenkeypressed'] = {
    * Block to send a broadcast.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "event_whenkeypressed",
-      "message0": "Когда клавиша %1 нажата",
+      "message0": Blockly["Msg"][locale]["WHEN_PRESS"]  ,
       "args0": [
         {
           "type": "field_dropdown",

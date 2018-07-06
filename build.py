@@ -292,7 +292,9 @@ class Gen_compressed(threading.Thread):
     response = conn.getresponse()
     json_str = response.read()
     conn.close()
-
+    #print("JSON: ")
+    #print(json_str)
+	
     # Parse the JSON response.
     json_data = json.loads(json_str)
 

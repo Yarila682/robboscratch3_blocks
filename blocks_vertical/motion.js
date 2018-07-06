@@ -33,9 +33,9 @@ Blockly.Blocks['motion_movesteps'] = {
    * Block to move steps.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Двигаться %1 шагов",
+      "message0": Blockly["Msg"][locale]["CHAR_MOVE_STEPS"] ,
       "args0": [
         {
           "type": "input_value",
@@ -53,9 +53,9 @@ Blockly.Blocks['motion_turnright'] = {
    * Block to turn right.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Повернуть %1 на %2 градусов",
+      "message0": Blockly["Msg"][locale]["CHAR_TURN"] ,
       "args0": [
         {
           "type": "field_image",
@@ -79,9 +79,9 @@ Blockly.Blocks['motion_turnleft'] = {
    * Block to turn left.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Повернуть %1 на %2 градусов",
+      "message0": Blockly["Msg"][locale]["CHAR_TURN"] ,
       "args0": [
         {
           "type": "field_image",
@@ -105,9 +105,9 @@ Blockly.Blocks['motion_pointindirection'] = {
    * Block to point in direction.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить направление %1",
+      "message0": Blockly["Msg"][locale]["CHAR_POINT_IN_DIR"] ,
       "args0": [
         {
           "type": "input_value",
@@ -125,7 +125,7 @@ Blockly.Blocks['motion_pointtowards_menu'] = {
    * Point towards drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -134,7 +134,7 @@ Blockly.Blocks['motion_pointtowards_menu'] = {
             "type": "field_dropdown",
             "name": "TOWARDS",
             "options": [
-              ['указатель мыши', '_mouse_']
+              [Blockly["Msg"][locale]["MOUSE_POINTER"], '_mouse_']
             ]
           }
         ],
@@ -151,9 +151,9 @@ Blockly.Blocks['motion_pointtowards'] = {
    * Block to point in direction.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Повернуться к %1",
+      "message0": Blockly["Msg"][locale]["CHAR_POINT_TOW"] ,
       "args0": [
         {
           "type": "input_value",
@@ -171,7 +171,7 @@ Blockly.Blocks['motion_goto_menu'] = {
    * Go to drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -180,8 +180,8 @@ Blockly.Blocks['motion_goto_menu'] = {
             "type": "field_dropdown",
             "name": "TO",
             "options": [
-              ['указатель мыши', '_mouse_'],
-              ['случайная позиция', '_random_']
+              [Blockly["Msg"][locale]["MOUSE_POINTER"], '_mouse_'],
+              [Blockly["Msg"][locale]["RANDOM_POS"] , '_random_']
             ]
           }
         ],
@@ -198,9 +198,9 @@ Blockly.Blocks['motion_gotoxy'] = {
    * Block to go to X, Y.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Переместить в x: %1 y: %2",
+      "message0": Blockly["Msg"][locale]["GO_TO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -222,9 +222,9 @@ Blockly.Blocks['motion_goto'] = {
    * Block to go to a menu item.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Переместить на %1",
+      "message0": Blockly["Msg"][locale]["CHAR_GO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -242,9 +242,9 @@ Blockly.Blocks['motion_glidesecstoxy'] = {
    * Block to glide for a specified time.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Плыть %1 секунд в x: %2 y: %3",
+      "message0": Blockly["Msg"][locale]["CHAR_GLIDE_SEC_TO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -270,7 +270,7 @@ Blockly.Blocks['motion_glideto_menu'] = {
    * Glide to drop-down menu
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1",
       "args0": [
@@ -296,9 +296,9 @@ Blockly.Blocks['motion_glideto'] = {
    * Block to glide to a menu item
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Плыть %1 секунд в %2",
+      "message0": Blockly["Msg"][locale]["CHAR_GLIDE_SECS"] ,
       "args0": [
         {
           "type": "input_value",
@@ -320,9 +320,9 @@ Blockly.Blocks['motion_changexby'] = {
    * Block to change X.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить х на %1",
+      "message0": Blockly["Msg"][locale]["CHAR_CHANGE_X"] ,
       "args0": [
         {
           "type": "input_value",
@@ -340,9 +340,9 @@ Blockly.Blocks['motion_setx'] = {
    * Block to set X.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить х в %1",
+      "message0": Blockly["Msg"][locale]["CHAR_SET_X"],
       "args0": [
         {
           "type": "input_value",
@@ -360,9 +360,9 @@ Blockly.Blocks['motion_changeyby'] = {
    * Block to change Y.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить у на %1",
+      "message0": Blockly["Msg"][locale]["CHAR_CHANGE_Y"] ,
       "args0": [
         {
           "type": "input_value",
@@ -380,9 +380,9 @@ Blockly.Blocks['motion_sety'] = {
    * Block to set Y.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить у в %1",
+      "message0": Blockly["Msg"][locale]["CHAR_SET_Y"] ,
       "args0": [
         {
           "type": "input_value",
@@ -400,9 +400,9 @@ Blockly.Blocks['motion_ifonedgebounce'] = {
    * Block to bounce on edge.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Если на краю отпрыгнуть",
+      "message0": Blockly["Msg"][locale]["CHAR_EDGE"] ,
       "category": Blockly.Categories.motion,
       "extensions": ["colours_motion", "shape_statement"]
     });
@@ -414,9 +414,9 @@ Blockly.Blocks['motion_setrotationstyle'] = {
    * Block to set rotation style.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить стиль поворота %1",
+      "message0": Blockly["Msg"][locale]["CHAR_SET_ROT_STILE"] ,
       "args0": [
         {
           "type": "field_dropdown",
@@ -439,9 +439,9 @@ Blockly.Blocks['motion_xposition'] = {
    * Block to report X.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "x позиция",
+      "message0": Blockly["Msg"][locale]["CHAR_X"] ,
       "category": Blockly.Categories.motion,
       "checkboxInFlyout": true,
       "extensions": ["colours_motion", "output_number"]
@@ -454,9 +454,9 @@ Blockly.Blocks['motion_yposition'] = {
    * Block to report Y.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "y позиция",
+      "message0": Blockly["Msg"][locale]["CHAR_Y"] ,
       "category": Blockly.Categories.motion,
       "checkboxInFlyout": true,
       "extensions": ["colours_motion", "output_number"]
@@ -469,9 +469,9 @@ Blockly.Blocks['motion_direction'] = {
    * Block to report direction.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Направление",
+      "message0": Blockly["Msg"][locale]["CHAR_DIR"] ,
       "category": Blockly.Categories.motion,
       "checkboxInFlyout": true,
       "extensions": ["colours_motion", "output_number"]

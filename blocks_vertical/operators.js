@@ -33,7 +33,7 @@ Blockly.Blocks['operator_add'] = {
    * Block for adding two numbers.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1 + %2",
@@ -58,7 +58,7 @@ Blockly.Blocks['operator_subtract'] = {
    * Block for subtracting two numbers.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1 - %2",
@@ -83,7 +83,7 @@ Blockly.Blocks['operator_multiply'] = {
    * Block for multiplying two numbers.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1 * %2",
@@ -108,7 +108,7 @@ Blockly.Blocks['operator_divide'] = {
    * Block for dividing two numbers.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1 / %2",
@@ -133,10 +133,10 @@ Blockly.Blocks['operator_random'] = {
    * Block for picking a random number.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
-        "message0": "Выбрать случайное от %1 до %2",
+        "message0": Blockly["Msg"][locale]["RANDOM"] ,
         "args0": [
           {
             "type": "input_value",
@@ -158,7 +158,7 @@ Blockly.Blocks['operator_lt'] = {
    * Block for less than comparator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 < %2",
       "args0": [
@@ -182,7 +182,7 @@ Blockly.Blocks['operator_equals'] = {
    * Block for equals comparator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 = %2",
       "args0": [
@@ -206,7 +206,7 @@ Blockly.Blocks['operator_gt'] = {
    * Block for greater than comparator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 > %2",
       "args0": [
@@ -230,9 +230,9 @@ Blockly.Blocks['operator_and'] = {
    * Block for "and" boolean comparator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "%1 и %2",
+      "message0": Blockly["Msg"][locale]["AND"],
       "args0": [
         {
           "type": "input_value",
@@ -256,9 +256,9 @@ Blockly.Blocks['operator_or'] = {
    * Block for "or" boolean comparator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "%1 или %2",
+      "message0": Blockly["Msg"][locale]["OR"] ,
       "args0": [
         {
           "type": "input_value",
@@ -282,9 +282,9 @@ Blockly.Blocks['operator_not'] = {
    * Block for "not" unary boolean operator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Не %1",
+      "message0": Blockly["Msg"][locale]["NOT"],
       "args0": [
         {
           "type": "input_value",
@@ -303,9 +303,9 @@ Blockly.Blocks['operator_join'] = {
    * Block for string join operator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Присоединить %1 %2",
+      "message0": Blockly["Msg"][locale]["JOIN"],
       "args0": [
         {
           "type": "input_value",
@@ -327,9 +327,9 @@ Blockly.Blocks['operator_letter_of'] = {
    * Block for "letter _ of _" operator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Буква %1 из %2",
+      "message0": Blockly["Msg"][locale]["LETTER_OF"] ,
       "args0": [
         {
           "type": "input_value",
@@ -351,9 +351,9 @@ Blockly.Blocks['operator_length'] = {
    * Block for string length operator.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Длинна %1",
+      "message0": Blockly["Msg"][locale]["LENGTH"] ,
       "args0": [
         {
           "type": "input_value",
@@ -371,10 +371,10 @@ Blockly.Blocks['operator_contains'] = {
    * Block for _ contains _ operator
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
-        "message0": "%1 содержит %2?",
+        "message0": Blockly["Msg"][locale]["CONTAINS"] ,
         "args0": [
           {
             "type": "input_value",
@@ -396,10 +396,10 @@ Blockly.Blocks['operator_mod'] = {
    * Block for mod two numbers.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
-        "message0": "%1 mod %2",
+        "message0":"%1 mod %2",
         "args0": [
           {
             "type": "input_value",
@@ -421,10 +421,10 @@ Blockly.Blocks['operator_round'] = {
    * Block for rounding a numbers.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
-        "message0": "Округлить %1",
+        "message0": Blockly["Msg"][locale]["ROUND"],
         "args0": [
           {
             "type": "input_value",
@@ -442,25 +442,25 @@ Blockly.Blocks['operator_mathop'] = {
    * Block for "advanced" math ops on a number.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
-        "message0": "%1 от %2",
+        "message0": Blockly["Msg"][locale]["OF"],
         "args0": [
           {
             "type": "field_dropdown",
             "name": "OPERATOR",
             "options": [
-              ['модуль', 'abs'],
-              ['округлить вниз', 'floor'],
-              ['окурглить вверх', 'ceiling'],
-              ['корень', 'sqrt'],
-              ['синус', 'sin'],
-              ['косинус', 'cos'],
-              ['тангенс', 'tan'],
-              ['арксинус', 'asin'],
-              ['арккосинус', 'acos'],
-              ['арктангенс', 'atan'],
+              [Blockly["Msg"][locale]["ABS"], 'abs'],
+              [Blockly["Msg"][locale]["FLOOR"], 'floor'],
+              [Blockly["Msg"][locale]["CEIL"], 'ceiling'],
+              [Blockly["Msg"][locale]["SQRT"], 'sqrt'],
+              ['sin', 'sin'],
+              ['cos', 'cos'],
+              ['tan', 'tan'],
+              ['asin', 'asin'],
+              ['acos', 'acos'],
+              ['atan', 'atan'],
               ['ln', 'ln'],
               ['log', 'log'],
               ['e ^', 'e ^'],

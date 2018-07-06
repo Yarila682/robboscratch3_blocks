@@ -31,7 +31,7 @@ Blockly.Blocks['extension_pen_down'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 перо опущенно",
       "args0": [
@@ -55,7 +55,7 @@ Blockly.Blocks['extension_music_drum'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 играть %3",
       "args0": [
@@ -83,7 +83,7 @@ Blockly.Blocks['extension_wedo_motor'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 turn a motor %3",
       "args0": [
@@ -113,7 +113,7 @@ Blockly.Blocks['extension_wedo_hat'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 when I am wearing a hat",
       "args0": [
@@ -137,7 +137,7 @@ Blockly.Blocks['extension_wedo_boolean'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 O RLY?",
       "args0": [
@@ -161,7 +161,7 @@ Blockly.Blocks['extension_wedo_tilt_reporter'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 tilt angle %3",
       "args0": [
@@ -189,7 +189,7 @@ Blockly.Blocks['extension_wedo_tilt_menu'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -214,7 +214,7 @@ Blockly.Blocks['extension_music_reporter'] = {
   /**
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "message0": "%1 %2 hey now, you're an all-star",
       "args0": [

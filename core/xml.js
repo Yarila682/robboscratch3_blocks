@@ -516,7 +516,8 @@ Blockly.Xml.appendDomToWorkspace = function(xml, workspace) {
  * @param {!Blockly.Workspace} workspace The workspace.
  * @return {!Blockly.Block} The root block created.
  */
-Blockly.Xml.domToBlock = function(xmlBlock, workspace) {
+Blockly.Xml.domToBlock = function(xmlBlock, workspace,locale) {
+    console.log("Block locale2: " + locale);
   if (xmlBlock instanceof Blockly.Workspace) {
     var swap = xmlBlock;
     xmlBlock = workspace;
@@ -528,7 +529,7 @@ Blockly.Xml.domToBlock = function(xmlBlock, workspace) {
   Blockly.Events.disable();
   var variablesBeforeCreation = workspace.getAllVariables();
   try {
-    var topBlock = Blockly.Xml.domToBlockHeadless_(xmlBlock, workspace);
+    var topBlock = Blockly.Xml.domToBlockHeadless_(xmlBlock, workspace,locale);
     // Generate list of all blocks.
     var blocks = topBlock.getDescendants();
     if (workspace.rendered) {
@@ -604,13 +605,17 @@ Blockly.Xml.domToVariables = function(xmlVariables, workspace) {
  * @return {!Blockly.Block} The root block created.
  * @private
  */
-Blockly.Xml.domToBlockHeadless_ = function(xmlBlock, workspace) {
+Blockly.Xml.domToBlockHeadless_ = function(xmlBlock, workspace,locale) {
+    console.log("Block locale4: " + locale);
   var block = null;
   var prototypeName = xmlBlock.getAttribute('type');
   goog.asserts.assert(prototypeName, 'Block type unspecified: %s',
                       xmlBlock.outerHTML);
   var id = xmlBlock.getAttribute('id');
-  block = workspace.newBlock(prototypeName, id);
+
+//  console.log("Blockly.Xml.domToBlockHeadless_");
+//  console.trace();
+  block = workspace.newBlock(prototypeName, id,locale);
 
   var blockChild = null;
   for (var i = 0, xmlChild; xmlChild = xmlBlock.childNodes[i]; i++) {
@@ -691,7 +696,7 @@ Blockly.Xml.domToBlockHeadless_ = function(xmlBlock, workspace) {
         }
         if (childBlockNode) {
           blockChild = Blockly.Xml.domToBlockHeadless_(childBlockNode,
-              workspace);
+              workspace,locale);
           if (blockChild.outputConnection) {
             input.connection.connect(blockChild.outputConnection);
           } else if (blockChild.previousConnection) {
@@ -713,7 +718,7 @@ Blockly.Xml.domToBlockHeadless_ = function(xmlBlock, workspace) {
           goog.asserts.assert(!block.nextConnection.isConnected(),
               'Next statement is already connected.');
           blockChild = Blockly.Xml.domToBlockHeadless_(childBlockNode,
-              workspace);
+              workspace,locale);
           goog.asserts.assert(blockChild.previousConnection,
               'Next block does not have previous statement.');
           block.nextConnection.connect(blockChild.previousConnection);

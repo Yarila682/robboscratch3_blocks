@@ -33,9 +33,9 @@ Blockly.Blocks['pen_clear'] = {
    * Block to clear drawing.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Очистить",
+      "message0": Blockly["Msg"][locale]["CLEAR"] ,
       "category": Blockly.Categories.pen,
       "extensions": ["colours_pen", "shape_statement"]
     });
@@ -47,9 +47,9 @@ Blockly.Blocks['pen_stamp'] = {
    * Block to stamp a sprite.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Печать",
+      "message0": Blockly["Msg"][locale]["STAMP"] ,
       "category": Blockly.Categories.pen,
       "extensions": ["colours_pen", "shape_statement"]
     });
@@ -61,9 +61,9 @@ Blockly.Blocks['pen_pendown'] = {
    * Block to pull down the sprite's pen.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Опустить перо",
+      "message0": Blockly["Msg"][locale]["PEN_DOWN"],
       "category": Blockly.Categories.pen,
       "extensions": ["colours_pen", "shape_statement"]
     });
@@ -75,9 +75,9 @@ Blockly.Blocks['pen_penup'] = {
    * Block to pull up the sprite's pen.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Поднять перо",
+      "message0": Blockly["Msg"][locale]["PEN_UP"] ,
       "category": Blockly.Categories.pen,
       "extensions": ["colours_pen", "shape_statement"]
     });
@@ -89,9 +89,9 @@ Blockly.Blocks['pen_setpencolortocolor'] = {
    * Block to set the pen's color to the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить цвет пера в %1",
+      "message0": Blockly["Msg"][locale]["PEN_SET_COLOR"] ,
       "args0": [
         {
           "type": "input_value",
@@ -109,9 +109,9 @@ Blockly.Blocks['pen_changepencolorby'] = {
    * Block to change the pen's color by the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить цвет пера на %1",
+      "message0": Blockly["Msg"][locale]["PEN_CHANGE_COLOR"],
       "args0": [
         {
           "type": "input_value",
@@ -129,9 +129,9 @@ Blockly.Blocks['pen_setpencolortonum'] = {
    * Block to set the pen's color to the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить цвет пера %1",
+      "message0": Blockly["Msg"][locale]["PEN_SET_COLOR_TO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -149,9 +149,9 @@ Blockly.Blocks['pen_changepenshadeby'] = {
    * Block to change the pen's shade by the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить тень пера на %1",
+      "message0": Blockly["Msg"][locale]["PEN_CHANGE_SHADE"] ,
       "args0": [
         {
           "type": "input_value",
@@ -169,9 +169,9 @@ Blockly.Blocks['pen_setpenshadeto'] = {
    * Block to set the pen's shade to the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить тень пера в %1",
+      "message0": Blockly["Msg"][locale]["PEN_SET_SHADE"] ,
       "args0": [
         {
           "type": "input_value",
@@ -189,9 +189,9 @@ Blockly.Blocks['pen_changepensizeby'] = {
    * Block to change the pen's size by the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить размер пера на %1",
+      "message0": Blockly["Msg"][locale]["PEN_CHANGE_SHADE"] ,
       "args0": [
         {
           "type": "input_value",
@@ -209,9 +209,9 @@ Blockly.Blocks['pen_setpensizeto'] = {
    * Block to set the pen's size to the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить размер пера в %1",
+      "message0": Blockly["Msg"][locale]["PEN_SET_SIZE"] ,
       "args0": [
         {
           "type": "input_value",
@@ -229,9 +229,9 @@ Blockly.Blocks['pen_changepentransparencyby'] = {
    * Block to change the pen's transparency by the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить прозрачность пера на %1",
+      "message0": Blockly["Msg"][locale]["PEN_CHANGE_TRANS"] ,
       "args0": [
         {
           "type": "input_value",
@@ -249,9 +249,9 @@ Blockly.Blocks['pen_setpentransparencyto'] = {
    * Block to set the pen's transparency to the value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить прозрачность пера в %1",
+      "message0": Blockly["Msg"][locale]["PEN_SET_TRANS"] ,
       "args0": [
         {
           "type": "input_value",

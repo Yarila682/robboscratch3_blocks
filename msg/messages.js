@@ -32,9 +32,12 @@
  */
 'use strict';
 
-goog.provide('Blockly.Msg.en');
+//goog.provide('Blockly.Msg.en');
 
 goog.require('Blockly.Msg');
+
+//Blockly = {};
+//Blockly.Msg = {};
 
 
 /**
@@ -1380,141 +1383,634 @@ Blockly.Msg.COPTER_DIRECTION_RIGHT = 'Right';
 } */
 //else if(LANGUEGE_OF_BLOCKS=="RUS")
 //{
-Blockly.Msg.MOTORS_ON_FOR_SECONDS = 'Моторы вкл на %1 секунд';
-Blockly.Msg.MOTORS_ON = 'Моторы вкл';
-Blockly.Msg.MOTORS_OFF = 'Моторы выкл';
-Blockly.Msg.SET_ROBOT_DIRECTION = 'Уст направление робота %1';
-Blockly.Msg.DIRECTION_FORWARD = 'Вперёд';
-Blockly.Msg.DIRECTION_BACKWARD = 'Назад';
-Blockly.Msg.DIRECTION_LEFT = 'Налево';
-Blockly.Msg.DIRECTION_RIGHT = 'Направо';
-Blockly.Msg.SET_ROBOT_MOTORS_ON_FOR_STEPS = 'Моторы вкл на %1 шагов';
-Blockly.Msg.ROBOT_RESET_TRIP_METERS = 'Обнулить счётчик пути';
-Blockly.Msg.ROBOT_TURN_RIGHT = 'Повернуть на %1 на %2 градусов';
-Blockly.Msg.ROBOT_TURN_LEFT  = 'Повернуть %1 на %2 градусов';
-Blockly.Msg.ROBOT_SET_MOTORS_POWER = 'Уст мощность моторов %1 %';
- Blockly.Msg.ROBOT_SET_MOTORS_POWER_LEFT_RIGHT_SEPARATELY = 'Уст мощность моторов Л %1 П %2 %';
-Blockly.Msg.ROBOT_SET_MOTORS_LEFT_RIGHT_POWER_AND_DIRECTION_SEPARATELY = 'Л %1 П %2 уст мощность Л %3  П %4 %';
-Blockly.Msg.ROBOT_GET_SENSOR_DATA = 'Робот %1';
-Blockly.Msg.ROBOT_SENSOR1                      =          'Датчик1';
-Blockly.Msg.ROBOT_SENSOR2                      =          'Датчик2';
-Blockly.Msg.ROBOT_SENSOR3                      =          'Датчик3';
-Blockly.Msg.ROBOT_SENSOR4                      =          'Датчик4';
-Blockly.Msg.ROBOT_SENSOR5                      =          'Датчик5';
-Blockly.Msg.ROBOT_SENSOR_TRIP_METER_LEFT       =          'Счётчик пути Л';
-Blockly.Msg.ROBOT_SENSOR_TRIP_METER_RIGHT      =          'Счётчик пути П';
-Blockly.Msg.ROBOT_RGB_RED                      =          'Красный';
-Blockly.Msg.ROBOT_RGB_GREEN                    =          'Зелёный';
-Blockly.Msg.ROBOT_RGB_BLUE                     =          'Синий';
-Blockly.Msg.ROBOT_GET_RGB_SENSOR_DATA = 'Датчик цвета RGB %1 %2';
-Blockly.Msg.ROBOT_START_BUTTON_PRESSED = 'Кнопка start на Роботе нажата?';
-Blockly.Msg.ROBOT_TURN_LED_ON = 'Вкл светодиод на роботе %1';
-Blockly.Msg.ROBOT_TURN_LED_OFF = 'Выкл светодиод на роботе %1';
-Blockly.Msg.ROBOT_CLAW_CLOSED = 'Клешня закрыта на %1 %';
-Blockly.Msg.ROBOT_CLAW_OPEN_STATE =                               'Открыта';
-Blockly.Msg.ROBOT_CLAW_HALF_OPEN_STATE =                          'Полуоткрыта';
-Blockly.Msg.ROBOT_CLAW_CLOSED_STATE =                             'Закрыта';
-Blockly.Msg.ROBOT_POSITION1       =            'Позиция1';
-Blockly.Msg.ROBOT_POSITION2       =            'Позиция2';
-Blockly.Msg.ROBOT_POSITION3       =            'Позиция3';
-Blockly.Msg.ROBOT_POSITION4       =            'Позиция4';
-Blockly.Msg.ROBOT_POSITION5       =            'Позиция5';
-Blockly.Msg.ROBOT_CLAW_STATE = "Клешня %1";
 
- Blockly.Msg.LAB_LED_TURN_ON = "Вкл светодиод на Лабаратории %1";
- Blockly.Msg.LAB_LED_TURN_OFF = "Выкл светодиод на Лабаратории %1";
 
- Blockly.Msg.LAB_LED_NUM_0    =                           '0';
- Blockly.Msg.LAB_LED_NUM_1    =                           '1';
- Blockly.Msg.LAB_LED_NUM_2    =                           '2';
- Blockly.Msg.LAB_LED_NUM_3    =                           '3';
- Blockly.Msg.LAB_LED_NUM_4    =                           '4';
- Blockly.Msg.LAB_LED_NUM_5    =                           '5';
- Blockly.Msg.LAB_LED_NUM_6    =                           '6';
- Blockly.Msg.LAB_LED_NUM_7    =                           '7';
+Blockly.Msg.ru = {};
+Blockly.Msg.en = {};
 
- Blockly.Msg.LAB_COLOR_LED_TURN_ON    =  "Вкл цветной светодиод на Лабаратории %1";
- Blockly.Msg.LAB_COLOR_LED_TURN_OFF   =  "Выкл цветной светодиод на Лабаратории %1";
 
- Blockly.Msg.LAB_COLOR_LED_RED        =                           'красный';
- Blockly.Msg.LAB_COLOR_LED_YELLOW     =                           'жёлтый';
- Blockly.Msg.LAB_COLOR_LED_GREEN      =                           'зелёный';
+Blockly.Msg.ru.MOTORS_ON_FOR_SECONDS = 'Моторы вкл на %1 секунд';
+Blockly.Msg.ru.MOTORS_ON = 'Моторы вкл';
+Blockly.Msg.ru.MOTORS_OFF = 'Моторы выкл';
+Blockly.Msg.ru.SET_ROBOT_DIRECTION = 'Уст направление робота %1';
+Blockly.Msg.ru.DIRECTION_FORWARD = 'Вперёд';
+Blockly.Msg.ru.DIRECTION_BACKWARD = 'Назад';
+Blockly.Msg.ru.DIRECTION_LEFT = 'Налево';
+Blockly.Msg.ru.DIRECTION_RIGHT = 'Направо';
+Blockly.Msg.ru.SET_ROBOT_MOTORS_ON_FOR_STEPS = 'Моторы вкл на %1 шагов';
+Blockly.Msg.ru.ROBOT_RESET_TRIP_METERS = 'Обнулить счётчик пути';
+Blockly.Msg.ru.ROBOT_TURN_RIGHT = 'Повернуть на %1 на %2 градусов';
+Blockly.Msg.ru.ROBOT_TURN_LEFT  = 'Повернуть %1 на %2 градусов';
+Blockly.Msg.ru.ROBOT_SET_MOTORS_POWER = 'Уст мощность моторов %1 %';
+ Blockly.Msg.ru.ROBOT_SET_MOTORS_POWER_LEFT_RIGHT_SEPARATELY = 'Уст мощность моторов Л %1 П %2 %';
+Blockly.Msg.ru.ROBOT_SET_MOTORS_LEFT_RIGHT_POWER_AND_DIRECTION_SEPARATELY = 'Л %1 П %2 уст мощность Л %3  П %4 %';
+Blockly.Msg.ru.ROBOT_GET_SENSOR_DATA = 'Робот %1';
+Blockly.Msg.ru.ROBOT_SENSOR1                      =          'Датчик1';
+Blockly.Msg.ru.ROBOT_SENSOR2                      =          'Датчик2';
+Blockly.Msg.ru.ROBOT_SENSOR3                      =          'Датчик3';
+Blockly.Msg.ru.ROBOT_SENSOR4                      =          'Датчик4';
+Blockly.Msg.ru.ROBOT_SENSOR5                      =          'Датчик5';
+Blockly.Msg.ru.ROBOT_SENSOR_TRIP_METER_LEFT       =          'Счётчик пути Л';
+Blockly.Msg.ru.ROBOT_SENSOR_TRIP_METER_RIGHT      =          'Счётчик пути П';
+Blockly.Msg.ru.ROBOT_RGB_RED                      =          'Красный';
+Blockly.Msg.ru.ROBOT_RGB_GREEN                    =          'Зелёный';
+Blockly.Msg.ru.ROBOT_RGB_BLUE                     =          'Синий';
+Blockly.Msg.ru.ROBOT_GET_RGB_SENSOR_DATA = 'Датчик цвета RGB %1 %2';
+Blockly.Msg.ru.ROBOT_START_BUTTON_PRESSED = 'Кнопка start на Роботе нажата?';
+Blockly.Msg.ru.ROBOT_TURN_LED_ON = 'Вкл светодиод на роботе %1';
+Blockly.Msg.ru.ROBOT_TURN_LED_OFF = 'Выкл светодиод на роботе %1';
+Blockly.Msg.ru.ROBOT_CLAW_CLOSED = 'Клешня закрыта на %1 %';
+Blockly.Msg.ru.ROBOT_CLAW_OPEN_STATE =                               'Открыта';
+Blockly.Msg.ru.ROBOT_CLAW_HALF_OPEN_STATE =                          'Полуоткрыта';
+Blockly.Msg.ru.ROBOT_CLAW_CLOSED_STATE =                             'Закрыта';
+Blockly.Msg.ru.ROBOT_POSITION1       =            'Позиция1';
+Blockly.Msg.ru.ROBOT_POSITION2       =            'Позиция2';
+Blockly.Msg.ru.ROBOT_POSITION3       =            'Позиция3';
+Blockly.Msg.ru.ROBOT_POSITION4       =            'Позиция4';
+Blockly.Msg.ru.ROBOT_POSITION5       =            'Позиция5';
+Blockly.Msg.ru.ROBOT_CLAW_STATE = "Клешня %1";
 
-  Blockly.Msg.LAB_SENSOR  = "Лаборатория %1";
+ Blockly.Msg.ru.LAB_LED_TURN_ON = "Вкл светодиод на Лабаратории %1";
+ Blockly.Msg.ru.LAB_LED_TURN_OFF = "Выкл светодиод на Лабаратории %1";
 
-  Blockly.Msg.LAB_SENSOR_LIGHT         =                           'свет';
-  Blockly.Msg.LAB_SENSOR_SOUND         =                           'звук';
-  Blockly.Msg.LAB_SENSOR_SLIDER        =                           'слайдер';
+ Blockly.Msg.ru.LAB_LED_NUM_0    =                           '0';
+ Blockly.Msg.ru.LAB_LED_NUM_1    =                           '1';
+ Blockly.Msg.ru.LAB_LED_NUM_2    =                           '2';
+ Blockly.Msg.ru.LAB_LED_NUM_3    =                           '3';
+ Blockly.Msg.ru.LAB_LED_NUM_4    =                           '4';
+ Blockly.Msg.ru.LAB_LED_NUM_5    =                           '5';
+ Blockly.Msg.ru.LAB_LED_NUM_6    =                           '6';
+ Blockly.Msg.ru.LAB_LED_NUM_7    =                           '7';
 
-  Blockly.Msg.LAB_BUTTON_PRESSED = 'Кнопка на Лаборатории %1 нажата?';
+ Blockly.Msg.ru.LAB_COLOR_LED_TURN_ON    =  "Вкл цветной светодиод на Лабаратории %1";
+ Blockly.Msg.ru.LAB_COLOR_LED_TURN_OFF   =  "Выкл цветной светодиод на Лабаратории %1";
 
-  Blockly.Msg.LAB_BUTTON_NUM_0         =                      '0';
-  Blockly.Msg.LAB_BUTTON_NUM_1         =                      '1';
-  Blockly.Msg.LAB_BUTTON_NUM_2         =                      '2';
-  Blockly.Msg.LAB_BUTTON_NUM_3         =                      '3';
-  Blockly.Msg.LAB_BUTTON_NUM_4         =                      '4';
-  Blockly.Msg.LAB_BUTTON_NUM_5         =                      '5';
+ Blockly.Msg.ru.LAB_COLOR_LED_RED        =                           'красный';
+ Blockly.Msg.ru.LAB_COLOR_LED_YELLOW     =                           'жёлтый';
+ Blockly.Msg.ru.LAB_COLOR_LED_GREEN      =                           'зелёный';
 
-  Blockly.Msg.LAB_EXTERNAL_SENSOR      =   "Лаборатория вход %1";
+  Blockly.Msg.ru.LAB_SENSOR  = "Лаборатория %1";
 
-  Blockly.Msg.LAB_EXTERNAL_SENSOR_A0   =                             'A0';
-  Blockly.Msg.LAB_EXTERNAL_SENSOR_A1   =                             'A1';
+  Blockly.Msg.ru.LAB_SENSOR_LIGHT         =                           'свет';
+  Blockly.Msg.ru.LAB_SENSOR_SOUND         =                           'звук';
+  Blockly.Msg.ru.LAB_SENSOR_SLIDER        =                           'слайдер';
 
-  Blockly.Msg.LAB_ANALOG_PIN  = "Лаборатория вход %1";
+  Blockly.Msg.ru.LAB_BUTTON_PRESSED = 'Кнопка на Лаборатории %1 нажата?';
 
-  Blockly.Msg.LAB_ANALOG_PIN_NUM_0      =                         'A0';
-  Blockly.Msg.LAB_ANALOG_PIN_NUM_1      =                         'A1';
-  Blockly.Msg.LAB_ANALOG_PIN_NUM_2      =                         'A2';
-  Blockly.Msg.LAB_ANALOG_PIN_NUM_3      =                         'A3';
-  Blockly.Msg.LAB_ANALOG_PIN_NUM_4      =                         'A4';
-  Blockly.Msg.LAB_ANALOG_PIN_NUM_5      =                         'A5';
+  Blockly.Msg.ru.LAB_BUTTON_NUM_0         =                      '0';
+  Blockly.Msg.ru.LAB_BUTTON_NUM_1         =                      '1';
+  Blockly.Msg.ru.LAB_BUTTON_NUM_2         =                      '2';
+  Blockly.Msg.ru.LAB_BUTTON_NUM_3         =                      '3';
+  Blockly.Msg.ru.LAB_BUTTON_NUM_4         =                      '4';
+  Blockly.Msg.ru.LAB_BUTTON_NUM_5         =                      '5';
 
-  Blockly.Msg.LAB_DIGITAL_PIN = "Лаборатория вход %1";
+  Blockly.Msg.ru.LAB_EXTERNAL_SENSOR      =   "Лаборатория вход %1";
 
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_8     =                          'D8';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_9     =                          'D9';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_10    =                          'D10';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_11    =                          'D11';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_12    =                          'D12';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_13    =                          'D13';
+  Blockly.Msg.ru.LAB_EXTERNAL_SENSOR_A0   =                             'A0';
+  Blockly.Msg.ru.LAB_EXTERNAL_SENSOR_A1   =                             'A1';
 
-  Blockly.Msg.LAB_DIGITAL_PIN_SET_ON_OFF = "set Lab pin %1 %2";
+  Blockly.Msg.ru.LAB_ANALOG_PIN  = "Лаборатория вход %1";
 
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_2      =                         'D2';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_3      =                         'D3';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_4      =                         'D4';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_5      =                         'D5';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_6      =                         'D6';
-  Blockly.Msg.LAB_DIGITAL_PIN_NUM_7      =                         'D7';
+  Blockly.Msg.ru.LAB_ANALOG_PIN_NUM_0      =                         'A0';
+  Blockly.Msg.ru.LAB_ANALOG_PIN_NUM_1      =                         'A1';
+  Blockly.Msg.ru.LAB_ANALOG_PIN_NUM_2      =                         'A2';
+  Blockly.Msg.ru.LAB_ANALOG_PIN_NUM_3      =                         'A3';
+  Blockly.Msg.ru.LAB_ANALOG_PIN_NUM_4      =                         'A4';
+  Blockly.Msg.ru.LAB_ANALOG_PIN_NUM_5      =                         'A5';
 
-  Blockly.Msg.LAB_DIGITAL_PIN_STATE_ON    =                            'on';
-  Blockly.Msg.LAB_DIGITAL_PIN_STATE_OFF   =                            'off';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN = "Лаборатория вход %1";
 
-Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE = "Уст выход Лаборатории %1 в ШИМ значение %2";
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_8     =                          'D8';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_9     =                          'D9';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_10    =                          'D10';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_11    =                          'D11';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_12    =                          'D12';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_13    =                          'D13';
 
-Blockly.Msg.LAB_PLAY_NOTE = "Играть ноту на Лабаратории %1";
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_SET_ON_OFF = "set Lab pin %1 %2";
 
-Blockly.Msg.COPTER_FLY_UP  = "Взлёт";
-Blockly.Msg.COPTER_LAND    = "Посадка";
-Blockly.Msg.COPTER_STATUS  = "Статус";
-Blockly.Msg.COPTER_FLY_DISTANCE = "Лететь %1 см";
-Blockly.Msg.COPTER_FLY_BACKWARD = "Лететь назад %1 см";
-Blockly.Msg.COPTER_FLY_TIME =  "Лететь %1 секунд";
-Blockly.Msg.COPTER_FLY_FOR_TIME_WITH_SPEED = "Лететь %1 секунд со скоростью по х %2 по у %3";
-Blockly.Msg.COPTER_CHANGE_X_BY = "Изменить координату по x на %1";
-Blockly.Msg.COPTER_CHANGE_Y_BY = "Изменить координату по у на %1";
-Blockly.Msg.COPTER_CHANGE_Z_BY = "Изменить координату по z на %1";
-Blockly.Msg.COPTER_X_COORD = "Координата по x";
-Blockly.Msg.COPTER_Y_COORD = "Координата по y";
-Blockly.Msg.COPTER_Z_COORD = "Высота";
-Blockly.Msg.COPTER_FLY_FOR_SECONDS_TO_COORDS = "Лететь %1 секунд к x: %2 y: %3 z: %4";
-Blockly.Msg.COPTER_FLY_TO_COORDS = "Дететь к x: %1 y: %2 z: %3";
-Blockly.Msg.COPTER_ROTATE = "Повернуть на %1 градусов";
-Blockly.Msg.COPTER_SET_DIRECTION = "Установить направление %1";
-Blockly.Msg.COPTER_DIRECTION = "Направление";
-Blockly.Msg.COPTER_STOP = "СТОП!";
-Blockly.Msg.COPTER_DIRECTION_FORWARD = 'Вперёд';
-Blockly.Msg.COPTER_DIRECTION_BACKWARD = 'Назад';
-Blockly.Msg.COPTER_DIRECTION_LEFT = 'Налево';
-Blockly.Msg.COPTER_DIRECTION_RIGHT = 'Направо';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_2      =                         'D2';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_3      =                         'D3';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_4      =                         'D4';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_5      =                         'D5';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_6      =                         'D6';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_7      =                         'D7';
+
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_STATE_ON    =                            'on';
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_STATE_OFF   =                            'off';
+
+Blockly.Msg.ru.LAB_DIGITAL_PIN_SET_PWM_VALUE = "Уст выход Лаборатории %1 в ШИМ значение %2";
+
+Blockly.Msg.ru.LAB_PLAY_NOTE = "Играть ноту на Лабаратории %1";
+
+
+Blockly.Msg.ru.COPTER_LAND    = "Посадка";
+Blockly.Msg.ru.COPTER_STATUS  = "Статус";
+Blockly.Msg.ru.COPTER_FLY_DISTANCE = "Лететь %1 см";
+Blockly.Msg.ru.COPTER_FLY_BACKWARD = "Лететь назад %1 см";
+Blockly.Msg.ru.COPTER_FLY_TIME =  "Лететь %1 секунд";
+Blockly.Msg.ru.COPTER_FLY_FOR_TIME_WITH_SPEED = "Лететь %1 секунд со скоростью по х %2 по у %3";
+Blockly.Msg.ru.COPTER_CHANGE_X_BY = "Изменить координату по x на %1";
+Blockly.Msg.ru.COPTER_CHANGE_Y_BY = "Изменить координату по у на %1";
+Blockly.Msg.ru.COPTER_CHANGE_Z_BY = "Изменить координату по z на %1";
+Blockly.Msg.ru.COPTER_X_COORD = "Координата по x";
+Blockly.Msg.ru.COPTER_Y_COORD = "Координата по y";
+Blockly.Msg.ru.COPTER_Z_COORD = "Высота";
+Blockly.Msg.ru.COPTER_FLY_FOR_SECONDS_TO_COORDS = "Лететь %1 секунд к x: %2 y: %3 z: %4";
+Blockly.Msg.ru.COPTER_FLY_TO_COORDS = "Лететь к x: %1 y: %2 z: %3";
+Blockly.Msg.ru.COPTER_ROTATE = "Повернуть на %1 градусов";
+Blockly.Msg.ru.COPTER_SET_DIRECTION = "Установить направление %1";
+Blockly.Msg.ru.COPTER_DIRECTION = "Направление";
+Blockly.Msg.ru.COPTER_STOP = "СТОП!";
+Blockly.Msg.ru.COPTER_DIRECTION_FORWARD = 'Вперёд';
+Blockly.Msg.ru.COPTER_DIRECTION_BACKWARD = 'Назад';
+Blockly.Msg.ru.COPTER_DIRECTION_LEFT = 'Налево';
+Blockly.Msg.ru.COPTER_DIRECTION_RIGHT = 'Направо';
+
+Blockly.Msg.ru.COPTER_FLY_UP  = "Взлёт";
+
+
+//CONTROL
+Blockly.Msg.ru.CREATE_CLONE = "Создать клон %1";
+Blockly.Msg.ru.DELETE_CLONE = "Удалить клон";
+Blockly.Msg.ru.ALWAYS = "Всегда";
+Blockly.Msg.ru.REPEAT = "Повторить %1";
+Blockly.Msg.ru.IFTHEN = "Если %1 , то";
+Blockly.Msg.ru.ELSE = "Иначе";
+Blockly.Msg.ru.WAIT = "Ждать %1 секунд";
+Blockly.Msg.ru.WAIT_UNTIL = "Ждать пока %1";
+Blockly.Msg.ru.REPEAT_UNTIL = "Повторять пока %1";
+Blockly.Msg.ru.CLONE_START =  "Когда я начинаю как клон";
+
+
+//data
+Blockly.Msg.ru.SET_VAR =  "Установить %1 в %2";
+Blockly.Msg.ru.CHANGE_VAR =  "Изменить %1 на %2";
+Blockly.Msg.ru.SHOW_VAR =  "Показать переменную %1";
+Blockly.Msg.ru.HIDE_VAR =  "Спрятать переменную %1";
+Blockly.Msg.ru.ADD_IN_LIST =  "Добавить %1 к %2";
+Blockly.Msg.ru.DELETE_IN_LIST = "Удалить %1 из %2";
+Blockly.Msg.ru.INSERT_IN_LIST =  "Вставить %1 в %2 из %3";
+Blockly.Msg.ru.REPLACE_IN_LIST =  "Заменить элемент %1 в %2 на %3";
+Blockly.Msg.ru.GET_ITEM = "Элемент %1 из %2";
+Blockly.Msg.ru.LENGTH_LIST =  "Длинна списка %1";
+Blockly.Msg.ru.CONTAIN_LIST = "%1 содержит %2?";
+Blockly.Msg.ru.SHOW_LIST = "Показать список %1";
+Blockly.Msg.ru.HIDE_LIST = "Скрыть список %1";
+//event
+
+Blockly.Msg.ru.WHEN_CLICKED =  "Когда %1 нажата"     ;
+Blockly.Msg.ru.WHEN_SPRITE_CLICKED = "Когда этот спрайт нажат"     ;
+Blockly.Msg.ru.WHEN_RECIEVE =    "Когда получил %1"  ;
+Blockly.Msg.ru.WHEN_BACK_SWITCH =   "Когда фон меняется на %1"   ;
+  Blockly.Msg.ru.WHEN_MORE =   "Когда %1 > %2"   ;
+Blockly.Msg.ru.BROAD =     "Передать %1"  ;
+Blockly.Msg.ru.BROAD_WAIT = "Передать %1 и ждать"   ;
+Blockly.Msg.ru.WHEN_PRESS =    "Когда клавиша %1 нажата"   ;
+Blockly.Msg.ru.MOUSE_POINTER =  "указатель мыши"   ;
+Blockly.Msg.ru.RANDOM_POS =    "случайная позиция"   ;
+//looks
+Blockly.Msg.ru.SAY_FOR_SEC =  "Говорить %1  %2 секунд"    ;
+Blockly.Msg.ru.SAY =  "Говорить %1"    ;
+Blockly.Msg.ru.THINK_FOR_SEC =  "Думать %1  %2 секунд"     ;
+Blockly.Msg.ru.THINK =  "Думать %1"    ;
+Blockly.Msg.ru.SHOW_PERS =  "Показать"    ;
+Blockly.Msg.ru.HIDE_PERS =  "Скрыть"    ;
+Blockly.Msg.ru.CHANGE_EFF =  "Изменить %1 эффект на %2"    ;
+Blockly.Msg.ru.SET_EFF =  "Установить %1 эффект в %2"   ;
+Blockly.Msg.ru.CLEAR_EFF =   "Очистить графические эффекты"    ;
+Blockly.Msg.ru.CHANGE_SIZE =    "Измениь размер на %1"   ;
+Blockly.Msg.ru.SET_SIZE =    "Установить размер в %1 %"  ;
+Blockly.Msg.ru.GET_SIZE =     "Размер" ;
+Blockly.Msg.ru.SWITCH_COSTUME =   "Изменить костюм на %1"   ;
+Blockly.Msg.ru.NEXT_COSTUME =    "Следующий костюм"  ;
+Blockly.Msg.ru.SWITCH_BACK =    "Поменять фон на %1" ;
+Blockly.Msg.ru.GO_TO =   "Переместиться %1"  ;
+Blockly.Msg.ru.GO_LAYERS =    "Идти %1 %2 слой"  ;
+Blockly.Msg.ru.FRONT="Вперёд";
+Blockly.Msg.ru.BACK="НАЗАД";
+Blockly.Msg.ru.SET_BACK =    "Фон %1"  ;
+Blockly.Msg.ru.SET_COSTUME =    "Костюм %1"  ;
+Blockly.Msg.ru.SWITCH_BACK_WAIT =    "Поменять фон на %1 и ждать"  ;
+Blockly.Msg.ru.NEXT_BACK =  "Следующий фон"  ;
+//motions
+
+
+Blockly.Msg.ru.CHAR_MOVE_STEPS = "Двигаться %1 шагов"     ;
+Blockly.Msg.ru.CHAR_TURN = "Повернуть %1 на %2 градусов"    ;
+Blockly.Msg.ru.CHAR_POINT_IN_DIR = "Установить направление %1"     ;
+Blockly.Msg.ru.CHAR_POINT_TOW = "Повернуться к %1"   ;
+Blockly.Msg.ru.CHAR_GO_TO ="Переместить в x: %1 y: %2"    ;
+Blockly.Msg.ru.CHAR_GO =  "Переместить на %1"    ;
+Blockly.Msg.ru.CHAR_GLIDE_SEC_TO ="Плыть %1 секунд в x: %2 y: %3"   ;
+Blockly.Msg.ru.CHAR_GLIDE_SECS = "Плыть %1 секунд в %2"    ;
+Blockly.Msg.ru.CHAR_CHANGE_X = "Изменить х на %1"    ;
+Blockly.Msg.ru.CHAR_SET_X =   "Установить х в %1"    ;
+Blockly.Msg.ru.CHAR_CHANGE_Y = "Изменить у на %1"   ;
+Blockly.Msg.ru.CHAR_SET_Y =  "Установить у в %1"    ;
+Blockly.Msg.ru.CHAR_EDGE = "Если на краю отпрыгнуть"      ;
+Blockly.Msg.ru.CHAR_SET_ROT_STILE = "Установить стиль поворота %1"    ;
+Blockly.Msg.ru.CHAR_X =  "x позиция";
+Blockly.Msg.ru.CHAR_Y =  "y позиция"    ;
+Blockly.Msg.ru.CHAR_DIR = "Направление"    ;
+//operatoRS
+
+Blockly.Msg.ru.RANDOM ="Выбрать случайное от %1 до %2"     ;
+Blockly.Msg.ru.AND =  "%1 и %2"    ;
+Blockly.Msg.ru.OR =  "%1 или %2"    ;
+Blockly.Msg.ru.NOT =  "Не %1"   ;
+Blockly.Msg.ru.JOIN = "Присоединить %1 %2"    ;
+Blockly.Msg.ru.LETTER_OF ="Буква %1 из %2"    ;
+Blockly.Msg.ru.LENGTH = "Длинна %1"    ;
+Blockly.Msg.ru.CONTAINS = "%1 содержит %2?"    ;
+Blockly.Msg.ru.ROUND =  "Округлить %1"   ;
+Blockly.Msg.ru.OF =  "%1 от %2"    ;
+Blockly.Msg.ru.ABS =  'модуль'    ;
+Blockly.Msg.ru.FLOOR =  'округлить вниз' ;
+Blockly.Msg.ru.CEIL =  'окурглить вверх'    ;
+Blockly.Msg.ru.SQRT =  'корень'    ;
+//pen
+
+Blockly.Msg.ru.CLEAR ="Очистить"      ;
+Blockly.Msg.ru.STAMP = "Печать"     ;
+Blockly.Msg.ru.PEN_DOWN =  "Опустить перо"    ;
+Blockly.Msg.ru.PEN_UP ="Поднять перо"    ;
+Blockly.Msg.ru.PEN_SET_COLOR =  "Установить цвет пера в %1"    ;
+Blockly.Msg.ru.PEN_CHANGE_COLOR =  "Изменить цвет пера на %1"    ;
+Blockly.Msg.ru.PEN_SET_COLOR_TO = "Установить цвет пера %1"    ;
+Blockly.Msg.ru.PEN_CHANGE_SHADE =  "Изменить тень пера на %1"    ;
+Blockly.Msg.ru.PEN_SET_SHADE = "Установить тень пера в %1"   ;
+Blockly.Msg.ru.PEN_CHANGE_SHADE =  "Изменить размер пера на %1"    ;
+Blockly.Msg.ru.PEN_SET_SIZE =  "Установить размер пера в %1"    ;
+Blockly.Msg.ru.PEN_CHANGE_TRANS = "Изменить прозрачность пера на %1"    ;
+Blockly.Msg.ru.PEN_SET_TRANS = "Установить прозрачность пера в %1"     ;
+//proc
+Blockly.Msg.ru.DEFINE = "Объявить %1"    ;
+//sens
+Blockly.Msg.ru.EDGEE = "край"      ;
+Blockly.Msg.ru.TOUCH ="Касается %1?"      ;
+Blockly.Msg.ru.TOUCH_COLOR = "Касается цвета %1?"      ;
+Blockly.Msg.ru.COLOR_TOUCH = "Цвет %1 касается %2?"      ;
+Blockly.Msg.ru.DISTANCE_TO = "Расстояние до %1"     ;
+Blockly.Msg.ru.ASK_WAIT = "Спросить %1 и ждать"     ;
+Blockly.Msg.ru.ANSWER = "Ответ"     ;
+Blockly.Msg.ru.KEY_PRESS ="Клавиша %1 нажата?"     ;
+Blockly.Msg.ru.MOUSE_DOWN ="ЛКМ нажата?"     ;
+Blockly.Msg.ru.MOUSE_X = "Координата мыши x"     ;
+Blockly.Msg.ru.MOUSE_Y = "Координата мыши y"     ;
+Blockly.Msg.ru.I_WANT_TO_EAT ="Установить перемещение %1"     ;
+Blockly.Msg.ru.NO_BEER = "Громкость"     ;
+Blockly.Msg.ru.NO_MONEY =  "Видео %1 на %2"     ;
+Blockly.Msg.ru.STAGE='Уровень';
+Blockly.Msg.ru.MOTION='движение';
+Blockly.Msg.ru.DIRECTION='Направление';
+Blockly.Msg.ru.TOO_MUCH_TRENSLATE = "Видео %1"    ;
+Blockly.Msg.ru.SET_VIDEO ="Установить прозрачность видео в %1%"    ;
+  Blockly.Msg.ru.TIMER =  "Таймер"    ;
+Blockly.Msg.ru.RES_TIMER =  "Обнулить таймер"    ;
+Blockly.Msg.ru.IZ =  "%1 из %2"    ;
+Blockly.Msg.ru.CURR = "Текущий %1"      ;
+Blockly.Msg.ru.DAYS = "Дней с 2000"     ;
+Blockly.Msg.ru.USERNAME = "Имя пользователя"     ;
+
+
+  Blockly.Msg.ru.YEAR='год';
+ Blockly.Msg.ru.MONTH='месяц';
+ Blockly.Msg.ru.DATA='дата';
+ Blockly.Msg.ru.DOW='день недели';
+ Blockly.Msg.ru.HOUR='час';
+ Blockly.Msg.ru.MIN='минута'
+ Blockly.Msg.ru.SEC='секунда'
+
+ Blockly.Msg.ru.POSITION_X='x позиция';
+ Blockly.Msg.ru.POSITION_Y='y позиция';
+ Blockly.Msg.ru.COST='костюм #';
+ Blockly.Msg.ru.NC='название костюма';
+ Blockly.Msg.ru.VOLUME='громкость';
+ Blockly.Msg.ru.FON='фон #';
+ Blockly.Msg.ru.FONNAME='название фона';
+//sound
+
+Blockly.Msg.ru.START_SOUND = "Играй мелодию %1"      ;
+Blockly.Msg.ru.PLAY_SOUND = "Играй мелодию %1 пока не кончится"  ;
+Blockly.Msg.ru.STOP_SONDS =  "Выключить музыку"    ;
+Blockly.Msg.ru.PLAY_DRUM = "Барабану %1 играть %2 тактов"    ;
+Blockly.Msg.ru.REST = "Подождать %1 тактов"    ;
+Blockly.Msg.ru.PLAY_NOTE =  "Играть ноту %1 %2 тактов"    ;
+Blockly.Msg.ru.SET_EF =  "Установить %1 эффект в %2"    ;
+Blockly.Msg.ru.CHANGE_EF =   "Изменить %1 эффект на %2";
+Blockly.Msg.ru.CLEAR_SOUND =     "Очистить звуковые эффекты" ;
+Blockly.Msg.ru.SET_INS =   "Установить инструмент %1" ;
+Blockly.Msg.ru.CHANGE_VOLUME ="Изменить громкость на %1"    ;
+Blockly.Msg.ru.SET_VOLUME = "Установить громкость в %1%";
+Blockly.Msg.ru.CHANGE_TEMPO = "Изменить темп на %1"    ;
+Blockly.Msg.ru.PUT_THE_TEMPO = "Установить темп в %1 bpm"    ;
+Blockly.Msg.ru.TEMPO = "Темп";
+
+
+//ENGLISH
+Blockly.Msg.en.CREATE_CLONE = "create clone of %1";
+Blockly.Msg.en.DELETE_CLONE = "Delete clone";
+Blockly.Msg.en.ALWAYS = "forever";
+Blockly.Msg.en.REPEAT = "repeat %1";
+Blockly.Msg.en.IF_THEN = "if %1 then";
+Blockly.Msg.en.ELSE = "else";
+Blockly.Msg.en.WAIT = "wait %1 seconds";
+Blockly.Msg.en.WAIT_UNTIL = "wait until %1";
+Blockly.Msg.en.REPEAT_UNTIL = "repeat until %1";
+Blockly.Msg.en.CLONE_START =  "when I start as a clone";
+//
+Blockly.Msg.en.SET_VAR = "set %1 to %2";
+Blockly.Msg.en.CHANGE_VAR =  "change %1 by %2";
+Blockly.Msg.en.SHOW_VAR =  "show variable %1";
+Blockly.Msg.en.HIDE_VAR =  "hide variable %1";
+Blockly.Msg.en.ADD_IN_LIST =  "add %1 to %2";
+Blockly.Msg.en.DELETE_IN_LIST = "delete %1 of %2";
+Blockly.Msg.en.INSERT_IN_LIST =  "insert %1 at %2 of %3";
+Blockly.Msg.en.REPLACE_IN_LIST =  "replace item %1 of %2 with %3";
+Blockly.Msg.en.GET_ITEM = "item %1 of %2";
+Blockly.Msg.en.LENGTH_LIST =  "length of %1";
+Blockly.Msg.en.CONTAIN_LIST = "%1 contains %2?";
+Blockly.Msg.en.SHOW_LIST = "show list %1";
+Blockly.Msg.en.HIDE_LIST = "hide list %1";
+//
+Blockly.Msg.en.WHEN_CLICKED =  "when %1 clicked"     ;
+Blockly.Msg.en.WHEN_SPRITE_CLICKED = "when this sprite clicked"     ;
+Blockly.Msg.en.WHEN_RECIEVE =    "when I receive %1"  ;
+Blockly.Msg.en.BHEN_BACK_SWITCH =   "when backdrop switches to %1"   ;
+Blockly.Msg.en.WHEN_MORE =    "when %1 > %2"   ;
+Blockly.Msg.en.BROAD =     "broadcast %1"  ;
+Blockly.Msg.en.BROAD_WAIT =   "broadcast %1 and wait"   ;
+Blockly.Msg.en.WHEN_PRESS =   "when %1 key pressed"   ;
+//
+Blockly.Msg.en.SAY_FOR_SEC =  "say %1 for %2 seconds"    ;
+Blockly.Msg.en.SAY =  "say %1"    ;
+Blockly.Msg.en.THINK_FOR_SEC =  "think %1 for %2 seconds"     ;
+Blockly.Msg.en.THINK =  "think %1"    ;
+Blockly.Msg.en.SHOW_PERS =  "show"    ;
+Blockly.Msg.en.HIDE_PERS =  "hide"    ;
+Blockly.Msg.en.CHANGE_EFF =  "change %1 effect by %2"    ;
+Blockly.Msg.en.SET_EFF =  "set %1 effect to %2"    ;
+Blockly.Msg.en.CLEAR_EFF =   "clear graphic effects"    ;
+Blockly.Msg.en.CHANGE_SIZE =    "change size by %1"   ;
+Blockly.Msg.en.SET_SIZE =    "set size to %1 %"  ;
+Blockly.Msg.en.GET_SIZE =     "size" ;
+Blockly.Msg.en.SWITCH_COSTUME =    "switch costume to %1"   ;
+Blockly.Msg.en.NEXT_COSTUME =    "next costume"  ;
+Blockly.Msg.en.SWITCH_BACK =     "switch backdrop to %1" ;
+Blockly.Msg.en.GO_TO =    "go to %1"  ;
+Blockly.Msg.en.GO_LAYERS =    "go %1 %2 layers"  ;
+Blockly.Msg.en.SET_BACK =    "backdrop %1"  ;
+Blockly.Msg.en.SET_COSTUME =    "costume %1"  ;
+Blockly.Msg.en.SWITCH_BACK_WAIT =    "switch backdrop to %1 and wait"  ;
+Blockly.Msg.en.NEXT_BACK =    "next backdrop"  ;
+Blockly.Msg.en.FRONT="front";
+Blockly.Msg.en.BACK="back";
+//
+Blockly.Msg.en.CHAR_MOVE_STEPS = "move %1 steps"     ;
+Blockly.Msg.en.CHAR_TURN = "turn %1 %2 degrees"     ;
+Blockly.Msg.en.CHAR_POINT_IN_DIR = "point in direction %1"     ;
+Blockly.Msg.en.CHAR_POINT_TOW =  "point towards %1"    ;
+Blockly.Msg.en.CHAR_GO_TO =  "go to x: %1 y: %2"    ;
+Blockly.Msg.en.CHAR_GO =  "go to %1"    ;
+Blockly.Msg.en.CHAR_GLIDE_SEC_TO =  "glide %1 secs to x: %2 y: %3"   ;
+Blockly.Msg.en.CHAR_GLIDE_SECS =  "glide %1 secs to %2"    ;
+Blockly.Msg.en.CHAR_CHANGE_X =  "change x by %1"    ;
+Blockly.Msg.en.CHAR_SET_X =  "set x to %1"    ;
+Blockly.Msg.en.CHAR_CHANGE_Y =   "change y by %1"   ;
+Blockly.Msg.en.CHAR_SET_Y =  "set y to %1"    ;
+Blockly.Msg.en.CHAR_EDGE =  "if on edge, bounce"      ;
+Blockly.Msg.en.CHAR_SET_ROT_STILE =  "set rotation style %1"    ;
+Blockly.Msg.en.CHAR_X =  "x position"    ;
+Blockly.Msg.en.CHAR_Y =  "y position"    ;
+Blockly.Msg.en.CHAR_DIR =  "direction"    ;
+Blockly.Msg.en.MOUSE_POINTER =  "mouse pointer"   ;
+Blockly.Msg.en.RANDOM_POS =    "random position"   ;
+//
+Blockly.Msg.en.RANDOM = "pick random %1 to %2"     ;
+Blockly.Msg.en.AND =  "%1 and %2"    ;
+Blockly.Msg.en.OR =  "%1 or %2"    ;
+Blockly.Msg.en.NOT =  "not %1"   ;
+Blockly.Msg.en.JOIN =  "join %1 %2"    ;
+Blockly.Msg.en.LETTER_OF =  "letter %1 of %2"    ;
+Blockly.Msg.en.LENGTH =  "length of %1"    ;
+Blockly.Msg.en.CONTAINS =  "%1 contains %2?"    ;
+Blockly.Msg.en.ROUND =  "round %1"   ;
+Blockly.Msg.en.OF =  "%1 of %2"    ;
+Blockly.Msg.en.ABS =  'abs'    ;
+Blockly.Msg.en.FLOOR =  'floor'     ;
+Blockly.Msg.en.CEIL =  'ceiling'    ;
+Blockly.Msg.en.SQRT =  'sqrt'    ;
+//
+Blockly.Msg.en.DEFINE = "define %1"     ;
+//
+Blockly.Msg.en.CLEAR ="clear"      ;
+Blockly.Msg.en.STAMP = "stamp"     ;
+Blockly.Msg.en.PEN_DOWN =  "pen down"    ;
+Blockly.Msg.en.PEN_UP =  "pen up"    ;
+Blockly.Msg.en.PEN_SET_COLOR =   "set pen color to %1"    ;
+Blockly.Msg.en.PEN_CHANGE_COLOR =  "change pen color by %1"    ;
+Blockly.Msg.en.PEN_SET_COLOR_TO =  "set pen color to %1"    ;
+Blockly.Msg.en.PEN_CHANGE_SHADE =  "change pen shade by %1"    ;
+Blockly.Msg.en.PEN_SET_SHADE =   "set pen shade to %1"   ;
+Blockly.Msg.en.PEN_CHANGE_SHADE =  "change pen size by %1"    ;
+Blockly.Msg.en.PEN_SET_SIZE =  "set pen size to %1"    ;
+Blockly.Msg.en.PEN_CHANGE_TRANS =  "change pen transparency by %1"    ;
+Blockly.Msg.en.PEN_SET_TRANS = "set pen transparency to %1"     ;
+//
+Blockly.Msg.en.EDGEE = "edge"      ;
+Blockly.Msg.en.TOUCH ="touching %1?"      ;
+Blockly.Msg.en.TOUCH_COLOR ="touching color %1?"      ;
+Blockly.Msg.en.COLOR_TOUCH = "color %1 is touching %2?"      ;
+Blockly.Msg.en.DISTANCE_TO = "distance to %1"     ;
+Blockly.Msg.en.ASK_WAIT = "ask %1 and wait"     ;
+Blockly.Msg.en.ANSWER = "answer"     ;
+Blockly.Msg.en.KEY_PRESS = "key %1 pressed?"     ;
+Blockly.Msg.en.MOUSE_DOWN = "mouse down?"     ;
+Blockly.Msg.en.MOUSE_X = "mouse x"     ;
+Blockly.Msg.en.MOUSE_Y = "mouse y"     ;
+Blockly.Msg.en.I_WANT_TO_EAT = "set drag mode %1"     ;
+Blockly.Msg.en.NO_BEER = "loudness"     ;
+Blockly.Msg.en.NO_MONEY =  "video %1 on %2"     ;
+Blockly.Msg.en.TOO_MUCH_TRENSLATE =  "turn video %1"    ;
+Blockly.Msg.en.SET_VIEO =  "set video transparency to %1%"    ;
+Blockly.Msg.en.TIMER =  "timer"    ;
+Blockly.Msg.en.RES_TIMER =  "reset timer"    ;
+Blockly.Msg.en.IZ =  "%1 of %2"    ;
+Blockly.Msg.en.CURR = "current %1"      ;
+Blockly.Msg.en.DAYS = "days since 2000"     ;
+Blockly.Msg.en.USERNAME = "username"     ;
+Blockly.Msg.en.STAGE='stage';
+Blockly.Msg.en.MOTION='motion';
+Blockly.Msg.en.DIRECTION='direction';
+  Blockly.Msg.en.YEAR='year';
+ Blockly.Msg.en.MONTH='month';
+ Blockly.Msg.en.DATA='data';
+ Blockly.Msg.en.DOW='day of the week';
+ Blockly.Msg.en.HOUR='hour';
+ Blockly.Msg.en.MIN='minute';
+ Blockly.Msg.en.SEC='second';
+
+  Blockly.Msg.en.POSITION_X= 'x position';
+  Blockly.Msg.en.POSITION_Y= 'y position';
+  Blockly.Msg.en.COST= 'costume #';
+  Blockly.Msg.en.NC='costume name';
+  Blockly.Msg.en.VOLUME='volume';
+  Blockly.Msg.en.FON= 'backdrop #';
+  Blockly.Msg.en.FONNAME='backdrop name';
+//
+Blockly.Msg.en.START_SOUND = "start sound %1"      ;
+Blockly.Msg.en.PLAY_SOUND =     "play sound %1 until done"  ;
+Blockly.Msg.en.STOP_SONDS =   "stop all sounds"    ;
+Blockly.Msg.en.PLAY_DRUM =  "play drum %1 for %2 beats"    ;
+Blockly.Msg.en.REST =  "rest for %1 beats"    ;
+Blockly.Msg.en.PLAY_NOTE =  "play note %1 for %2 beats"    ;
+Blockly.Msg.en.SET_EF =  "set %1 effect to %2"    ;
+Blockly.Msg.en.CHANGE_EF =      "change %1 effect by %2";
+Blockly.Msg.en.CLEAR_SOUND =     "clear sound effects"  ;
+Blockly.Msg.en.SET_INS =     "set instrument to %1" ;
+Blockly.Msg.en.CHANGE_VOLUME =  "change volume by %1"    ;
+Blockly.Msg.en.SET_VOLUME =  "set volume to %1%"    ;
+Blockly.Msg.en.CHANGE_TEMPO =  "change tempo by %1"    ;
+Blockly.Msg.en.PUT_THE_TEMPO =  "set tempo to %1 bpm"    ;
+Blockly.Msg.en.TEMPO = "tempo";
+
+
+Blockly.Msg.en.MOTORS_ON_FOR_SECONDS = 'Motors on for %1 seconds';
+Blockly.Msg.en.MOTORS_ON = 'Motors on';
+Blockly.Msg.en.MOTORS_OFF = 'Motors off';
+Blockly.Msg.en.SET_ROBOT_DIRECTION = 'Set robot direction to %1';
+Blockly.Msg.en.DIRECTION_FORWARD = 'Forward';
+Blockly.Msg.en.DIRECTION_BACKWARD = 'Backward';
+Blockly.Msg.en.DIRECTION_LEFT = 'turn left';
+Blockly.Msg.en.DIRECTION_RIGHT = 'turn right';
+Blockly.Msg.en.SET_ROBOT_MOTORS_ON_FOR_STEPS = 'Motors on for %1 steps';
+Blockly.Msg.en.ROBOT_RESET_TRIP_METERS = 'Reset trip meters';
+Blockly.Msg.en.ROBOT_TURN_RIGHT = 'turn %1 %2 degrees';
+Blockly.Msg.en.ROBOT_TURN_LEFT  = 'turn %1 %2 degrees';
+Blockly.Msg.en.ROBOT_SET_MOTORS_POWER = 'set motors power %1 %';
+ Blockly.Msg.en.ROBOT_SET_MOTORS_POWER_LEFT_RIGHT_SEPARATELY = 'set motors power L %1 R %2 %';
+Blockly.Msg.en.ROBOT_SET_MOTORS_LEFT_RIGHT_POWER_AND_DIRECTION_SEPARATELY = 'L %1 R %2 set power L %3  R %4 %';
+Blockly.Msg.en.ROBOT_GET_SENSOR_DATA = 'Robot %1';
+Blockly.Msg.en.ROBOT_SENSOR1                      =          'sensor1';
+Blockly.Msg.en.ROBOT_SENSOR2                      =          'sensor2';
+Blockly.Msg.en.ROBOT_SENSOR3                      =          'sensor3';
+Blockly.Msg.en.ROBOT_SENSOR4                      =          'sensor4';
+Blockly.Msg.en.ROBOT_SENSOR5                      =          'sensor5';
+Blockly.Msg.en.ROBOT_SENSOR_TRIP_METER_LEFT       =          'trip meter L';
+Blockly.Msg.en.ROBOT_SENSOR_TRIP_METER_RIGHT      =          'trip meter R';
+Blockly.Msg.en.ROBOT_RGB_RED                      =          'red';
+Blockly.Msg.en.ROBOT_RGB_GREEN                    =          'green';
+Blockly.Msg.en.ROBOT_RGB_BLUE                     =          'blue';
+Blockly.Msg.en.ROBOT_GET_RGB_SENSOR_DATA = 'Robot Color Sensor RGB %1 %2';
+Blockly.Msg.en.ROBOT_START_BUTTON_PRESSED = 'Robot start button pressed?';
+Blockly.Msg.en.ROBOT_TURN_LED_ON = 'turn robot led in %1 on';
+Blockly.Msg.en.ROBOT_TURN_LED_OFF = 'turn robot led in %1 off';
+Blockly.Msg.en.ROBOT_CLAW_CLOSED = 'Claw closed %1 %';
+Blockly.Msg.en.ROBOT_CLAW_OPEN_STATE =                               'Open';
+Blockly.Msg.en.ROBOT_CLAW_HALF_OPEN_STATE =                          'Half-open';
+Blockly.Msg.en.ROBOT_CLAW_CLOSED_STATE =                             'Closed';
+Blockly.Msg.en.ROBOT_POSITION1       =            'position1';
+Blockly.Msg.en.ROBOT_POSITION2       =            'position2';
+Blockly.Msg.en.ROBOT_POSITION3       =            'position3';
+Blockly.Msg.en.ROBOT_POSITION4       =            'position4';
+Blockly.Msg.en.ROBOT_POSITION5       =            'position5';
+Blockly.Msg.en.ROBOT_CLAW_STATE = "Claw %1";
+
+ Blockly.Msg.en.LAB_LED_TURN_ON = "turn Lab led %1 on";
+ Blockly.Msg.en.LAB_LED_TURN_OFF = "turn Lab led %1 off";
+
+ Blockly.Msg.en.LAB_LED_NUM_0    =                           '0';
+ Blockly.Msg.en.LAB_LED_NUM_1    =                           '1';
+ Blockly.Msg.en.LAB_LED_NUM_2    =                           '2';
+ Blockly.Msg.en.LAB_LED_NUM_3    =                           '3';
+ Blockly.Msg.en.LAB_LED_NUM_4    =                           '4';
+ Blockly.Msg.en.LAB_LED_NUM_5    =                           '5';
+ Blockly.Msg.en.LAB_LED_NUM_6    =                           '6';
+ Blockly.Msg.en.LAB_LED_NUM_7    =                           '7';
+
+ Blockly.Msg.en.LAB_COLOR_LED_TURN_ON    =  "turn Lab %1 led on";
+ Blockly.Msg.en.LAB_COLOR_LED_TURN_OFF   =  "turn Lab %1 led off";
+
+ Blockly.Msg.en.LAB_COLOR_LED_RED        =                           'red';
+ Blockly.Msg.en.LAB_COLOR_LED_YELLOW     =                           'yellow';
+ Blockly.Msg.en.LAB_COLOR_LED_GREEN      =                           'green';
+
+  Blockly.Msg.en.LAB_SENSOR  = "Lab %1";
+
+  Blockly.Msg.en.LAB_SENSOR_LIGHT         =                           'light sensor';
+  Blockly.Msg.en.LAB_SENSOR_SOUND         =                           'sound sensor';
+  Blockly.Msg.en.LAB_SENSOR_SLIDER        =                           'slider';
+
+  Blockly.Msg.en.LAB_BUTTON_PRESSED = 'Lab button %1 pressed';
+
+  Blockly.Msg.en.LAB_BUTTON_NUM_0         =                      '0';
+  Blockly.Msg.en.LAB_BUTTON_NUM_1         =                      '1';
+  Blockly.Msg.en.LAB_BUTTON_NUM_2         =                      '2';
+  Blockly.Msg.en.LAB_BUTTON_NUM_3         =                      '3';
+  Blockly.Msg.en.LAB_BUTTON_NUM_4         =                      '4';
+  Blockly.Msg.en.LAB_BUTTON_NUM_5         =                      '5';
+
+  Blockly.Msg.en.LAB_EXTERNAL_SENSOR      =   "Lab ext %1";
+
+  Blockly.Msg.en.LAB_EXTERNAL_SENSOR_A0   =                             'A0';
+  Blockly.Msg.en.LAB_EXTERNAL_SENSOR_A1   =                             'A1';
+
+  Blockly.Msg.en.LAB_ANALOG_PIN  = "Lab pin %1";
+
+  Blockly.Msg.en.LAB_ANALOG_PIN_NUM_0      =                         'A0';
+  Blockly.Msg.en.LAB_ANALOG_PIN_NUM_1      =                         'A1';
+  Blockly.Msg.en.LAB_ANALOG_PIN_NUM_2      =                         'A2';
+  Blockly.Msg.en.LAB_ANALOG_PIN_NUM_3      =                         'A3';
+  Blockly.Msg.en.LAB_ANALOG_PIN_NUM_4      =                         'A4';
+  Blockly.Msg.en.LAB_ANALOG_PIN_NUM_5      =                         'A5';
+
+  Blockly.Msg.en.LAB_DIGITAL_PIN = "Lab pin %1";
+
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_8     =                          'D8';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_9     =                          'D9';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_10    =                          'D10';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_11    =                          'D11';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_12    =                          'D12';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_13    =                          'D13';
+
+  Blockly.Msg.en.LAB_DIGITAL_PIN_SET_ON_OFF = "set Lab pin %1 %2";
+
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_2      =                         'D2';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_3      =                         'D3';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_4      =                         'D4';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_5      =                         'D5';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_6      =                         'D6';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_NUM_7      =                         'D7';
+
+  Blockly.Msg.en.LAB_DIGITAL_PIN_STATE_ON    =                            'on';
+  Blockly.Msg.en.LAB_DIGITAL_PIN_STATE_OFF   =                            'off';
+
+Blockly.Msg.en.LAB_DIGITAL_PIN_SET_PWM_VALUE = "set Lab pin %1 PWM value %2";
+
+Blockly.Msg.en.LAB_PLAY_NOTE = "Play note on lab %1";
+
+Blockly.Msg.en.COPTER_FLY_UP  = "Fly up";
+Blockly.Msg.en.COPTER_LAND    = "Land";
+Blockly.Msg.en.COPTER_STATUS  = "Status";
+Blockly.Msg.en.COPTER_FLY_DISTANCE = "Fly  %1 cm";
+Blockly.Msg.en.COPTER_FLY_BACKWARD = "Fly backward %1 cm";
+Blockly.Msg.en.COPTER_FLY_TIME =  "Fly %1 seconds";
+Blockly.Msg.en.COPTER_FLY_FOR_TIME_WITH_SPEED = "Fly %1 seconds with  %2 x speed %3 y speed";
+Blockly.Msg.en.COPTER_CHANGE_X_BY = "Change x by %1";
+Blockly.Msg.en.COPTER_CHANGE_Y_BY = "Change y by %1";
+Blockly.Msg.en.COPTER_CHANGE_Z_BY = "Change z by %1";
+Blockly.Msg.en.COPTER_X_COORD = "x position";
+Blockly.Msg.en.COPTER_Y_COORD = "y position";
+Blockly.Msg.en.COPTER_Z_COORD = "z position";
+Blockly.Msg.en.COPTER_FLY_FOR_SECONDS_TO_COORDS = "Fly %1 seconds to x: %2 y: %3 z: %4 ";
+Blockly.Msg.en.COPTER_FLY_TO_COORDS = "Fly to x: %1 y: %2 z: %3";
+Blockly.Msg.en.COPTER_ROTATE = "Rotate %1 degrees";
+Blockly.Msg.en.COPTER_SET_DIRECTION = "Set direction to %1";
+Blockly.Msg.en.COPTER_DIRECTION = "direction";
+Blockly.Msg.en.COPTER_STOP = "Stop!";
+Blockly.Msg.en.COPTER_DIRECTION_FORWARD = 'Forward';
+Blockly.Msg.en.COPTER_DIRECTION_BACKWARD = 'Backward';
+Blockly.Msg.en.COPTER_DIRECTION_LEFT = 'Left';
+Blockly.Msg.en.COPTER_DIRECTION_RIGHT = 'Right';
 //}

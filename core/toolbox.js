@@ -103,6 +103,9 @@ Blockly.Toolbox.prototype.selectedItem_ = null;
  */
 Blockly.Toolbox.prototype.init = function() {
   var workspace = this.workspace_;
+
+  //console.log("Block locale1: " + workspace.locale);
+
   var svg = this.workspace_.getParentSvg();
 
   /**
@@ -205,7 +208,7 @@ Blockly.Toolbox.prototype.showAll_ = function() {
 
     allContents = allContents.concat(category.getContents());
   }
-  this.flyout_.show(allContents);
+  this.flyout_.show(allContents,this.workspace_.locale);
 };
 
 /**

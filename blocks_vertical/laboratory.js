@@ -3,7 +3,7 @@ Blockly.Blocks['led_nums'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -12,14 +12,14 @@ Blockly.Blocks['led_nums'] = {
           "type": "field_dropdown",
           "name": "LED_NUMS",
           "options": [
-            [Blockly.Msg.LAB_LED_NUM_0,                               '0'],
-            [Blockly.Msg.LAB_LED_NUM_1,                               '1'],
-            [Blockly.Msg.LAB_LED_NUM_2,                               '2'],
-            [Blockly.Msg.LAB_LED_NUM_3,                               '3'],
-            [Blockly.Msg.LAB_LED_NUM_4,                               '4'],
-            [Blockly.Msg.LAB_LED_NUM_5,                               '5'],
-            [Blockly.Msg.LAB_LED_NUM_6,                               '6'],
-            [Blockly.Msg.LAB_LED_NUM_7,                               '7'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_0"],                               '0'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_1"],                               '1'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_2"],                               '2'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_3"],                               '3'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_4"],                               '4'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_5"],                               '5'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_6"],                               '6'],
+            [Blockly["Msg"][locale]["LAB_LED_NUM_7"],                               '7']
 
 
 
@@ -44,10 +44,10 @@ Blockly.Blocks['lab_led_turn_on'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_LED_TURN_ON,
+    "message0": Blockly["Msg"][locale]["LAB_LED_TURN_ON"],
     "args0": [
       {
         "type": "input_value",
@@ -66,10 +66,10 @@ Blockly.Blocks['lab_led_turn_off'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_LED_TURN_OFF,
+    "message0": Blockly["Msg"][locale]["LAB_LED_TURN_OFF"],
     "args0": [
       {
         "type": "input_value",
@@ -89,7 +89,7 @@ Blockly.Blocks['led_colors'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -98,9 +98,9 @@ Blockly.Blocks['led_colors'] = {
           "type": "field_dropdown",
           "name": "LED_COLORS",
           "options": [
-            [Blockly.Msg.LAB_COLOR_LED_RED,                                   'red'],
-            [Blockly.Msg.LAB_COLOR_LED_YELLOW,                                'yellow'],
-            [Blockly.Msg.LAB_COLOR_LED_GREEN,                                 'green']
+            [Blockly["Msg"][locale]["LAB_COLOR_LED_RED"],                                   'red'],
+            [Blockly["Msg"][locale]["LAB_COLOR_LED_YELLOW"],                                'yellow'],
+            [Blockly["Msg"][locale]["LAB_COLOR_LED_GREEN"],                                 'green']
 
 
 
@@ -126,10 +126,10 @@ Blockly.Blocks['lab_color_led_turn_on'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_COLOR_LED_TURN_ON,
+    "message0": Blockly["Msg"][locale]["LAB_COLOR_LED_TURN_ON"],
     "args0": [
       {
         "type": "input_value",
@@ -148,10 +148,10 @@ Blockly.Blocks['lab_color_led_turn_off'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_COLOR_LED_TURN_OFF,
+    "message0": Blockly["Msg"][locale]["LAB_COLOR_LED_TURN_OFF"],
     "args0": [
       {
         "type": "input_value",
@@ -171,7 +171,7 @@ Blockly.Blocks['lab_sensors'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -180,9 +180,9 @@ Blockly.Blocks['lab_sensors'] = {
           "type": "field_dropdown",
           "name": "LAB_SENSORS",
           "options": [
-            [Blockly.Msg.LAB_SENSOR_LIGHT,                                    'light'],
-            [Blockly.Msg.LAB_SENSOR_SOUND,                                    'sound'],
-            [Blockly.Msg.LAB_SENSOR_SLIDER,                                   'slider']
+            [Blockly["Msg"][locale]["LAB_SENSOR_LIGHT"],                                    'light'],
+            [Blockly["Msg"][locale]["LAB_SENSOR_SOUND"],                                    'sound'],
+            [Blockly["Msg"][locale]["LAB_SENSOR_SLIDER"],                                   'slider']
 
 
 
@@ -207,10 +207,10 @@ Blockly.Blocks['lab_sensor'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_SENSOR,
+    "message0": Blockly["Msg"][locale]["LAB_SENSOR"],
     "args0": [
       {
         "type": "input_value",
@@ -229,7 +229,7 @@ Blockly.Blocks['button_numbers'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -239,11 +239,11 @@ Blockly.Blocks['button_numbers'] = {
           "name": "BUTTON_NUMBERS",
           "options": [
 
-            [Blockly.Msg.LAB_BUTTON_NUM_1,                               '1'],
-            [Blockly.Msg.LAB_BUTTON_NUM_2,                               '2'],
-            [Blockly.Msg.LAB_BUTTON_NUM_3,                               '3'],
-            [Blockly.Msg.LAB_BUTTON_NUM_4,                               '4'],
-            [Blockly.Msg.LAB_BUTTON_NUM_5,                               '5']
+            [Blockly["Msg"][locale]["LAB_BUTTON_NUM_1"],                               '1'],
+            [Blockly["Msg"][locale]["LAB_BUTTON_NUM_2"],                               '2'],
+            [Blockly["Msg"][locale]["LAB_BUTTON_NUM_3"],                               '3'],
+            [Blockly["Msg"][locale]["LAB_BUTTON_NUM_4"],                               '4'],
+            [Blockly["Msg"][locale]["LAB_BUTTON_NUM_5"],                               '5']
 
 
 
@@ -269,10 +269,10 @@ Blockly.Blocks['lab_button_pressed'] = {
    * Blocks.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_BUTTON_PRESSED,
+    "message0": Blockly["Msg"][locale]["LAB_BUTTON_PRESSED"],
 
     "args0": [
       {
@@ -293,7 +293,7 @@ Blockly.Blocks['lab_external_sensors'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -302,8 +302,8 @@ Blockly.Blocks['lab_external_sensors'] = {
           "type": "field_dropdown",
           "name": "EXTERNAL_SENSORS",
           "options": [
-            [Blockly.Msg.LAB_EXTERNAL_SENSOR_A0,                                'A0'],
-            [Blockly.Msg.LAB_EXTERNAL_SENSOR_A1,                                'A1']
+            [Blockly["Msg"][locale]["LAB_EXTERNAL_SENSOR_A0"],                                'A0'],
+            [Blockly["Msg"][locale]["LAB_EXTERNAL_SENSOR_A1"],                                'A1']
 
 
 
@@ -330,10 +330,10 @@ Blockly.Blocks['lab_external_sensor'] = {
    * Blocks.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_EXTERNAL_SENSOR,
+    "message0": Blockly["Msg"][locale]["LAB_EXTERNAL_SENSOR"],
 
     "args0": [
       {
@@ -354,7 +354,7 @@ Blockly.Blocks['lab_analog_pins'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -363,12 +363,12 @@ Blockly.Blocks['lab_analog_pins'] = {
           "type": "field_dropdown",
           "name": "LAB_ANALOG_PINS",
           "options": [
-            [Blockly.Msg.LAB_ANALOG_PIN_NUM_0,                               'A0'],
-            [Blockly.Msg.LAB_ANALOG_PIN_NUM_1,                               'A1'],
-            [Blockly.Msg.LAB_ANALOG_PIN_NUM_2,                               'A2'],
-            [Blockly.Msg.LAB_ANALOG_PIN_NUM_3,                               'A3'],
-            [Blockly.Msg.LAB_ANALOG_PIN_NUM_4,                               'A4'],
-            [Blockly.Msg.LAB_ANALOG_PIN_NUM_5,                               'A5']
+            [Blockly["Msg"][locale]["LAB_ANALOG_PIN_NUM_0"],                               'A0'],
+            [Blockly["Msg"][locale]["LAB_ANALOG_PIN_NUM_1"],                               'A1'],
+            [Blockly["Msg"][locale]["LAB_ANALOG_PIN_NUM_2"],                               'A2'],
+            [Blockly["Msg"][locale]["LAB_ANALOG_PIN_NUM_3"],                               'A3'],
+            [Blockly["Msg"][locale]["LAB_ANALOG_PIN_NUM_4"],                               'A4'],
+            [Blockly["Msg"][locale]["LAB_ANALOG_PIN_NUM_5"],                               'A5']
 
 
 
@@ -394,10 +394,10 @@ Blockly.Blocks['lab_analog_pin'] = {
    * Blocks.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_ANALOG_PIN,
+    "message0": Blockly["Msg"][locale]["LAB_ANALOG_PIN"],
 
     "args0": [
       {
@@ -418,7 +418,7 @@ Blockly.Blocks['lab_digital_pins_stack1'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -428,12 +428,12 @@ Blockly.Blocks['lab_digital_pins_stack1'] = {
           "name": "LAB_DIGITAL_PINS_STACK1",
           "options": [
 
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_8,                               'D8'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_9,                               'D9'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_10,                              'D10'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_11,                              'D11'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_12,                              'D12'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_13,                              'D13']
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_8"],                               'D8'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_9"],                               'D9'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_10"],                              'D10'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_11"],                              'D11'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_12"],                              'D12'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_13"],                              'D13']
 
 
 
@@ -459,10 +459,10 @@ Blockly.Blocks['lab_digital_pin'] = {
    * Blocks.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_DIGITAL_PIN,
+    "message0": Blockly["Msg"][locale]["LAB_DIGITAL_PIN"],
 
     "args0": [
       {
@@ -483,7 +483,7 @@ Blockly.Blocks['lab_digital_pins_stack2'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -493,12 +493,12 @@ Blockly.Blocks['lab_digital_pins_stack2'] = {
           "name": "LAB_DIGITAL_PINS_STACK2",
           "options": [
 
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_2,                               'D2'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_3,                               'D3'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_4,                               'D4'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_5,                               'D5'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_6,                               'D6'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_7,                               'D7']
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_2"],                               'D2'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_3"],                               'D3'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_4"],                               'D4'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_5"],                               'D5'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_6"],                               'D6'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_7"],                               'D7']
 
 
 
@@ -524,7 +524,7 @@ Blockly.Blocks['lab_digital_pins_states'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -534,8 +534,8 @@ Blockly.Blocks['lab_digital_pins_states'] = {
           "name": "LAB_DIGITAL_PINS_STATES",
           "options": [
 
-            [Blockly.Msg.LAB_DIGITAL_PIN_STATE_ON,                                'on'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_STATE_OFF,                               'off'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_STATE_ON"],                                'on'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_STATE_OFF"],                               'off']
 
           ]
         }
@@ -554,10 +554,10 @@ Blockly.Blocks['lab_digital_pin_set_on_off'] = {
    * Blocks.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_DIGITAL_PIN_SET_ON_OFF,
+    "message0": Blockly["Msg"][locale]["LAB_DIGITAL_PIN_SET_ON_OFF"],
 
     "args0": [
       {
@@ -582,7 +582,7 @@ Blockly.Blocks['lab_digital_pins_stack3'] = {
    * Block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
       "message0": "%1",
@@ -592,9 +592,9 @@ Blockly.Blocks['lab_digital_pins_stack3'] = {
           "name": "LAB_DIGITAL_PINS_STACK3",
           "options": [
 
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_3,                               'D3'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_5,                               'D5'],
-            [Blockly.Msg.LAB_DIGITAL_PIN_NUM_6,                               'D6']
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_3"],                               'D3'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_5"],                               'D5'],
+            [Blockly["Msg"][locale]["LAB_DIGITAL_PIN_NUM_6"],                               'D6']
 
 
           ]
@@ -615,10 +615,10 @@ Blockly.Blocks['lab_digital_pin_set_pwm_value'] = {
    * Blocks.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
 
-    "message0": Blockly.Msg.LAB_DIGITAL_PIN_SET_PWM_VALUE,
+    "message0": Blockly["Msg"][locale]["LAB_DIGITAL_PIN_SET_PWM_VALUE"],
 
     "args0": [
       {
@@ -645,10 +645,10 @@ Blockly.Blocks['lab_play_note'] = {
    * Block to motors on for some seconds.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
 
     this.jsonInit({
-      "message0": Blockly.Msg.LAB_PLAY_NOTE,
+      "message0": Blockly["Msg"][locale]["LAB_PLAY_NOTE"],
       "args0": [
         {
           "type": "input_value",

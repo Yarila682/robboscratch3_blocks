@@ -681,9 +681,9 @@ Blockly.Blocks['procedures_definition'] = {
    * Block for defining a procedure with no return value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Объявить %1",
+      "message0": Blockly["Msg"][locale]["DEFINE"] ,
       "args0": [
         {
           "type": "input_statement",
@@ -700,7 +700,7 @@ Blockly.Blocks['procedures_call'] = {
    * Block for calling a procedure with no return value.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "extensions": ["colours_more", "shape_statement", "procedure_call_contextmenu"]
     });
@@ -733,7 +733,7 @@ Blockly.Blocks['procedures_prototype'] = {
    * define block.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "extensions": ["colours_more", "shape_statement"]
     });
@@ -768,7 +768,7 @@ Blockly.Blocks['procedures_declaration'] = {
    * The root block in the procedure declaration editor.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "extensions": ["colours_more", "shape_statement"]
     });
@@ -808,7 +808,7 @@ Blockly.Blocks['procedures_declaration'] = {
 };
 
 Blockly.Blocks['argument_reporter_boolean'] = {
-  init: function() {
+  init: function(locale) {
     this.jsonInit({ "message0": " %1",
       "args0": [
         {
@@ -823,7 +823,7 @@ Blockly.Blocks['argument_reporter_boolean'] = {
 };
 
 Blockly.Blocks['argument_reporter_string_number'] = {
-  init: function() {
+  init: function(locale) {
     this.jsonInit({ "message0": " %1",
       "args0": [
         {
@@ -838,7 +838,7 @@ Blockly.Blocks['argument_reporter_string_number'] = {
 };
 
 Blockly.Blocks['argument_editor_boolean'] = {
-  init: function() {
+  init: function(locale) {
     this.jsonInit({ "message0": " %1",
       "args0": [
         {
@@ -858,8 +858,8 @@ Blockly.Blocks['argument_editor_boolean'] = {
 };
 
 Blockly.Blocks['argument_editor_string_number'] = {
-  init: function() {
-    this.jsonInit({ "message0": " %1",
+  init: function(locale) {
+    this.jsonInit({ "message0":  " %1",
       "args0": [
         {
           "type": "field_input_removable",

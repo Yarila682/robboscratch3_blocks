@@ -32,7 +32,7 @@ Blockly.Blocks['sound_sounds_menu'] = {
    * Sound effects drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -67,9 +67,9 @@ Blockly.Blocks['sound_play'] = {
    * Block to play sound.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Играй мелодию %1",
+      "message0": Blockly["Msg"][locale]["START_SOUND"],
       "args0": [
         {
           "type": "input_value",
@@ -87,9 +87,9 @@ Blockly.Blocks['sound_playuntildone'] = {
    * Block to play sound until done.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Играй мелодию %1 пока не кончится",
+      "message0": Blockly["Msg"][locale]["PLAY_SOUND"] ,
       "args0": [
         {
           "type": "input_value",
@@ -106,9 +106,9 @@ Blockly.Blocks['sound_stopallsounds'] = {
    * Block to stop all sounds
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Вырубить музыку",
+      "message0": Blockly["Msg"][locale]["STOP_SONDS"] ,
       "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
@@ -120,7 +120,7 @@ Blockly.Blocks['sound_drums_menu'] = {
    * Drums drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -163,9 +163,9 @@ Blockly.Blocks['sound_playdrumforbeats'] = {
    * Block to play a drum for some number of beats
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Барабану %1 играть %2 тактов",
+      "message0": Blockly["Msg"][locale]["PLAY_DRUM"] ,
       "args0": [
         {
           "type": "input_value",
@@ -187,9 +187,9 @@ Blockly.Blocks['sound_restforbeats'] = {
    * Block to rest for some number of beats
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Подождать %1 тактов",
+      "message0": Blockly["Msg"][locale]["REST"] ,
       "args0": [
         {
           "type": "input_value",
@@ -207,9 +207,9 @@ Blockly.Blocks['sound_playnoteforbeats'] = {
    * Block to play a certain note for some number of beats
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Играть ноту %1 %2 тактов",
+      "message0": Blockly["Msg"][locale]["PLAY_NOTE"] ,
       "args0": [
         {
           "type": "input_value",
@@ -236,9 +236,9 @@ Blockly.Blocks['sound_seteffectto'] = {
    * Block to set the audio effect
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить %1 эффект в %2",
+      "message0": Blockly["Msg"][locale]["SET_EF"],
       "args0": [
         {
           "type": "field_dropdown",
@@ -261,9 +261,9 @@ Blockly.Blocks['sound_changeeffectby'] = {
    * Block to change the audio effect
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить %1 эффект на %2",
+      "message0": Blockly["Msg"][locale]["CHANGE_EF"] ,
       "args0": [
         {
           "type": "field_dropdown",
@@ -285,9 +285,9 @@ Blockly.Blocks['sound_cleareffects'] = {
    * Block to clear audio effects
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Очистить звуковые эффекты",
+      "message0": Blockly["Msg"][locale]["CLEAR_SOUND"] ,
       "extensions": ["colours_sounds", "shape_statement"]
     });
   }
@@ -298,7 +298,7 @@ Blockly.Blocks['sound_instruments_menu'] = {
    * Instruments drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -344,9 +344,9 @@ Blockly.Blocks['sound_setinstrumentto'] = {
    * Block to set the sprite's instrument
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить инструмент %1",
+      "message0": Blockly["Msg"][locale]["SET_INS"] ,
       "args0": [
         {
           "type": "input_value",
@@ -364,9 +364,9 @@ Blockly.Blocks['sound_changevolumeby'] = {
    * Block to change the sprite's volume by a certain value
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить громкость на %1",
+      "message0": Blockly["Msg"][locale]["CHANGE_VOLUME"] ,
       "args0": [
         {
           "type": "input_value",
@@ -384,9 +384,9 @@ Blockly.Blocks['sound_setvolumeto'] = {
    * Block to set the sprite's volume to a certain percent
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить громкость в %1%",
+      "message0": Blockly["Msg"][locale]["SET_VOLUME"] ,
       "args0": [
         {
           "type": "input_value",
@@ -404,9 +404,9 @@ Blockly.Blocks['sound_volume'] = {
    * Block to report volume
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Громкость",
+      "message0": Blockly["Msg"][locale]["VOLUME"],
       "category": Blockly.Categories.sound,
       "checkboxInFlyout": true,
       "extensions": ["colours_sounds", "output_number"]
@@ -419,9 +419,9 @@ Blockly.Blocks['sound_changetempoby'] = {
    * Block to change the sprite's tempo by a certain value
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Изменить темп на %1",
+      "message0": Blockly["Msg"][locale]["CHANGE_TEMPO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -439,9 +439,9 @@ Blockly.Blocks['sound_settempotobpm'] = {
    * Block to set the sprite's volume to a certain bpm
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить темп в %1 bpm",
+      "message0": Blockly["Msg"][locale]["PUT_THE_TEMPO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -459,9 +459,9 @@ Blockly.Blocks['sound_tempo'] = {
    * Block to report tempo
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Темп",
+      "message0": Blockly["Msg"][locale]["TEMPO"],
       "category": Blockly.Categories.sound,
       "checkboxInFlyout": true,
       "extensions": ["colours_sounds", "output_number"]

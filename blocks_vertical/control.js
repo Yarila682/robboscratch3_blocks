@@ -33,10 +33,10 @@ Blockly.Blocks['control_forever'] = {
    * https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#5eke39
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "control_forever",
-      "message0": "Всегда",
+      "message0": Blockly["Msg"][locale]["ALWAYS"],
       "message1": "%1", // Statement
       "message2": "%1", // Icon
       "lastDummyAlign2": "RIGHT",
@@ -68,10 +68,10 @@ Blockly.Blocks['control_repeat'] = {
    * https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#so57n9
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "control_repeat",
-      "message0": "Повторить %1",
+      "message0":Blockly["Msg"][locale]["REPEAT"],
       "message1": "%1", // Statement
       "message2": "%1", // Icon
       "lastDummyAlign2": "RIGHT",
@@ -108,10 +108,10 @@ Blockly.Blocks['control_if'] = {
    * Block for if-then.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "type": "control_if",
-      "message0": "Если %1 , то",
+      "message0": Blockly["Msg"][locale]["IFTHEN"],
       "message1": "%1", // Statement
       "args0": [
         {
@@ -137,12 +137,12 @@ Blockly.Blocks['control_if_else'] = {
    * Block for if-else.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "type": "control_if_else",
-      "message0": "Если %1 , то",
+      "message0": Blockly["Msg"][locale]["IFTHEN"],
       "message1": "%1",
-      "message2": "Иначе",
+      "message2": Blockly["Msg"][locale]["ELSE"],
       "message3": "%1",
       "args0": [
         {
@@ -174,7 +174,7 @@ Blockly.Blocks['control_stop'] = {
    * Block for stop all scripts.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     var ALL_SCRIPTS = 'all';
     var THIS_SCRIPT = 'this script';
     var OTHER_SCRIPTS = 'other scripts in sprite';
@@ -229,10 +229,10 @@ Blockly.Blocks['control_wait'] = {
    * Block to wait (pause) stack.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "control_wait",
-      "message0": "Ждать %1 секунд",
+      "message0": Blockly["Msg"][locale]["WAIT"],
       "args0": [
         {
           "type": "input_value",
@@ -250,9 +250,9 @@ Blockly.Blocks['control_wait_until'] = {
    * Block to wait until a condition becomes true.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Ждать пока %1",
+      "message0": Blockly["Msg"][locale]["WAIT_UNTIL"],
       "args0": [
         {
           "type": "input_value",
@@ -270,9 +270,9 @@ Blockly.Blocks['control_repeat_until'] = {
   /**
    * Block for repeat until a condition becomes true.
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Повторять пока %1",
+      "message0": Blockly["Msg"][locale]["REPEAT_UNTIL"],
       "message1": "%1",
       "message2": "%1",
       "lastDummyAlign2": "RIGHT",
@@ -310,10 +310,10 @@ Blockly.Blocks['control_start_as_clone'] = {
    * Block for "when I start as a clone" hat.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "control_start_as_clone",
-      "message0": "Когда я начинаю как клон",
+      "message0": Blockly["Msg"][locale]["CLONE_START"],
       "args0": [
       ],
       "category": Blockly.Categories.control,
@@ -327,7 +327,7 @@ Blockly.Blocks['control_create_clone_of_menu'] = {
    * Create-clone drop-down menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -350,10 +350,10 @@ Blockly.Blocks['control_create_clone_of'] = {
    * Block for "create clone of..."
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
       "id": "control_start_as_clone",
-      "message0": "Создать клон %1",
+      "message0": Blockly["Msg"][locale]["CREATE_CLONE"],
       "args0": [
         {
           "type": "input_value",
@@ -363,6 +363,7 @@ Blockly.Blocks['control_create_clone_of'] = {
       "category": Blockly.Categories.control,
       "extensions": ["colours_control", "shape_statement"]
     });
+
   }
 };
 
@@ -371,9 +372,9 @@ Blockly.Blocks['control_delete_this_clone'] = {
    * Block for "delete this clone."
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Удалить клон",
+      "message0":Blockly["Msg"][locale]["DELETE_CLONE"],
       "args0": [
       ],
       "category": Blockly.Categories.control,

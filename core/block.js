@@ -54,7 +54,11 @@ goog.require('goog.string');
  *     create a new id.
  * @constructor
  */
-Blockly.Block = function(workspace, prototypeName, opt_id) {
+Blockly.Block = function(workspace, prototypeName, opt_id,locale) {
+
+  console.log("Block locale3: " + locale);
+
+
   var flyoutWorkspace = workspace && workspace.getFlyout && workspace.getFlyout() ?
      workspace.getFlyout().getWorkspace() : null;
   /** @type {string} */
@@ -177,7 +181,7 @@ Blockly.Block = function(workspace, prototypeName, opt_id) {
 
   // Call an initialization function, if it exists.
   if (goog.isFunction(this.init)) {
-    this.init();
+    this.init(locale);
   }
   // Record initial inline state.
   /** @type {boolean|undefined} */
@@ -1193,6 +1197,7 @@ Blockly.Block.prototype.appendDummyInput = function(opt_name) {
  */
 Blockly.Block.prototype.jsonInit = function(json) {
 
+  console.log(`Block name: ${this.id}`);
   // Validate inputs.
   goog.asserts.assert(json['output'] == undefined ||
       json['previousStatement'] == undefined,
@@ -1205,6 +1210,13 @@ Blockly.Block.prototype.jsonInit = function(json) {
 
   // Interpolate the message blocks.
   var i = 0;
+
+if (typeof(json['message0']) === 'undefined') {
+
+    json['message0'] = "";
+
+}
+
   while (json['message' + i] !== undefined) {
     this.interpolate_(json['message' + i], json['args' + i] || [],
         json['lastDummyAlign' + i]);

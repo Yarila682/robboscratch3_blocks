@@ -33,9 +33,9 @@ Blockly.Blocks['sensing_touchingobject'] = {
    * Block to Report if its touching a Object.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Касается %1?",
+      "message0": Blockly["Msg"][locale]["TOUCH"] ,
       "args0": [
         {
           "type": "input_value",
@@ -53,7 +53,7 @@ Blockly.Blocks['sensing_touchingobjectmenu'] = {
    * "Touching [Object]" Block Menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -62,8 +62,8 @@ Blockly.Blocks['sensing_touchingobjectmenu'] = {
             "type": "field_dropdown",
             "name": "TOUCHINGOBJECTMENU",
             "options": [
-              ['Указатель мыши', '_mouse_'],
-              ['край', '_edge_']
+              [ Blockly["Msg"][locale]["MOUSE_POINTER"], '_mouse_'],
+              [ Blockly["Msg"][locale]["EDGEE"], '_edge_']
             ]
           }
         ],
@@ -77,9 +77,9 @@ Blockly.Blocks['sensing_touchingcolor'] = {
    * Block to Report if its touching a certain Color.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Касается цвета %1?",
+      "message0": Blockly["Msg"][locale]["TOUCH_COLOR"],
       "args0": [
         {
           "type": "input_value",
@@ -97,9 +97,9 @@ Blockly.Blocks['sensing_coloristouchingcolor'] = {
    * Block to Report if a color is touching a certain Color.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Цвет %1 касается %2?",
+      "message0": Blockly["Msg"][locale]["COLOR_TOUCH"] ,
       "args0": [
         {
           "type": "input_value",
@@ -121,9 +121,9 @@ Blockly.Blocks['sensing_distanceto'] = {
    * Block to Report distance to another Object.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Расстояние до %1",
+      "message0": Blockly["Msg"][locale]["DISTANCE_TO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -141,7 +141,7 @@ Blockly.Blocks['sensing_distancetomenu'] = {
    * "Distance to [Object]" Block Menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -150,7 +150,7 @@ Blockly.Blocks['sensing_distancetomenu'] = {
             "type": "field_dropdown",
             "name": "DISTANCETOMENU",
             "options": [
-              ['Указатель мыши', '_mouse_']
+              [Blockly["Msg"][locale]["MOUSE_POINTER"], '_mouse_']
             ]
           }
         ],
@@ -164,9 +164,9 @@ Blockly.Blocks['sensing_askandwait'] = {
    * Block to ask a question and wait
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Спросить %1 и ждать",
+      "message0": Blockly["Msg"][locale]["ASK_WAIT"] ,
       "args0": [
         {
           "type": "input_value",
@@ -184,9 +184,9 @@ Blockly.Blocks['sensing_answer'] = {
    * Block to report answer
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Ответ",
+      "message0": Blockly["Msg"][locale]["ANSWER"] ,
       "category": Blockly.Categories.sensing,
       "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
@@ -199,9 +199,9 @@ Blockly.Blocks['sensing_keypressed'] = {
    * Block to Report if a key is pressed.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Клавиша %1 нажата?",
+      "message0": Blockly["Msg"][locale]["KEY_PRESS"] ,
       "args0": [
         {
           "type": "field_dropdown",
@@ -264,9 +264,9 @@ Blockly.Blocks['sensing_mousedown'] = {
    * Block to Report if the mouse is down.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "ЛКМ нажата?",
+      "message0": Blockly["Msg"][locale]["MOUSE_DOWN"] ,
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_boolean"]
     });
@@ -278,9 +278,9 @@ Blockly.Blocks['sensing_mousex'] = {
    * Block to report mouse's x position
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Координата мыши x",
+      "message0": Blockly["Msg"][locale]["MOUSE_X"] ,
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_number"]
     });
@@ -292,9 +292,9 @@ Blockly.Blocks['sensing_mousey'] = {
    * Block to report mouse's y position
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Координата мыши y",
+      "message0": Blockly["Msg"][locale]["MOUSE_Y"] ,
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_number"]
     });
@@ -306,9 +306,9 @@ Blockly.Blocks['sensing_setdragmode'] = {
    * Block to set drag mode.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить перемещение %1",
+      "message0": Blockly["Msg"][locale]["I_WANT_TO_EAT"] ,
       "args0": [
         {
           "type": "field_dropdown",
@@ -330,9 +330,9 @@ Blockly.Blocks['sensing_loudness'] = {
    * Block to report loudness
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Громкость",
+      "message0": Blockly["Msg"][locale]["NO_BEER"] ,
       "category": Blockly.Categories.sensing,
       "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
@@ -345,9 +345,9 @@ Blockly.Blocks['sensing_videoon'] = {
    * Block to Report the Video [Motion/Direction] of the Stage or Sprite (Not added Sprite's Option).
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Видео %1 на %2",
+      "message0": Blockly["Msg"][locale]["NO_MONEY"] ,
       "args0": [
         {
           "type": "input_value",
@@ -370,7 +370,7 @@ Blockly.Blocks['sensing_videoonmenuone'] = {
    * "Video [Motion/Direction] of [Stage]" First Block Menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -379,8 +379,8 @@ Blockly.Blocks['sensing_videoonmenuone'] = {
             "type": "field_dropdown",
             "name": "VIDEOONMENU1",
             "options": [
-              ['движение', 'MOTION'],
-              ['направление', 'DIRECTION']
+              [Blockly["Msg"][locale]["MOTION"], 'MOTION'],
+              [Blockly["Msg"][locale]["DIRECTION"], 'DIRECTION']
             ]
           }
         ],
@@ -393,7 +393,7 @@ Blockly.Blocks['sensing_videoonmenutwo'] = {
    * "Video [Motion/Direction] of [Stage]" Second Block Menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -402,7 +402,7 @@ Blockly.Blocks['sensing_videoonmenutwo'] = {
             "type": "field_dropdown",
             "name": "VIDEOONMENU2",
             "options": [
-              ['уровень', 'STAGE']
+              [Blockly["Msg"][locale]["STAGE"], 'STAGE']
             ]
           }
         ],
@@ -416,9 +416,9 @@ Blockly.Blocks['sensing_videotoggle'] = {
    * Block to toggle video
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Видео %1",
+      "message0": Blockly["Msg"][locale]["TOO_MUCH_TRENSLATE"] ,
       "args0": [
         {
           "type": "input_value",
@@ -436,7 +436,7 @@ Blockly.Blocks['sensing_videotogglemenu'] = {
    * "Turn Video [On/Off/On-flipped]" Block Menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -461,9 +461,9 @@ Blockly.Blocks['sensing_setvideotransparency'] = {
    * Block to set the video transparency to a certain percent
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Установить прозрачность видео в %1%",
+      "message0": Blockly["Msg"][locale]["SET_VIDEO"] ,
       "args0": [
         {
           "type": "input_value",
@@ -481,9 +481,9 @@ Blockly.Blocks['sensing_timer'] = {
    * Block to report timer
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Таймер",
+      "message0": Blockly["Msg"][locale]["TIMER"] ,
       "category": Blockly.Categories.sensing,
       "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
@@ -496,9 +496,9 @@ Blockly.Blocks['sensing_resettimer'] = {
    * Block to reset timer
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Обнулить таймер",
+      "message0": Blockly["Msg"][locale]["RES_TIMER"],
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "shape_statement"]
     });
@@ -510,7 +510,7 @@ Blockly.Blocks['sensing_of_object_menu'] = {
    * "* of _" object menu.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit(
       {
         "message0": "%1",
@@ -535,23 +535,23 @@ Blockly.Blocks['sensing_of'] = {
    * Block to report properties of sprites.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "%1 из %2",
+      "message0": Blockly["Msg"][locale]["IZ"],
       "args0": [
         {
           "type": "field_dropdown",
           "name": "PROPERTY",
           "options": [
-            ['x позиция', 'x position'],
-            ['y позиция', 'y position'],
-            ['направление', 'direction'],
-            ['костюм #', 'costume #'],
-            ['название костюма', 'costume name'],
-            ['размер', 'size'],
-            ['громкость', 'volume'],
-            ['фон #', 'backdrop #'],
-            ['название фона', 'backdrop name']
+            [Blockly["Msg"][locale]["POSITION_X"], 'x position'],
+            [Blockly["Msg"][locale]["POSITION_Y"], 'y position'],
+            [Blockly["Msg"][locale]["DIRECTION"], 'direction'],
+            [Blockly["Msg"][locale]["COST"], 'costume #'],
+            [Blockly["Msg"][locale]["NC"], 'costume name'],
+            [Blockly["Msg"][locale]["SIZE"], 'size'],
+            [Blockly["Msg"][locale]["VOLUME"], 'volume'],
+            [Blockly["Msg"][locale]["FON"], 'backdrop #'],
+            [Blockly["Msg"][locale]["FONNAME"], 'backdrop name']
           ]
         },
         {
@@ -572,21 +572,21 @@ Blockly.Blocks['sensing_current'] = {
    * Block to Report the current option.
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Текущий %1",
+      "message0": Blockly["Msg"][locale]["CURR"] ,
       "args0": [
         {
           "type": "field_dropdown",
           "name": "CURRENTMENU",
           "options": [
-            ['год', 'YEAR'],
-            ['месяц', 'MONTH'],
-            ['дата', 'DATE'],
-            ['день недели', 'DAYOFWEEK'],
-            ['час', 'HOUR'],
-            ['минута', 'MINUTE'],
-            ['секунда', 'SECOND']
+            [Blockly["Msg"][locale]["YEAR"], 'YEAR'],
+            [Blockly["Msg"][locale]["MONTH"], 'MONTH'],
+            [Blockly["Msg"][locale]["DATA"], 'DATE'],
+            [Blockly["Msg"][locale]["DOW"], 'DAYOFWEEK'],
+            [Blockly["Msg"][locale]["HOUR"], 'HOUR'],
+            [Blockly["Msg"][locale]["MIN"], 'MINUTE'],
+            [Blockly["Msg"][locale]["SEC"], 'SECOND']
           ]
         }
       ],
@@ -602,9 +602,9 @@ Blockly.Blocks['sensing_dayssince2000'] = {
    * Block to report days since 2000
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Дней с 2000",
+      "message0": Blockly["Msg"][locale]["DAYS"] ,
       "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_number"]
     });
@@ -616,9 +616,9 @@ Blockly.Blocks['sensing_username'] = {
    * Block to report user's username
    * @this Blockly.Block
    */
-  init: function() {
+  init: function(locale) {
     this.jsonInit({
-      "message0": "Имя пользователя",
+      "message0": Blockly["Msg"][locale]["USERNAME"] ,
       "category": Blockly.Categories.sensing,
       "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]

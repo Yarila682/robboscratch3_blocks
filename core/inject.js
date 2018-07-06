@@ -45,7 +45,7 @@ goog.require('goog.userAgent');
  * @param {Object=} opt_options Optional dictionary of options.
  * @return {!Blockly.Workspace} Newly created main workspace.
  */
-Blockly.inject = function(container, opt_options) {
+Blockly.inject = function(container, opt_options,locale) {
   if (goog.isString(container)) {
     container = document.getElementById(container) ||
         document.querySelector(container);
@@ -71,6 +71,9 @@ Blockly.inject = function(container, opt_options) {
 
   var workspace = Blockly.createMainWorkspace_(svg, options, blockDragSurface,
       workspaceDragSurface);
+
+  workspace.locale = locale;
+
   Blockly.init_(workspace);
   Blockly.mainWorkspace = workspace;
 

@@ -51,7 +51,7 @@ goog.require('goog.userAgent');
  * @extends {Blockly.Block}
  * @constructor
  */
-Blockly.BlockSvg = function(workspace, prototypeName, opt_id) {
+Blockly.BlockSvg = function(workspace, prototypeName, opt_id,locale) {
   // Create core elements for the block.
   /**
    * @type {SVGElement}
@@ -76,7 +76,7 @@ Blockly.BlockSvg = function(workspace, prototypeName, opt_id) {
 
   Blockly.Tooltip.bindMouseEvents(this.svgPath_);
   Blockly.BlockSvg.superClass_.constructor.call(this,
-      workspace, prototypeName, opt_id);
+      workspace, prototypeName, opt_id,locale);
 };
 goog.inherits(Blockly.BlockSvg, Blockly.Block);
 

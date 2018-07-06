@@ -437,7 +437,8 @@ Blockly.Flyout.prototype.hide = function() {
  * @param {!Array|string} xmlList List of blocks to show.
  *     Variables and procedures have a custom set of blocks.
  */
-Blockly.Flyout.prototype.show = function(xmlList) {
+Blockly.Flyout.prototype.show = function(xmlList,locale) {
+  console.log("Block locale1: " + locale);
   this.workspace_.setResizesEnabled(false);
   this.hide();
   this.clearOldBlocks_();
@@ -466,7 +467,7 @@ Blockly.Flyout.prototype.show = function(xmlList) {
       var tagName = xml.tagName.toUpperCase();
       var default_gap = this.horizontalLayout_ ? this.GAP_X : this.GAP_Y;
       if (tagName == 'BLOCK') {
-        var curBlock = Blockly.Xml.domToBlock(xml, this.workspace_);
+        var curBlock = Blockly.Xml.domToBlock(xml, this.workspace_,locale); //here
         if (curBlock.disabled) {
           // Record blocks that were initially disabled.
           // Do not enable these blocks as a result of capacity filtering.
