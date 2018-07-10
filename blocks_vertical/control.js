@@ -183,12 +183,12 @@ Blockly.Blocks['control_stop'] = {
           this.sourceBlock_.nextConnection &&
           this.sourceBlock_.nextConnection.isConnected()) {
         return [
-          ['other scripts in sprite', OTHER_SCRIPTS]
+          [Blockly["Msg"][locale]["OTHER_SCRIPTS"], OTHER_SCRIPTS]
         ];
       }
-      return [['all', ALL_SCRIPTS],
-        ['this script', THIS_SCRIPT],
-        ['other scripts in sprite', OTHER_SCRIPTS]
+      return [[ Blockly["Msg"][locale]["ALL_SCRIPTS"], ALL_SCRIPTS],
+        [Blockly["Msg"][locale]["THIS_SCRIPT"], THIS_SCRIPT],
+        [Blockly["Msg"][locale]["OTHER_SCRIPTS"], OTHER_SCRIPTS]
       ];
     }, function(option) {
       // Create an event group to keep field value and mutator in sync
@@ -204,7 +204,7 @@ Blockly.Blocks['control_stop'] = {
       return null;
     });
     this.appendDummyInput()
-        .appendField('Стоп')
+        .appendField(Blockly["Msg"][locale]["STOP"])
         .appendField(stopDropdown, 'STOP_OPTION');
     this.setCategory(Blockly.Categories.control);
     this.setColour(Blockly.Colours.control.primary,
@@ -336,7 +336,7 @@ Blockly.Blocks['control_create_clone_of_menu'] = {
             "type": "field_dropdown",
             "name": "CLONE_OPTION",
             "options": [
-              ['себя самого', '_myself_']
+              [Blockly["Msg"][locale]["MYSELF"], '_myself_']
             ]
           }
         ],

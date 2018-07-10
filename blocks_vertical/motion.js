@@ -278,8 +278,8 @@ Blockly.Blocks['motion_glideto_menu'] = {
           "type": "field_dropdown",
           "name": "TO",
           "options": [
-            ['указатель мыши', '_mouse_'],
-            ['случайная позиция', '_random_']
+            [Blockly["Msg"][locale]["GLIDETO_MOUSE_POINTER"], '_mouse_'],
+            [Blockly["Msg"][locale]["GLIDETO_RANDOM_POSITION"], '_random_']
           ]
         }
       ],
@@ -422,9 +422,9 @@ Blockly.Blocks['motion_setrotationstyle'] = {
           "type": "field_dropdown",
           "name": "STYLE",
           "options": [
-            ['лево-право', 'left-right'],
-            ['не поворачивать', 'don\'t rotate'],
-            ['всё вокруг', 'all around']
+            [Blockly["Msg"][locale]["ROTATION_STYLE_LEFT_RIGHT"], 'left-right'],
+            [Blockly["Msg"][locale]["ROTATION_STYLE_DONT_ROTATE"], 'don\'t rotate'],
+            [Blockly["Msg"][locale]["ROTATION_STYLE_ALL_AROUND"], 'all around']
           ]
         }
       ],

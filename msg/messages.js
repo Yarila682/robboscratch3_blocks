@@ -1541,6 +1541,11 @@ Blockly.Msg.ru.WAIT = "Ждать %1 секунд";
 Blockly.Msg.ru.WAIT_UNTIL = "Ждать пока %1";
 Blockly.Msg.ru.REPEAT_UNTIL = "Повторять пока %1";
 Blockly.Msg.ru.CLONE_START =  "Когда я начинаю как клон";
+Blockly.Msg.ru.ALL_SCRIPTS = "Все скрипты";
+Blockly.Msg.ru.THIS_SCRIPT = "Этот скрипт";
+Blockly.Msg.ru.OTHER_SCRIPTS = "Другие скрипты в спрайте";
+Blockly.Msg.ru.STOP = "Стоп";
+Blockly.Msg.ru.MYSELF = "себя самого";
 
 
 //data
@@ -1585,7 +1590,7 @@ Blockly.Msg.ru.GET_SIZE =     "Размер" ;
 Blockly.Msg.ru.SWITCH_COSTUME =   "Изменить костюм на %1"   ;
 Blockly.Msg.ru.NEXT_COSTUME =    "Следующий костюм"  ;
 Blockly.Msg.ru.SWITCH_BACK =    "Поменять фон на %1" ;
-Blockly.Msg.ru.GO_TO =   "Переместиться %1"  ;
+Blockly.Msg.ru.GO_TO =   "Переместиться в x: %1 y: %2"  ;
 Blockly.Msg.ru.GO_LAYERS =    "Идти %1 %2 слой"  ;
 Blockly.Msg.ru.FRONT="Вперёд";
 Blockly.Msg.ru.BACK="НАЗАД";
@@ -1593,8 +1598,11 @@ Blockly.Msg.ru.SET_BACK =    "Фон %1"  ;
 Blockly.Msg.ru.SET_COSTUME =    "Костюм %1"  ;
 Blockly.Msg.ru.SWITCH_BACK_WAIT =    "Поменять фон на %1 и ждать"  ;
 Blockly.Msg.ru.NEXT_BACK =  "Следующий фон"  ;
+Blockly.Msg.ru.COSTUME1="костюм1";
+Blockly.Msg.ru.COSTUME2="костюм2";
 //motions
 
+Blockly.Msg.ru.LOOKS_GO_TO =    "Переместиться в %1"  ;
 
 Blockly.Msg.ru.CHAR_MOVE_STEPS = "Двигаться %1 шагов"     ;
 Blockly.Msg.ru.CHAR_TURN = "Повернуть %1 на %2 градусов"    ;
@@ -1613,6 +1621,11 @@ Blockly.Msg.ru.CHAR_SET_ROT_STILE = "Установить стиль повор�
 Blockly.Msg.ru.CHAR_X =  "x позиция";
 Blockly.Msg.ru.CHAR_Y =  "y позиция"    ;
 Blockly.Msg.ru.CHAR_DIR = "Направление"    ;
+Blockly.Msg.ru.ROTATION_STYLE_LEFT_RIGHT = "лево-право";
+Blockly.Msg.ru.ROTATION_STYLE_DONT_ROTATE = "не поворачивать";
+Blockly.Msg.ru.ROTATION_STYLE_ALL_AROUND  = "всё вокруг";
+Blockly.Msg.ru.GLIDETO_MOUSE_POINTER = "указатель мыши";
+Blockly.Msg.ru.GLIDETO_RANDOM_POSITION = "случайная мозиция";
 //operatoRS
 
 Blockly.Msg.ru.RANDOM ="Выбрать случайное от %1 до %2"     ;
@@ -1689,6 +1702,7 @@ Blockly.Msg.ru.USERNAME = "Имя пользователя"     ;
  Blockly.Msg.ru.VOLUME='громкость';
  Blockly.Msg.ru.FON='фон #';
  Blockly.Msg.ru.FONNAME='название фона';
+ Blockly.Msg.ru.SIZE = "размер"
 //sound
 
 Blockly.Msg.ru.START_SOUND = "Играй мелодию %1"      ;
@@ -1713,12 +1727,17 @@ Blockly.Msg.en.CREATE_CLONE = "create clone of %1";
 Blockly.Msg.en.DELETE_CLONE = "Delete clone";
 Blockly.Msg.en.ALWAYS = "forever";
 Blockly.Msg.en.REPEAT = "repeat %1";
-Blockly.Msg.en.IF_THEN = "if %1 then";
+Blockly.Msg.en.IFTHEN = "if %1 then";
 Blockly.Msg.en.ELSE = "else";
 Blockly.Msg.en.WAIT = "wait %1 seconds";
 Blockly.Msg.en.WAIT_UNTIL = "wait until %1";
 Blockly.Msg.en.REPEAT_UNTIL = "repeat until %1";
 Blockly.Msg.en.CLONE_START =  "when I start as a clone";
+Blockly.Msg.en.ALL_SCRIPTS = "all scripts";
+Blockly.Msg.en.THIS_SCRIPT = "this script";
+Blockly.Msg.en.OTHER_SCRIPTS = "other scripts in sprite";
+Blockly.Msg.en.STOP = "Stop";
+Blockly.Msg.en.MYSELF = "myself";
 //
 Blockly.Msg.en.SET_VAR = "set %1 to %2";
 Blockly.Msg.en.CHANGE_VAR =  "change %1 by %2";
@@ -1737,7 +1756,7 @@ Blockly.Msg.en.HIDE_LIST = "hide list %1";
 Blockly.Msg.en.WHEN_CLICKED =  "when %1 clicked"     ;
 Blockly.Msg.en.WHEN_SPRITE_CLICKED = "when this sprite clicked"     ;
 Blockly.Msg.en.WHEN_RECIEVE =    "when I receive %1"  ;
-Blockly.Msg.en.BHEN_BACK_SWITCH =   "when backdrop switches to %1"   ;
+Blockly.Msg.en.WHEN_BACK_SWITCH =   "when backdrop switches to %1"   ;
 Blockly.Msg.en.WHEN_MORE =    "when %1 > %2"   ;
 Blockly.Msg.en.BROAD =     "broadcast %1"  ;
 Blockly.Msg.en.BROAD_WAIT =   "broadcast %1 and wait"   ;
@@ -1758,7 +1777,7 @@ Blockly.Msg.en.GET_SIZE =     "size" ;
 Blockly.Msg.en.SWITCH_COSTUME =    "switch costume to %1"   ;
 Blockly.Msg.en.NEXT_COSTUME =    "next costume"  ;
 Blockly.Msg.en.SWITCH_BACK =     "switch backdrop to %1" ;
-Blockly.Msg.en.GO_TO =    "go to %1"  ;
+Blockly.Msg.en.GO_TO =    "go to x:%1 y:%2"  ;
 Blockly.Msg.en.GO_LAYERS =    "go %1 %2 layers"  ;
 Blockly.Msg.en.SET_BACK =    "backdrop %1"  ;
 Blockly.Msg.en.SET_COSTUME =    "costume %1"  ;
@@ -1766,6 +1785,12 @@ Blockly.Msg.en.SWITCH_BACK_WAIT =    "switch backdrop to %1 and wait"  ;
 Blockly.Msg.en.NEXT_BACK =    "next backdrop"  ;
 Blockly.Msg.en.FRONT="front";
 Blockly.Msg.en.BACK="back";
+Blockly.Msg.en.COSTUME1="costume1";
+Blockly.Msg.en.COSTUME2="costume2";
+
+Blockly.Msg.en.LOOKS_GO_TO =    "go to %1"  ;
+
+
 //
 Blockly.Msg.en.CHAR_MOVE_STEPS = "move %1 steps"     ;
 Blockly.Msg.en.CHAR_TURN = "turn %1 %2 degrees"     ;
@@ -1784,8 +1809,13 @@ Blockly.Msg.en.CHAR_SET_ROT_STILE =  "set rotation style %1"    ;
 Blockly.Msg.en.CHAR_X =  "x position"    ;
 Blockly.Msg.en.CHAR_Y =  "y position"    ;
 Blockly.Msg.en.CHAR_DIR =  "direction"    ;
-Blockly.Msg.en.MOUSE_POINTER =  "mouse pointer"   ;
+Blockly.Msg.en.MOUSE_POINTER =  "mouse-pointer"   ;
 Blockly.Msg.en.RANDOM_POS =    "random position"   ;
+Blockly.Msg.en.ROTATION_STYLE_LEFT_RIGHT = "left-right";
+Blockly.Msg.en.ROTATION_STYLE_DONT_ROTATE = "don\'t rotate";
+Blockly.Msg.en.ROTATION_STYLE_ALL_AROUND  = "all around";
+Blockly.Msg.en.GLIDETO_MOUSE_POINTER = "mouse-pointer";
+Blockly.Msg.en.GLIDETO_RANDOM_POSITION = "random position";
 //
 Blockly.Msg.en.RANDOM = "pick random %1 to %2"     ;
 Blockly.Msg.en.AND =  "%1 and %2"    ;
@@ -1858,6 +1888,8 @@ Blockly.Msg.en.DIRECTION='direction';
   Blockly.Msg.en.VOLUME='volume';
   Blockly.Msg.en.FON= 'backdrop #';
   Blockly.Msg.en.FONNAME='backdrop name';
+  Blockly.Msg.en.SIZE = "size";
+
 //
 Blockly.Msg.en.START_SOUND = "start sound %1"      ;
 Blockly.Msg.en.PLAY_SOUND =     "play sound %1 until done"  ;

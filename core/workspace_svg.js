@@ -527,8 +527,8 @@ Blockly.WorkspaceSvg.prototype.dispose = function() {
  */
 Blockly.WorkspaceSvg.prototype.newBlock = function(prototypeName, opt_id,locale) {
 
-  console.log("Block locale6: " + locale);
-  return new Blockly.BlockSvg(this, prototypeName, opt_id,locale);
+  console.log("Block locale6: " + this.locale);
+  return new Blockly.BlockSvg(this, prototypeName, opt_id,this.locale);
 };
 
 /**

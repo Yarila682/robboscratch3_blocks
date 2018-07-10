@@ -518,6 +518,7 @@ Blockly.Xml.appendDomToWorkspace = function(xml, workspace) {
  */
 Blockly.Xml.domToBlock = function(xmlBlock, workspace,locale) {
     console.log("Block locale2: " + locale);
+
   if (xmlBlock instanceof Blockly.Workspace) {
     var swap = xmlBlock;
     xmlBlock = workspace;
@@ -525,11 +526,17 @@ Blockly.Xml.domToBlock = function(xmlBlock, workspace,locale) {
     console.warn('Deprecated call to Blockly.Xml.domToBlock, ' +
                  'swap the arguments.');
   }
+
+  if (typeof(locale) != "undefined"){
+
+      workspace.locale = locale;
+
+  }
   // Create top-level block.
   Blockly.Events.disable();
   var variablesBeforeCreation = workspace.getAllVariables();
   try {
-    var topBlock = Blockly.Xml.domToBlockHeadless_(xmlBlock, workspace,locale);
+    var topBlock = Blockly.Xml.domToBlockHeadless_(xmlBlock, workspace,workspace.locale);
     // Generate list of all blocks.
     var blocks = topBlock.getDescendants();
     if (workspace.rendered) {

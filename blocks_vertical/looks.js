@@ -289,8 +289,8 @@ Blockly.Blocks['looks_costume'] = {
             "type": "field_dropdown",
             "name": "COSTUME",
             "options": [
-              ['costume1', 'COSTUME1'],
-              ['costume2', 'COSTUME2']
+              [Blockly["Msg"][locale]["COSTUME1"], 'COSTUME1'],
+              [Blockly["Msg"][locale]["COSTUME2"], 'COSTUME2']
             ]
           }
         ],
@@ -391,7 +391,7 @@ Blockly.Blocks['looks_gotofrontback'] = {
   init: function(locale) {
     this.jsonInit(
       {
-        "message0": Blockly["Msg"][locale]["GO_TO"] ,
+        "message0": Blockly["Msg"][locale]["LOOKS_GO_TO"] ,
         "args0": [
           {
             "type": "field_dropdown",
