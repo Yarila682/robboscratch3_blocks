@@ -36,6 +36,9 @@
 
 goog.require('Blockly.Msg');
 
+Blockly.Msg.ru = {};
+Blockly.Msg.en = {};
+
 //Blockly = {};
 //Blockly.Msg = {};
 
@@ -165,14 +168,17 @@ Blockly.Msg.RENAME_LIST_MODAL_TITLE = 'Rename List';
 
 // Broadcast Message creation
 /// dropdown choice - Create a new message.
-Blockly.Msg.NEW_BROADCAST_MESSAGE = 'New message';
+//Blockly.Msg.NEW_BROADCAST_MESSAGE = 'New message test';
+Blockly.Msg.en.NEW_BROADCAST_MESSAGE = 'New message';
+Blockly.Msg.ru.NEW_BROADCAST_MESSAGE = 'Новое сообщение';
 /// prompt - Prompts the user to enter the name for a new broadcast message
 Blockly.Msg.NEW_BROADCAST_MESSAGE_TITLE = 'New message name:';
 /// prompt title - Title of the prompt asking the user to enter the name for the new message.
 Blockly.Msg.BROADCAST_MODAL_TITLE = 'New Message';
 /// default broadcast message name
 /// (default option in broadcast message dropdown menus)
-Blockly.Msg.DEFAULT_BROADCAST_MESSAGE_NAME = 'message1';
+Blockly.Msg.en.DEFAULT_BROADCAST_MESSAGE_NAME = 'message1';
+Blockly.Msg.ru.DEFAULT_BROADCAST_MESSAGE_NAME = 'сообщение1';
 
 // Variable deletion.
 /// confirm -  Ask the user to confirm their deletion of multiple uses of a variable.
@@ -1385,8 +1391,7 @@ Blockly.Msg.COPTER_DIRECTION_RIGHT = 'Right';
 //{
 
 
-Blockly.Msg.ru = {};
-Blockly.Msg.en = {};
+
 
 
 Blockly.Msg.ru.MOTORS_ON_FOR_SECONDS = 'Моторы вкл на %1 секунд';
