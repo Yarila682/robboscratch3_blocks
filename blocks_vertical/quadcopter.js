@@ -18,7 +18,7 @@ Blockly.Blocks['copter_fly_up'] = {
    */
   init: function(locale) {
 
-    
+
 
     console.log("copter_fly_up init: " + locale);
 
@@ -277,6 +277,22 @@ Blockly.Blocks['copter_z_coord'] = {
 
     this.jsonInit({
       "message0":  Blockly["Msg"][locale]["COPTER_Z_COORD"],
+
+      "category": Blockly.Categories.quadcopter,
+      "extensions": ["colours_quadcopter", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['copter_yaw'] = {
+  /**
+   * Block to land.
+   * @this Blockly.Block
+   */
+  init: function(locale) {
+
+    this.jsonInit({
+      "message0":  Blockly["Msg"][locale]["COPTER_YAW"],
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]
