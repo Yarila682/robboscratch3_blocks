@@ -56,7 +56,7 @@ goog.require('goog.string');
  */
 Blockly.Block = function(workspace, prototypeName, opt_id,locale) {
 
-  console.log("Block locale3: " + locale);
+  //console.log("Block locale3: " + locale);
 
 
   var flyoutWorkspace = workspace && workspace.getFlyout && workspace.getFlyout() ?
@@ -1197,7 +1197,7 @@ Blockly.Block.prototype.appendDummyInput = function(opt_name) {
  */
 Blockly.Block.prototype.jsonInit = function(json) {
 
-  console.log(`Block name: ${this.id}`);
+  //console.log(`Block name: ${this.id}`);
   // Validate inputs.
   goog.asserts.assert(json['output'] == undefined ||
       json['previousStatement'] == undefined,

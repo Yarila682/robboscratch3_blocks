@@ -517,7 +517,7 @@ Blockly.Xml.appendDomToWorkspace = function(xml, workspace) {
  * @return {!Blockly.Block} The root block created.
  */
 Blockly.Xml.domToBlock = function(xmlBlock, workspace,locale) {
-    console.log("Block locale2: " + locale);
+  //  console.log("Block locale2: " + locale);
 
   if (xmlBlock instanceof Blockly.Workspace) {
     var swap = xmlBlock;
@@ -613,7 +613,7 @@ Blockly.Xml.domToVariables = function(xmlVariables, workspace) {
  * @private
  */
 Blockly.Xml.domToBlockHeadless_ = function(xmlBlock, workspace,locale) {
-    console.log("Block locale4: " + locale);
+  //  console.log("Block locale4: " + locale);
   var block = null;
   var prototypeName = xmlBlock.getAttribute('type');
   goog.asserts.assert(prototypeName, 'Block type unspecified: %s',

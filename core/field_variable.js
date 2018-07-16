@@ -273,7 +273,7 @@ Blockly.FieldVariable.dropdownCreate = function() {
 
   var locale = workspace.locale;
 
-  console.log(`Blockly.FieldVariable.dropdownCreate: ${locale}`);
+  //console.log(`Blockly.FieldVariable.dropdownCreate: ${locale}`);
 
   if (workspace) {
     var variableTypes = this.getVariableTypes_();

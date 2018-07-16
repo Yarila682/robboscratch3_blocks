@@ -438,7 +438,7 @@ Blockly.Flyout.prototype.hide = function() {
  *     Variables and procedures have a custom set of blocks.
  */
 Blockly.Flyout.prototype.show = function(xmlList,locale) {
-  console.log("Block locale1: " + locale);
+  //console.log("Block locale1: " + locale);
   this.workspace_.setResizesEnabled(false);
   this.hide();
   this.clearOldBlocks_();

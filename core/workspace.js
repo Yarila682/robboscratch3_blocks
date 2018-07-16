@@ -367,7 +367,7 @@ Blockly.Workspace.prototype.getWidth = function() {
  */
 Blockly.Workspace.prototype.newBlock = function(prototypeName, opt_id,locale) {
 
-  console.log("Block locale5: " + locale);
+  //console.log("Block locale5: " + locale);
   return new Blockly.Block(this, prototypeName, opt_id,locale);
 };
 
