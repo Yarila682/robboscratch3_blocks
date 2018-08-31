@@ -132,39 +132,7 @@ Blockly.Msg.RENAME_VARIABLE_TITLE = 'Rename all "%1" variables to:';
 /// prompt title - Title for the rename variable modal
 Blockly.Msg.RENAME_VARIABLE_MODAL_TITLE = 'Rename Variable';
 
-// Variable creation
-/// button text - Text on the button used to launch the variable creation dialogue.
-Blockly.Msg.NEW_VARIABLE = 'Make a Variable';
-/// prompt - Prompts the user to enter the name for a new variable.  See [https://github.com/google/blockly/wiki/Variables#dropdown-menu https://github.com/google/blockly/wiki/Variables#dropdown-menu].
-Blockly.Msg.NEW_VARIABLE_TITLE = 'New variable name:';
-/// prompt title - Title of the prompt asking the user to enter the name for the new variable.
-Blockly.Msg.VARIABLE_MODAL_TITLE = 'New Variable';
-/// alert - Tells the user that the name they entered is already in use.
-Blockly.Msg.VARIABLE_ALREADY_EXISTS = 'A variable named "%1" already exists.';
-/// alert - Tells the user that the name they entered is already in use for another type.
-Blockly.Msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = 'A variable named "%1" already exists for another variable of type "%2".';
-/// alert - Tells the user that the name they entered is already in use for a procedure.
-Blockly.Msg.PROCEDURE_ALREADY_EXISTS = 'A procedure named "%1" already exists.';
 
-// Custom procedure creation
-/// button text - Text on the button used to launch the procedure creation dialogue.
-Blockly.Msg.NEW_PROCEDURE = 'Make a Block';
-
-// List creation
-/// button text - Text on the button used to launch the list creation dialogue.
-Blockly.Msg.NEW_LIST = 'Make a List';
-/// prompt - Prompts the user to enter the name for a new list
-Blockly.Msg.NEW_LIST_TITLE = 'New list name:';
-/// prompt title - Title of the prompt asking the user to enter the name for the new list.
-Blockly.Msg.LIST_MODAL_TITLE = 'New List';
-/// alert - Tells the user that the name they entered is already in use.
-Blockly.Msg.LIST_ALREADY_EXISTS = 'A list named "%1" already exists.';
-
-// List renaming
-/// prompt - Prompts the user to enter the new name for the selected list.
-Blockly.Msg.RENAME_LIST_TITLE = 'Rename all "%1" lists to:';
-/// prompt title - Title of the prompt asking the user to rename the list
-Blockly.Msg.RENAME_LIST_MODAL_TITLE = 'Rename List';
 
 // Broadcast Message creation
 /// dropdown choice - Create a new message.
@@ -1585,6 +1553,7 @@ Blockly.Msg.ru.SAY_FOR_SEC =  "Говорить %1  %2 секунд"    ;
 Blockly.Msg.ru.SAY =  "Говорить %1"    ;
 Blockly.Msg.ru.THINK_FOR_SEC =  "Думать %1  %2 секунд"     ;
 Blockly.Msg.ru.THINK =  "Думать %1"    ;
+
 Blockly.Msg.ru.SHOW_PERS =  "Показать"    ;
 Blockly.Msg.ru.HIDE_PERS =  "Скрыть"    ;
 Blockly.Msg.ru.CHANGE_EFF =  "Изменить %1 эффект на %2"    ;
@@ -1604,8 +1573,19 @@ Blockly.Msg.ru.SET_BACK =    "Фон %1"  ;
 Blockly.Msg.ru.SET_COSTUME =    "Костюм %1"  ;
 Blockly.Msg.ru.SWITCH_BACK_WAIT =    "Поменять фон на %1 и ждать"  ;
 Blockly.Msg.ru.NEXT_BACK =  "Следующий фон"  ;
-Blockly.Msg.ru.COSTUME1="костюм1";
-Blockly.Msg.ru.COSTUME2="костюм2";
+Blockly.Msg.ru.COLOR="Цвет";
+Blockly.Msg.ru.FISHEYE="Рыбий глаз";
+Blockly.Msg.ru.GHOST="Прозрачность";
+Blockly.Msg.ru.MOSAIC="Мозаика";
+Blockly.Msg.ru.PIXELATE="Укрупнение пикселей";
+Blockly.Msg.ru.WHIRL="Завихрение";
+Blockly.Msg.ru.BRIGHTNESS="Яркость";
+
+
+
+
+
+
 //motions
 
 Blockly.Msg.ru.LOOKS_GO_TO =    "Переместиться в %1"  ;
@@ -1726,9 +1706,13 @@ Blockly.Msg.ru.SET_VOLUME = "Установить громкость в %1%";
 Blockly.Msg.ru.CHANGE_TEMPO = "Изменить темп на %1"    ;
 Blockly.Msg.ru.PUT_THE_TEMPO = "Установить темп в %1 bpm"    ;
 Blockly.Msg.ru.TEMPO = "Темп";
-
+/// button text - Text on the button used to launch the list creation dialogue.
+Blockly.Msg.ru.NEW_LIST = 'Создать лист';
 
 //ENGLISH
+/// button text - Text on the button used to launch the list creation dialogue.
+Blockly.Msg.en.NEW_LIST = 'Make a List';
+
 Blockly.Msg.en.CREATE_CLONE = "create clone of %1";
 Blockly.Msg.en.DELETE_CLONE = "Delete clone";
 Blockly.Msg.en.ALWAYS = "forever";
@@ -1793,6 +1777,13 @@ Blockly.Msg.en.FRONT="front";
 Blockly.Msg.en.BACK="back";
 Blockly.Msg.en.COSTUME1="costume1";
 Blockly.Msg.en.COSTUME2="costume2";
+Blockly.Msg.en.COLOR="color";
+Blockly.Msg.en.FISHEYE="fisheye";
+Blockly.Msg.en.GHOST="ghost";
+Blockly.Msg.en.MOSAIC="mosaic";
+Blockly.Msg.en.PIXELATE="pixelate";
+Blockly.Msg.en.WHIRL="whirl";
+Blockly.Msg.en.BRIGHTNESS="brightness";
 
 Blockly.Msg.en.LOOKS_GO_TO =    "go to %1"  ;
 
@@ -2053,3 +2044,68 @@ Blockly.Msg.en.COPTER_DIRECTION_BACKWARD = 'Backward';
 Blockly.Msg.en.COPTER_DIRECTION_LEFT = 'Left';
 Blockly.Msg.en.COPTER_DIRECTION_RIGHT = 'Right';
 //}
+// Variable creation
+/// button text - Text on the button used to launch the variable creation dialogue.
+Blockly.Msg.en.NEW_VARIABLE = 'Make a Variable';
+/// prompt - Prompts the user to enter the name for a new variable.  See [https://github.com/google/blockly/wiki/Variables#dropdown-menu https://github.com/google/blockly/wiki/Variables#dropdown-menu].
+Blockly.Msg.en.NEW_VARIABLE_TITLE = 'New variable name:';
+/// prompt title - Title of the prompt asking the user to enter the name for the new variable.
+Blockly.Msg.en.VARIABLE_MODAL_TITLE = 'New Variable';
+/// alert - Tells the user that the name they entered is already in use.
+Blockly.Msg.en.VARIABLE_ALREADY_EXISTS = 'A variable named "%1" already exists.';
+/// alert - Tells the user that the name they entered is already in use for another type.
+Blockly.Msg.en.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = 'A variable named "%1" already exists for another variable of type "%2".';
+/// alert - Tells the user that the name they entered is already in use for a procedure.
+Blockly.Msg.en.PROCEDURE_ALREADY_EXISTS = 'A procedure named "%1" already exists.';
+
+// Custom procedure creation
+/// button text - Text on the button used to launch the procedure creation dialogue.
+Blockly.Msg.en.NEW_PROCEDURE = 'Make a Block';
+
+// List creation
+
+/// prompt - Prompts the user to enter the name for a new list
+Blockly.Msg.en.NEW_LIST_TITLE = 'New list name:';
+/// prompt title - Title of the prompt asking the user to enter the name for the new list.
+Blockly.Msg.en.LIST_MODAL_TITLE = 'New List';
+/// alert - Tells the user that the name they entered is already in use.
+Blockly.Msg.en.LIST_ALREADY_EXISTS = 'A list named "%1" already exists.';
+
+// List renaming
+/// prompt - Prompts the user to enter the new name for the selected list.
+Blockly.Msg.en.RENAME_LIST_TITLE = 'Rename all "%1" lists to:';
+/// prompt title - Title of the prompt asking the user to rename the list
+Blockly.Msg.en.RENAME_LIST_MODAL_TITLE = 'Rename List';
+
+// Variable creation
+/// button text - Text on the button used to launch the variable creation dialogue.
+Blockly.Msg.ru.NEW_VARIABLE = 'Создать переменную';
+/// prompt - Prompts the user to enter the name for a new variable.  See [https://github.com/google/blockly/wiki/Variables#dropdown-menu https://github.com/google/blockly/wiki/Variables#dropdown-menu].
+Blockly.Msg.ru.NEW_VARIABLE_TITLE = 'Имя новой переменной:';
+/// prompt title - Title of the prompt asking the user to enter the name for the new variable.
+Blockly.Msg.ru.VARIABLE_MODAL_TITLE = 'Новая переменная';
+/// alert - Tells the user that the name they entered is already in use.
+Blockly.Msg.ru.VARIABLE_ALREADY_EXISTS = 'Переменная с именем "%1" уже существует.';
+/// alert - Tells the user that the name they entered is already in use for another type.
+Blockly.Msg.ru.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = 'Переменная с именем "%1" уже существует для другой переменной типа "%2".';
+/// alert - Tells the user that the name they entered is already in use for a procedure.
+Blockly.Msg.ru.PROCEDURE_ALREADY_EXISTS = 'Блок с именем "%1" уже существует.';
+
+// Custom procedure creation
+/// button text - Text on the button used to launch the procedure creation dialogue.
+Blockly.Msg.ru.NEW_PROCEDURE = 'Создать блок';
+
+// List creation
+
+/// prompt - Prompts the user to enter the name for a new list
+Blockly.Msg.ru.NEW_LIST_TITLE = 'Имя нового списка:';
+/// prompt title - Title of the prompt asking the user to enter the name for the new list.
+Blockly.Msg.ru.LIST_MODAL_TITLE = 'Новый список';
+/// alert - Tells the user that the name they entered is already in use.
+Blockly.Msg.ru.LIST_ALREADY_EXISTS = 'Лист с именем "%1" уже существует.';
+
+// List renaming
+/// prompt - Prompts the user to enter the new name for the selected list.
+Blockly.Msg.ru.RENAME_LIST_TITLE = 'Переименовать все "%1" списки в:';
+/// prompt title - Title of the prompt asking the user to rename the list
+Blockly.Msg.ru.RENAME_LIST_MODAL_TITLE = 'Переименовать список';

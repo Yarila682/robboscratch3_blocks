@@ -349,15 +349,17 @@ Blockly.DataCategory.addHideList = function(xmlList, variable) {
  *     'VARIABLE'.
  */
 Blockly.DataCategory.addCreateButton = function(xmlList, workspace, type) {
+var locale = workspace.locale;
   var button = goog.dom.createDom('button');
   // Set default msg, callbackKey, and callback values for type 'VARIABLE'
-  var msg = Blockly.Msg.NEW_VARIABLE;
+  var msg = Blockly["Msg"][locale]["NEW_VARIABLE"];
   var callbackKey = 'CREATE_VARIABLE';
+
   var callback = function(button) {
     Blockly.Variables.createVariable(button.getTargetWorkspace(), null, '');};
 
   if (type === 'LIST') {
-    msg = Blockly.Msg.NEW_LIST;
+    msg = Blockly["Msg"][locale]["NEW_LIST"];
     callbackKey = 'CREATE_LIST';
     callback = function(button) {
       Blockly.Variables.createVariable(button.getTargetWorkspace(), null,

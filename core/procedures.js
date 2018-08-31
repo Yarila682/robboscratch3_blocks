@@ -253,7 +253,8 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
  */
 Blockly.Procedures.addCreateButton_ = function(workspace, xmlList) {
   var button = goog.dom.createDom('button');
-  var msg = Blockly.Msg.NEW_PROCEDURE;
+  var locale = workspace.locale;
+  var msg = Blockly["Msg"][locale]["NEW_PROCEDURE"];
   var callbackKey = 'CREATE_PROCEDURE';
   var callback = function() {
     Blockly.Procedures.createProcedureDefCallback_(workspace);

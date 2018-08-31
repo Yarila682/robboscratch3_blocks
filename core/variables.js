@@ -269,12 +269,13 @@ Blockly.Variables.createVariable = function(workspace, opt_callback, opt_type) {
   // Decide on a modal message based on the opt_type. If opt_type was not
   // provided, default to the original message for scalar variables.
   var newMsg, modalTitle;
+  var locale = workspace.locale;
   if (opt_type == Blockly.BROADCAST_MESSAGE_VARIABLE_TYPE) {
-    newMsg = Blockly.Msg.NEW_BROADCAST_MESSAGE_TITLE;
-    modalTitle = Blockly.Msg.BROADCAST_MODAL_TITLE;
+    newMsg = Blockly["Msg"][locale]["NEW_BROADCAST_MESSAGE_TITLE"];
+    modalTitle = Blockly["Msg"][locale]["BROADCAST_MODAL_TITLE"];
   } else if (opt_type == Blockly.LIST_VARIABLE_TYPE) {
-    newMsg = Blockly.Msg.NEW_LIST_TITLE;
-    modalTitle = Blockly.Msg.LIST_MODAL_TITLE;
+    newMsg = Blockly["Msg"][locale]["NEW_LIST_TITLE"];
+    modalTitle =Blockly["Msg"][locale]["LIST_MODAL_TITLE"];
   } else {
     // Note: this case covers 1) scalar variables, 2) any new type of
     // variable not explicitly checked for above, and 3) a null or undefined
@@ -282,8 +283,8 @@ Blockly.Variables.createVariable = function(workspace, opt_callback, opt_type) {
     // TODO (#1251) Warn developers that they didn't provide an opt_type/provided
     // a falsey opt_type
     opt_type = opt_type ? opt_type : '';
-    newMsg = Blockly.Msg.NEW_VARIABLE_TITLE;
-    modalTitle = Blockly.Msg.VARIABLE_MODAL_TITLE;
+    newMsg = Blockly["Msg"][locale]["NEW_VARIABLE_TITLE"];
+    modalTitle = Blockly["Msg"][locale]["VARIABLE_MODAL_TITLE"];
   }
   var validate = Blockly.Variables.nameValidator_.bind(null, opt_type);
 
@@ -348,6 +349,7 @@ Blockly.Variables.createVariable = function(workspace, opt_callback, opt_type) {
  * @private
  */
 Blockly.Variables.nameValidator_ = function(type, text, workspace, opt_callback) {
+  var locale = workspace.locale;
   // The validators for the different variable types require slightly different arguments.
   // For broadcast messages, if a broadcast message of the provided name already exists,
   // the validator needs to call a function that updates the selected
@@ -360,10 +362,10 @@ Blockly.Variables.nameValidator_ = function(type, text, workspace, opt_callback)
     return Blockly.Variables.validateBroadcastMessageName_(text, workspace, opt_callback);
   } else if (type == Blockly.LIST_VARIABLE_TYPE) {
     return Blockly.Variables.validateScalarVarOrListName_(text, workspace, type,
-        Blockly.Msg.LIST_ALREADY_EXISTS);
+        Blockly["Msg"][locale]["LIST_ALREADY_EXISTS"]);
   } else {
     return Blockly.Variables.validateScalarVarOrListName_(text, workspace, type,
-        Blockly.Msg.VARIABLE_ALREADY_EXISTS);
+        Blockly["Msg"][locale]["VARIABLE_ALREADY_EXISTS"]);
   }
 };
 
@@ -443,6 +445,7 @@ Blockly.Variables.renameVariable = function(workspace, variable,
     opt_callback) {
   // Validation and modal message/title depends on the variable type
   var promptMsg, modalTitle;
+  var locale = workspace.locale;
   var varType = variable.type;
   if (varType == Blockly.BROADCAST_MESSAGE_VARIABLE_TYPE) {
     console.warn('Unexpected attempt to rename a broadcast message with ' +
@@ -450,12 +453,12 @@ Blockly.Variables.renameVariable = function(workspace, variable,
     return;
   }
   if (varType == Blockly.LIST_VARIABLE_TYPE) {
-    promptMsg = Blockly.Msg.RENAME_LIST_TITLE;
-    modalTitle = Blockly.Msg.RENAME_LIST_MODAL_TITLE;
+    promptMsg = Blockly["Msg"][locale]["RENAME_LIST_TITLE"];
+    modalTitle = Blockly["Msg"][locale]["RENAME_LIST_MODAL_TITLE"];
   } else {
     // Default for all other types of variables
-    promptMsg = Blockly.Msg.RENAME_VARIABLE_TITLE;
-    modalTitle = Blockly.Msg.RENAME_VARIABLE_MODAL_TITLE;
+    promptMsg = Blockly["Msg"][locale]["RENAME_VARIABLE_TITLE"];
+    modalTitle = Blockly["Msg"][locale]["RENAME_VARIABLE_MODAL_TITLE"];
   }
   var validate = Blockly.Variables.nameValidator_.bind(null, varType);
 

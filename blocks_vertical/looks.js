@@ -145,7 +145,7 @@ Blockly.Blocks['looks_hide'] = {
       });
   }
 };
-
+/*
 Blockly.Blocks['looks_effect_menu_options'] = [
   ['color', 'COLOR'],
   ['fisheye', 'FISHEYE'],
@@ -154,8 +154,7 @@ Blockly.Blocks['looks_effect_menu_options'] = [
   ['mosaic', 'MOSAIC'],
   ['brightness', 'BRIGHTNESS'],
   ['ghost', 'GHOST']
-];
-
+];*/
 Blockly.Blocks['looks_changeeffectby'] = {
   /**
    * Block to change graphic effect.
@@ -168,7 +167,15 @@ Blockly.Blocks['looks_changeeffectby'] = {
         {
           "type": "field_dropdown",
           "name": "EFFECT",
-          "options": Blockly.Blocks['looks_effect_menu_options']
+          "options":[
+            [Blockly["Msg"][locale]["COLOR"],   'COLOR'],
+              [Blockly["Msg"][locale]["FISHEYE"],   'FISHEYE'],
+              [Blockly["Msg"][locale]["WHIRL"],   'WHIRL'],
+              [Blockly["Msg"][locale]["PIXELATE"],   'PIXELATE'],
+              [Blockly["Msg"][locale]["MOSAIC"],   'MOSAIC'],
+              [Blockly["Msg"][locale]["BRIGHTNESS"],   'BRIGHTNESS'],
+              [Blockly["Msg"][locale]["GHOST"],   'GHOST']
+          ]
         },
         {
           "type": "input_value",
@@ -193,7 +200,15 @@ Blockly.Blocks['looks_seteffectto'] = {
         {
           "type": "field_dropdown",
           "name": "EFFECT",
-          "options": Blockly.Blocks['looks_effect_menu_options']
+          "options":[
+            [Blockly["Msg"][locale]["COLOR"],   'COLOR'],
+              [Blockly["Msg"][locale]["FISHEYE"],   'FISHEYE'],
+              [Blockly["Msg"][locale]["WHIRL"],   'WHIRL'],
+              [Blockly["Msg"][locale]["PIXELATE"],   'PIXELATE'],
+              [Blockly["Msg"][locale]["MOSAIC"],   'MOSAIC'],
+              [Blockly["Msg"][locale]["BRIGHTNESS"],   'BRIGHTNESS'],
+              [Blockly["Msg"][locale]["GHOST"],   'GHOST']
+          ]
         },
         {
           "type": "input_value",
