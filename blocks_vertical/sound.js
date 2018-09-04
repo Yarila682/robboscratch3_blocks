@@ -225,11 +225,11 @@ Blockly.Blocks['sound_playnoteforbeats'] = {
     });
   }
 };
-
+/*
 Blockly.Blocks['sound_effects_menu_options'] = [
   ['pitch', 'PITCH'],
   ['pan left/right', 'PAN']
-];
+];*/
 
 Blockly.Blocks['sound_seteffectto'] = {
   /**
@@ -243,7 +243,10 @@ Blockly.Blocks['sound_seteffectto'] = {
         {
           "type": "field_dropdown",
           "name": "EFFECT",
-          "options": Blockly.Blocks['sound_effects_menu_options']
+          "options": [
+          [  Blockly["Msg"][locale]["PITCH"], 'PITCH'],
+          [Blockly["Msg"][locale]["PAN"], 'PAN']
+          ]
         },
         {
           "type": "input_value",
@@ -268,7 +271,10 @@ Blockly.Blocks['sound_changeeffectby'] = {
         {
           "type": "field_dropdown",
           "name": "EFFECT",
-          "options": Blockly.Blocks['sound_effects_menu_options']
+          "options": [
+          [  Blockly["Msg"][locale]["PITCH"], 'PITCH'],
+          [Blockly["Msg"][locale]["PAN"], 'PAN']
+          ]
         },
         {
           "type": "input_value",

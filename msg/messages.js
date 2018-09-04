@@ -1460,7 +1460,7 @@ Blockly.Msg.ru.ROBOT_CLAW_STATE = "Клешня %1";
   Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_12    =                          'D12';
   Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_13    =                          'D13';
 
-  Blockly.Msg.ru.LAB_DIGITAL_PIN_SET_ON_OFF = "set Lab pin %1 %2";
+  Blockly.Msg.ru.LAB_DIGITAL_PIN_SET_ON_OFF = "Уст выход Лаборатории %1 %2";
 
   Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_2      =                         'D2';
   Blockly.Msg.ru.LAB_DIGITAL_PIN_NUM_3      =                         'D3';
@@ -2109,3 +2109,7 @@ Blockly.Msg.ru.LIST_ALREADY_EXISTS = 'Лист с именем "%1" уже су�
 Blockly.Msg.ru.RENAME_LIST_TITLE = 'Переименовать все "%1" списки в:';
 /// prompt title - Title of the prompt asking the user to rename the list
 Blockly.Msg.ru.RENAME_LIST_MODAL_TITLE = 'Переименовать список';
+Blockly.Msg.ru.PITCH  = 'Удар';
+Blockly.Msg.ru.PAN  = 'Панорама влево/вправо';
+Blockly.Msg.en.PITCH  = 'pitch'
+Blockly.Msg.en.PAN  = 'pan left/right';
