@@ -32,33 +32,32 @@ Blockly.Blocks['sound_sounds_menu'] = {
    * Sound effects drop-down menu.
    * @this Blockly.Block
    */
-  init: function(locale) {
-    this.jsonInit(
-      {
-        "message0": "%1",
-        "args0": [
-          {
-            "type": "field_dropdown",
-            "name": "SOUND_MENU",
-            "options": [
-              ['1', '0'],
-              ['2', '1'],
-              ['3', '2'],
-              ['4', '3'],
-              ['5', '4'],
-              ['6', '5'],
-              ['7', '6'],
-              ['8', '7'],
-              ['9', '8'],
-              ['10', '9']
-            ]
-          }
-        ],
-        "colour": Blockly.Colours.sounds.secondary,
-        "colourSecondary": Blockly.Colours.sounds.secondary,
-        "colourTertiary": Blockly.Colours.sounds.tertiary,
-        "extensions": ["output_string"]
-      });
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "SOUND_MENU",
+          "options": [
+            ['1', '0'],
+            ['2', '1'],
+            ['3', '2'],
+            ['4', '3'],
+            ['5', '4'],
+            ['6', '5'],
+            ['7', '6'],
+            ['8', '7'],
+            ['9', '8'],
+            ['10', '9']
+          ]
+        }
+      ],
+      "colour": Blockly.Colours.sounds.secondary,
+      "colourSecondary": Blockly.Colours.sounds.secondary,
+      "colourTertiary": Blockly.Colours.sounds.tertiary,
+      "extensions": ["output_string"]
+    });
   }
 };
 
@@ -67,9 +66,9 @@ Blockly.Blocks['sound_play'] = {
    * Block to play sound.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["START_SOUND"],
+      "message0": Blockly.Msg.SOUND_PLAY,
       "args0": [
         {
           "type": "input_value",
@@ -87,15 +86,16 @@ Blockly.Blocks['sound_playuntildone'] = {
    * Block to play sound until done.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["PLAY_SOUND"] ,
+      "message0": Blockly.Msg.SOUND_PLAYUNTILDONE,
       "args0": [
         {
           "type": "input_value",
           "name": "SOUND_MENU"
         }
       ],
+      "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
   }
@@ -106,146 +106,30 @@ Blockly.Blocks['sound_stopallsounds'] = {
    * Block to stop all sounds
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["STOP_SONDS"] ,
+      "message0": Blockly.Msg.SOUND_STOPALLSOUNDS,
       "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
   }
 };
-
-Blockly.Blocks['sound_drums_menu'] = {
-  /**
-   * Drums drop-down menu.
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit(
-      {
-        "message0": "%1",
-        "args0": [
-          {
-            "type": "field_dropdown",
-            "name": "DRUM",
-            "options": [
-              ['(1) Snare Drum', '1'],
-              ['(2) Bass Drum', '2'],
-              ['(3) Side Stick', '3'],
-              ['(4) Crash Cymbal', '4'],
-              ['(5) Open Hi-Hat', '5'],
-              ['(6) Closed Hi-Hat', '6'],
-              ['(7) Tambourine', '7'],
-              ['(8) Hand Clap', '8'],
-              ['(9) Claves', '9'],
-              ['(10) Wood Block', '10'],
-              ['(11) Cowbell', '11'],
-              ['(12) Triangle', '12'],
-              ['(13) Bongo', '13'],
-              ['(14) Conga', '14'],
-              ['(15) Cabasa', '15'],
-              ['(16) Guiro', '16'],
-              ['(17) Vibraslap', '17'],
-              ['(18) Open Cuica', '18']
-            ]
-          }
-        ],
-        "colour": Blockly.Colours.sounds.secondary,
-        "colourSecondary": Blockly.Colours.sounds.secondary,
-        "colourTertiary": Blockly.Colours.sounds.tertiary,
-        "extensions": ["output_string"]
-      });
-  }
-};
-
-Blockly.Blocks['sound_playdrumforbeats'] = {
-  /**
-   * Block to play a drum for some number of beats
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["PLAY_DRUM"] ,
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "DRUM"
-        },
-        {
-          "type": "input_value",
-          "name": "BEATS"
-        }
-      ],
-      "category": Blockly.Categories.sound,
-      "extensions": ["colours_sounds", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['sound_restforbeats'] = {
-  /**
-   * Block to rest for some number of beats
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["REST"] ,
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "BEATS"
-        }
-      ],
-      "category": Blockly.Categories.sound,
-      "extensions": ["colours_sounds", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['sound_playnoteforbeats'] = {
-  /**
-   * Block to play a certain note for some number of beats
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["PLAY_NOTE"] ,
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "NOTE"
-        },
-        {
-          "type": "input_value",
-          "name": "BEATS"
-        }
-      ],
-      "category": Blockly.Categories.sound,
-      "extensions": ["colours_sounds", "shape_statement"]
-    });
-  }
-};
-/*
-Blockly.Blocks['sound_effects_menu_options'] = [
-  ['pitch', 'PITCH'],
-  ['pan left/right', 'PAN']
-];*/
 
 Blockly.Blocks['sound_seteffectto'] = {
   /**
    * Block to set the audio effect
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["SET_EF"],
+      "message0": Blockly.Msg.SOUND_SETEFFECTO,
       "args0": [
         {
           "type": "field_dropdown",
           "name": "EFFECT",
           "options": [
-          [  Blockly["Msg"][locale]["PITCH"], 'PITCH'],
-          [Blockly["Msg"][locale]["PAN"], 'PAN']
+            [Blockly.Msg.SOUND_EFFECTS_PITCH, 'PITCH'],
+            [Blockly.Msg.SOUND_EFFECTS_PAN, 'PAN']
           ]
         },
         {
@@ -253,6 +137,7 @@ Blockly.Blocks['sound_seteffectto'] = {
           "name": "VALUE"
         }
       ],
+      "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
   }
@@ -264,16 +149,16 @@ Blockly.Blocks['sound_changeeffectby'] = {
    * Block to change the audio effect
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["CHANGE_EF"] ,
+      "message0": Blockly.Msg.SOUND_CHANGEEFFECTBY,
       "args0": [
         {
           "type": "field_dropdown",
           "name": "EFFECT",
           "options": [
-          [  Blockly["Msg"][locale]["PITCH"], 'PITCH'],
-          [Blockly["Msg"][locale]["PAN"], 'PAN']
+            [Blockly.Msg.SOUND_EFFECTS_PITCH, 'PITCH'],
+            [Blockly.Msg.SOUND_EFFECTS_PAN, 'PAN']
           ]
         },
         {
@@ -281,6 +166,7 @@ Blockly.Blocks['sound_changeeffectby'] = {
           "name": "VALUE"
         }
       ],
+      "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
   }
@@ -291,74 +177,9 @@ Blockly.Blocks['sound_cleareffects'] = {
    * Block to clear audio effects
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["CLEAR_SOUND"] ,
-      "extensions": ["colours_sounds", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['sound_instruments_menu'] = {
-  /**
-   * Instruments drop-down menu.
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit(
-      {
-        "message0": "%1",
-        "args0": [
-          {
-            "type": "field_dropdown",
-            "name": "INSTRUMENT",
-            "options": [
-              ['(1) Piano', '1'],
-              ['(2) Electric Piano', '2'],
-              ['(3) Organ', '3'],
-              ['(4) Guitar', '4'],
-              ['(5) Electric Guitar', '5'],
-              ['(6) Bass', '6'],
-              ['(7) Pizzicato', '7'],
-              ['(8) Cello', '8'],
-              ['(9) Trombone', '9'],
-              ['(10) Clarinet', '10'],
-              ['(11) Saxophone', '11'],
-              ['(12) Flute', '12'],
-              ['(13) Wooden Flute', '13'],
-              ['(14) Bassoon', '14'],
-              ['(15) Choir', '15'],
-              ['(16) Vibraphone', '16'],
-              ['(17) Music Box', '17'],
-              ['(18) Steel Drum', '18'],
-              ['(19) Marimba', '19'],
-              ['(20) Synth Lead', '20'],
-              ['(21) Synth Pad', '21']
-            ]
-          }
-        ],
-        "colour": Blockly.Colours.sounds.secondary,
-        "colourSecondary": Blockly.Colours.sounds.secondary,
-        "colourTertiary": Blockly.Colours.sounds.tertiary,
-        "extensions": ["output_string"]
-      });
-  }
-};
-
-Blockly.Blocks['sound_setinstrumentto'] = {
-  /**
-   * Block to set the sprite's instrument
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["SET_INS"] ,
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "INSTRUMENT"
-        }
-      ],
+      "message0": Blockly.Msg.SOUND_CLEAREFFECTS,
       "category": Blockly.Categories.sound,
       "extensions": ["colours_sounds", "shape_statement"]
     });
@@ -370,9 +191,9 @@ Blockly.Blocks['sound_changevolumeby'] = {
    * Block to change the sprite's volume by a certain value
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["CHANGE_VOLUME"] ,
+      "message0": Blockly.Msg.SOUND_CHANGEVOLUMEBY,
       "args0": [
         {
           "type": "input_value",
@@ -390,9 +211,9 @@ Blockly.Blocks['sound_setvolumeto'] = {
    * Block to set the sprite's volume to a certain percent
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["SET_VOLUME"] ,
+      "message0": Blockly.Msg.SOUND_SETVOLUMETO,
       "args0": [
         {
           "type": "input_value",
@@ -410,64 +231,9 @@ Blockly.Blocks['sound_volume'] = {
    * Block to report volume
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["VOLUME"],
-      "category": Blockly.Categories.sound,
-      "checkboxInFlyout": true,
-      "extensions": ["colours_sounds", "output_number"]
-    });
-  }
-};
-
-Blockly.Blocks['sound_changetempoby'] = {
-  /**
-   * Block to change the sprite's tempo by a certain value
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["CHANGE_TEMPO"] ,
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "TEMPO"
-        }
-      ],
-      "category": Blockly.Categories.sound,
-      "extensions": ["colours_sounds", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['sound_settempotobpm'] = {
-  /**
-   * Block to set the sprite's volume to a certain bpm
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["PUT_THE_TEMPO"] ,
-      "args0": [
-        {
-          "type": "input_value",
-          "name": "TEMPO"
-        }
-      ],
-      "category": Blockly.Categories.sound,
-      "extensions": ["colours_sounds", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['sound_tempo'] = {
-  /**
-   * Block to report tempo
-   * @this Blockly.Block
-   */
-  init: function(locale) {
-    this.jsonInit({
-      "message0": Blockly["Msg"][locale]["TEMPO"],
+      "message0": Blockly.Msg.SOUND_VOLUME,
       "category": Blockly.Categories.sound,
       "checkboxInFlyout": true,
       "extensions": ["colours_sounds", "output_number"]

@@ -34,7 +34,7 @@ Blockly.Blocks['data_variable'] = {
    * Block of Variables
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1",
       "lastDummyAlign0": "CENTRE",
@@ -58,9 +58,9 @@ Blockly.Blocks['data_setvariableto'] = {
    * Block to set variable to a certain value
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["SET_VAR"],
+      "message0": Blockly.Msg.DATA_SETVARIABLETO,
       "args0": [
         {
           "type": "field_variable",
@@ -82,9 +82,9 @@ Blockly.Blocks['data_changevariableby'] = {
    * Block to change variable by a certain value
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["CHANGE_VAR"] ,
+      "message0": Blockly.Msg.DATA_CHANGEVARIABLEBY,
       "args0": [
         {
           "type": "field_variable",
@@ -106,9 +106,9 @@ Blockly.Blocks['data_showvariable'] = {
    * Block to show a variable
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["SHOW_VAR"] ,
+      "message0": Blockly.Msg.DATA_SHOWVARIABLE,
       "args0": [
         {
           "type": "field_variable",
@@ -130,9 +130,9 @@ Blockly.Blocks['data_hidevariable'] = {
    * Block to hide a variable
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["HIDE_VAR"] ,
+      "message0": Blockly.Msg.DATA_HIDEVARIABLE,
       "args0": [
         {
           "type": "field_variable",
@@ -154,9 +154,9 @@ Blockly.Blocks['data_listcontents'] = {
    * List reporter.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0":"%1",
+      "message0": "%1",
       "args0": [
         {
           "type": "field_variable_getter",
@@ -177,7 +177,7 @@ Blockly.Blocks['data_listindexall'] = {
    * List index menu, with all option.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1",
       "args0": [
@@ -189,8 +189,8 @@ Blockly.Blocks['data_listindexall'] = {
           "precision": 1,
           "options": [
             ["1", "1"],
-            ["последий", "last"],
-            ["все", "all"]
+            [Blockly.Msg.DATA_INDEX_LAST, "last"],
+            [Blockly.Msg.DATA_INDEX_ALL, "all"]
           ]
         }
       ],
@@ -205,7 +205,7 @@ Blockly.Blocks['data_listindexrandom'] = {
    * List index menu, with random option.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1",
       "args0": [
@@ -217,8 +217,8 @@ Blockly.Blocks['data_listindexrandom'] = {
           "precision": 1,
           "options": [
             ["1", "1"],
-            ["последний", "last"],
-            ["случайный", "random"]
+            [Blockly.Msg.DATA_INDEX_LAST, "last"],
+            [Blockly.Msg.DATA_INDEX_RANDOM, "random"]
           ]
         }
       ],
@@ -233,9 +233,9 @@ Blockly.Blocks['data_addtolist'] = {
    * Block to add item to list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["ADD_IN_LIST"] ,
+      "message0": Blockly.Msg.DATA_ADDTOLIST,
       "args0": [
         {
           "type": "input_value",
@@ -258,9 +258,9 @@ Blockly.Blocks['data_deleteoflist'] = {
    * Block to delete item from list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["DELETE_IN_LIST"],
+      "message0": Blockly.Msg.DATA_DELETEOFLIST,
       "args0": [
         {
           "type": "input_value",
@@ -278,14 +278,35 @@ Blockly.Blocks['data_deleteoflist'] = {
   }
 };
 
+Blockly.Blocks['data_deletealloflist'] = {
+  /**
+   * Block to delete all items from list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.DATA_DELETEALLOFLIST,
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['data_insertatlist'] = {
   /**
    * Block to insert item to list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["INSERT_IN_LIST"] ,
+      "message0": Blockly.Msg.DATA_INSERTATLIST,
       "args0": [
         {
           "type": "input_value",
@@ -312,9 +333,9 @@ Blockly.Blocks['data_replaceitemoflist'] = {
    * Block to insert item to list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["REPLACE_IN_LIST"] ,
+      "message0": Blockly.Msg.DATA_REPLACEITEMOFLIST,
       "args0": [
         {
           "type": "input_value",
@@ -341,13 +362,40 @@ Blockly.Blocks['data_itemoflist'] = {
    * Block for reporting item of list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["GET_ITEM"],
+      "message0": Blockly.Msg.DATA_ITEMOFLIST,
       "args0": [
         {
           "type": "input_value",
           "name": "INDEX"
+        },
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "output": null,
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists"],
+      "outputShape": Blockly.OUTPUT_SHAPE_ROUND
+    });
+  }
+};
+
+Blockly.Blocks['data_itemnumoflist'] = {
+  /**
+   * Block for reporting the item # of a string in a list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "item # of %1 in %2",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "ITEM"
         },
         {
           "type": "field_variable",
@@ -368,9 +416,9 @@ Blockly.Blocks['data_lengthoflist'] = {
    * Block for reporting length of list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["LENGTH_LIST"] ,
+      "message0": Blockly.Msg.DATA_LENGTHOFLIST,
       "args0": [
         {
           "type": "field_variable",
@@ -389,9 +437,9 @@ Blockly.Blocks['data_listcontainsitem'] = {
    * Block to report whether list contains item.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["CONTAIN_LIST"] ,
+      "message0": Blockly.Msg.DATA_LISTCONTAINSITEM,
       "args0": [
         {
           "type": "field_variable",
@@ -414,9 +462,9 @@ Blockly.Blocks['data_showlist'] = {
    * Block to show a list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["SHOW_LIST"],
+      "message0": Blockly.Msg.DATA_SHOWLIST,
       "args0": [
         {
           "type": "field_variable",
@@ -435,9 +483,9 @@ Blockly.Blocks['data_hidelist'] = {
    * Block to hide a list.
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": Blockly["Msg"][locale]["HIDE_LIST"] ,
+      "message0": Blockly.Msg.DATA_HIDELIST,
       "args0": [
         {
           "type": "field_variable",
@@ -478,7 +526,7 @@ Blockly.Constants.Data.CUSTOM_CONTEXT_MENU_GET_VARIABLE_MIXIN = {
 
         option.callback =
             Blockly.Constants.Data.VARIABLE_OPTION_CALLBACK_FACTORY(this,
-            option.text);
+                option.text);
         options.push(option);
       }
     } else {
@@ -500,7 +548,7 @@ Blockly.Constants.Data.CUSTOM_CONTEXT_MENU_GET_VARIABLE_MIXIN = {
 };
 
 Blockly.Extensions.registerMixin('contextMenu_getVariableBlock',
-  Blockly.Constants.Data.CUSTOM_CONTEXT_MENU_GET_VARIABLE_MIXIN);
+    Blockly.Constants.Data.CUSTOM_CONTEXT_MENU_GET_VARIABLE_MIXIN);
 
 /**
  * Callback factory for dropdown menu options associated with a variable getter

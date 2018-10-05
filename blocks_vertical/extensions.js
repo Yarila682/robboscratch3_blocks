@@ -31,9 +31,9 @@ Blockly.Blocks['extension_pen_down'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": "%1 %2 перо опущенно",
+      "message0": "%1 %2 pen down",
       "args0": [
         {
           "type": "field_image",
@@ -55,9 +55,9 @@ Blockly.Blocks['extension_music_drum'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
-      "message0": "%1 %2 играть %3",
+      "message0": "%1 %2 play drum %3",
       "args0": [
         {
           "type": "field_image",
@@ -83,7 +83,7 @@ Blockly.Blocks['extension_wedo_motor'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1 %2 turn a motor %3",
       "args0": [
@@ -113,7 +113,7 @@ Blockly.Blocks['extension_wedo_hat'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1 %2 when I am wearing a hat",
       "args0": [
@@ -137,7 +137,7 @@ Blockly.Blocks['extension_wedo_boolean'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1 %2 O RLY?",
       "args0": [
@@ -161,7 +161,7 @@ Blockly.Blocks['extension_wedo_tilt_reporter'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1 %2 tilt angle %3",
       "args0": [
@@ -189,24 +189,23 @@ Blockly.Blocks['extension_wedo_tilt_menu'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
-    this.jsonInit(
-      {
-        "message0": "%1",
-        "args0": [
-          {
-            "type": "field_dropdown",
-            "name": "TILT",
-            "options": [
-              ['Any', 'Any'],
-              ['Whirl', 'Whirl'],
-              ['South', 'South'],
-              ['Back in time', 'Back in time']
-            ]
-          }
-        ],
-        "extensions": ["colours_more", "output_string"]
-      });
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "TILT",
+          "options": [
+            ['Any', 'Any'],
+            ['Whirl', 'Whirl'],
+            ['South', 'South'],
+            ['Back in time', 'Back in time']
+          ]
+        }
+      ],
+      "extensions": ["colours_more", "output_string"]
+    });
   }
 };
 
@@ -214,7 +213,7 @@ Blockly.Blocks['extension_music_reporter'] = {
   /**
    * @this Blockly.Block
    */
-  init: function(locale) {
+  init: function() {
     this.jsonInit({
       "message0": "%1 %2 hey now, you're an all-star",
       "args0": [
@@ -230,6 +229,34 @@ Blockly.Blocks['extension_music_reporter'] = {
       ],
       "category": Blockly.Categories.more,
       "extensions": ["colours_more", "output_number", "scratch_extension"]
+    });
+  }
+};
+
+Blockly.Blocks['extension_microbit_display'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 display %3",
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/microbit-block-icon.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MATRIX"
+        },
+      ],
+      "category": Blockly.Categories.pen,
+      "extensions": ["colours_pen", "shape_statement", "scratch_extension"]
     });
   }
 };

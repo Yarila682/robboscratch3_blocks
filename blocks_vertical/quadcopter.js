@@ -23,7 +23,7 @@ Blockly.Blocks['copter_fly_up'] = {
     console.log("copter_fly_up init: " + locale);
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_UP"],
+      "message0":  Blockly.Msg.COPTER_FLY_UP,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "shape_statement"]
@@ -39,7 +39,7 @@ Blockly.Blocks['copter_land'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_LAND"],
+      "message0":  Blockly.Msg.COPTER_LAND,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "shape_statement"]
@@ -55,7 +55,7 @@ Blockly.Blocks['copter_stop'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_STOP"],
+      "message0":  Blockly.Msg.COPTER_STOP,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "shape_statement"]
@@ -71,7 +71,7 @@ Blockly.Blocks['copter_status'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_STATUS"],
+      "message0":  Blockly.Msg.COPTER_STATUS,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]
@@ -89,7 +89,7 @@ Blockly.Blocks['copter_fly_distance'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_DISTANCE"],
+      "message0":  Blockly.Msg.COPTER_FLY_DISTANCE,
       "args0": [
         {
           "type": "input_value",
@@ -110,7 +110,7 @@ Blockly.Blocks['copter_fly_time'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_TIME"],
+      "message0":  Blockly.Msg.COPTER_FLY_TIME,
       "args0": [
         {
           "type": "input_value",
@@ -131,7 +131,7 @@ Blockly.Blocks['copter_fly_for_time_with_speed'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_FOR_TIME_WITH_SPEED"],
+      "message0":  Blockly.Msg.COPTER_FLY_FOR_TIME_WITH_SPEED,
       "args0": [
         {
           "type": "input_value",
@@ -160,7 +160,7 @@ Blockly.Blocks['copter_fly_backward'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_BACKWARD"],
+      "message0":  Blockly.Msg.COPTER_FLY_BACKWARD,
       "args0": [
         {
           "type": "input_value",
@@ -181,7 +181,7 @@ Blockly.Blocks['copter_change_x_by'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_CHANGE_X_BY"],
+      "message0":  Blockly.Msg.COPTER_CHANGE_X_BY,
       "args0": [
         {
           "type": "input_value",
@@ -202,7 +202,7 @@ Blockly.Blocks['copter_change_y_by'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_CHANGE_Y_BY"],
+      "message0":  Blockly.Msg.COPTER_CHANGE_Y_BY,
       "args0": [
         {
           "type": "input_value",
@@ -223,7 +223,7 @@ Blockly.Blocks['copter_change_z_by'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_CHANGE_Z_BY"],
+      "message0":  Blockly.Msg.COPTER_CHANGE_Z_BY,
       "args0": [
         {
           "type": "input_value",
@@ -244,7 +244,7 @@ Blockly.Blocks['copter_x_coord'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_X_COORD"],
+      "message0":  Blockly.Msg.COPTER_X_COORD,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]
@@ -260,7 +260,7 @@ Blockly.Blocks['copter_y_coord'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_Y_COORD"],
+      "message0":  Blockly.Msg.COPTER_Y_COORD,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]
@@ -276,7 +276,7 @@ Blockly.Blocks['copter_z_coord'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_Z_COORD"],
+      "message0":  Blockly.Msg.COPTER_Z_COORD,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]
@@ -292,7 +292,7 @@ Blockly.Blocks['copter_yaw'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_YAW"],
+      "message0":  Blockly.Msg.COPTER_YAW,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]
@@ -308,7 +308,7 @@ Blockly.Blocks['copter_fly_for_seconds_to_coords'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_FOR_SECONDS_TO_COORDS"],
+      "message0":  Blockly.Msg.COPTER_FLY_FOR_SECONDS_TO_COORDS,
       "args0": [
         {
           "type": "input_value",
@@ -341,7 +341,7 @@ Blockly.Blocks['copter_fly_to_coords'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_FLY_TO_COORDS"],
+      "message0":  Blockly.Msg.COPTER_FLY_TO_COORDS,
       "args0": [
 
         {
@@ -371,7 +371,7 @@ Blockly.Blocks['copter_rotate'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_ROTATE"],
+      "message0":  Blockly.Msg.COPTER_ROTATE,
       "args0": [
 
         {
@@ -399,10 +399,10 @@ Blockly.Blocks['copter_directions'] = {
           "type": "field_dropdown",
           "name": "COPTER_DIRECTIONS",
           "options": [
-            [Blockly["Msg"][locale]["COPTER_DIRECTION_FORWARD"],   'direction_forward'],
-            [Blockly["Msg"][locale]["COPTER_DIRECTION_BACKWARD"],  'direction_backward'],
-            [Blockly["Msg"][locale]["COPTER_DIRECTION_LEFT"],      'direction_left'],
-            [Blockly["Msg"][locale]["COPTER_DIRECTION_RIGHT"],     'direction_right']
+            [Blockly.Msg.COPTER_DIRECTION_FORWARD,   'direction_forward'],
+            [Blockly.Msg.COPTER_DIRECTION_BACKWARD,  'direction_backward'],
+            [Blockly.Msg.COPTER_DIRECTION_LEFT,      'direction_left'],
+            [Blockly.Msg.COPTER_DIRECTION_RIGHT,     'direction_right']
           ]
         }
       ],
@@ -423,7 +423,7 @@ Blockly.Blocks['copter_set_direction'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_SET_DIRECTION"],
+      "message0":  Blockly.Msg.COPTER_SET_DIRECTION,
       "args0": [
 
         {
@@ -445,7 +445,7 @@ Blockly.Blocks['copter_direction'] = {
   init: function(locale) {
 
     this.jsonInit({
-      "message0":  Blockly["Msg"][locale]["COPTER_DIRECTION"],
+      "message0":  Blockly.Msg.COPTER_DIRECTION,
 
       "category": Blockly.Categories.quadcopter,
       "extensions": ["colours_quadcopter", "output_number"]

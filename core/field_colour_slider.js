@@ -51,6 +51,16 @@ Blockly.FieldColourSlider = function(colour, opt_validator) {
 };
 goog.inherits(Blockly.FieldColourSlider, Blockly.Field);
 
+/**
+ * Construct a FieldColourSlider from a JSON arg object.
+ * @param {!Object} options A JSON object with options (colour).
+ * @returns {!Blockly.FieldColourSlider} The new field instance.
+ * @package
+ * @nocollapse
+ */
+Blockly.FieldColourSlider.fromJson = function(options) {
+  return new Blockly.FieldColourSlider(options['colour']);
+};
 
 /**
  * Function to be called if eyedropper can be activated.
@@ -142,15 +152,15 @@ Blockly.FieldColourSlider.prototype.createColourStops_ = function(channel) {
 Blockly.FieldColourSlider.prototype.setGradient_ = function(node, channel) {
   var gradient = this.createColourStops_(channel).join(',');
   goog.style.setStyle(node, 'background',
-        '-moz-linear-gradient(left, ' + gradient + ')');
+      '-moz-linear-gradient(left, ' + gradient + ')');
   goog.style.setStyle(node, 'background',
-        '-webkit-linear-gradient(left, ' + gradient + ')');
+      '-webkit-linear-gradient(left, ' + gradient + ')');
   goog.style.setStyle(node, 'background',
-        '-o-linear-gradient(left, ' + gradient + ')');
+      '-o-linear-gradient(left, ' + gradient + ')');
   goog.style.setStyle(node, 'background',
-        '-ms-linear-gradient(left, ' + gradient + ')');
+      '-ms-linear-gradient(left, ' + gradient + ')');
   goog.style.setStyle(node, 'background',
-        'linear-gradient(left, ' + gradient + ')');
+      'linear-gradient(left, ' + gradient + ')');
 };
 
 /**
@@ -240,7 +250,7 @@ Blockly.FieldColourSlider.prototype.sliderCallbackFactory_ = function(channel) {
     }
     var colour = goog.color.hsvToHex(hsv[0], hsv[1], hsv[2]);
     if (thisField.sourceBlock_) {
-         // Call any validation function, and allow it to override.
+      // Call any validation function, and allow it to override.
       colour = thisField.callValidator(colour);
     }
     if (colour !== null) {
@@ -288,40 +298,41 @@ Blockly.FieldColourSlider.prototype.showEditor_ = function() {
   this.hueSlider_.setUnitIncrement(5);
   this.hueSlider_.setMinimum(0);
   this.hueSlider_.setMaximum(360);
+  this.hueSlider_.setMoveToPointEnabled(true);
   this.hueSlider_.render(div);
 
-  var saturationElements = this.createLabelDom_(
-    Blockly.Msg.COLOUR_SATURATION_LABEL
-  );
+  var saturationElements =
+      this.createLabelDom_(Blockly.Msg.COLOUR_SATURATION_LABEL);
   div.appendChild(saturationElements[0]);
   this.saturationReadout_ = saturationElements[1];
   this.saturationSlider_ = new goog.ui.Slider();
+  this.saturationSlider_.setMoveToPointEnabled(true);
   this.saturationSlider_.setUnitIncrement(0.01);
   this.saturationSlider_.setStep(0.001);
   this.saturationSlider_.setMinimum(0);
   this.saturationSlider_.setMaximum(1.0);
   this.saturationSlider_.render(div);
 
-  var brightnessElements = this.createLabelDom_(
-    Blockly.Msg.COLOUR_BRIGHTNESS_LABEL
-  );
+  var brightnessElements =
+      this.createLabelDom_(Blockly.Msg.COLOUR_BRIGHTNESS_LABEL);
   div.appendChild(brightnessElements[0]);
   this.brightnessReadout_ = brightnessElements[1];
   this.brightnessSlider_ = new goog.ui.Slider();
   this.brightnessSlider_.setUnitIncrement(2);
   this.brightnessSlider_.setMinimum(0);
   this.brightnessSlider_.setMaximum(255);
+  this.brightnessSlider_.setMoveToPointEnabled(true);
   this.brightnessSlider_.render(div);
 
   Blockly.FieldColourSlider.hueChangeEventKey_ = goog.events.listen(this.hueSlider_,
-        goog.ui.Component.EventType.CHANGE,
-        this.sliderCallbackFactory_('hue'));
+      goog.ui.Component.EventType.CHANGE,
+      this.sliderCallbackFactory_('hue'));
   Blockly.FieldColourSlider.saturationChangeEventKey_ = goog.events.listen(this.saturationSlider_,
-        goog.ui.Component.EventType.CHANGE,
-        this.sliderCallbackFactory_('saturation'));
+      goog.ui.Component.EventType.CHANGE,
+      this.sliderCallbackFactory_('saturation'));
   Blockly.FieldColourSlider.brightnessChangeEventKey_ = goog.events.listen(this.brightnessSlider_,
-        goog.ui.Component.EventType.CHANGE,
-        this.sliderCallbackFactory_('brightness'));
+      goog.ui.Component.EventType.CHANGE,
+      this.sliderCallbackFactory_('brightness'));
 
   if (Blockly.FieldColourSlider.activateEyedropper_) {
     var button = document.createElement('button');
@@ -330,11 +341,9 @@ Blockly.FieldColourSlider.prototype.showEditor_ = function() {
     image.src = Blockly.mainWorkspace.options.pathToMedia + Blockly.FieldColourSlider.EYEDROPPER_PATH;
     button.appendChild(image);
     div.appendChild(button);
-    Blockly.FieldColourSlider.eyedropperEventData_ = Blockly.bindEventWithChecks_(button,
-      'mousedown',
-      this,
-      this.activateEyedropperInternal_
-    );
+    Blockly.FieldColourSlider.eyedropperEventData_ =
+        Blockly.bindEventWithChecks_(button, 'mousedown', this,
+            this.activateEyedropperInternal_);
   }
 
   Blockly.DropDownDiv.setColour('#ffffff', '#dddddd');
@@ -360,3 +369,5 @@ Blockly.FieldColourSlider.prototype.dispose = function() {
   Blockly.Events.setGroup(false);
   Blockly.FieldColourSlider.superClass_.dispose.call(this);
 };
+
+Blockly.Field.register('field_colour_slider', Blockly.FieldColourSlider);

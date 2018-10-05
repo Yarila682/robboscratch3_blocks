@@ -73,6 +73,16 @@ Blockly.COLLAPSE_CHARS = 30;
 Blockly.LONGPRESS = 750;
 
 /**
+ * Distance to scroll when a mouse wheel event is received and its delta mode
+ * is line (0x1) instead of pixel (0x0). In these cases, a single "scroll" has
+ * a delta of 1, which makes the workspace scroll very slowly (just one pixel).
+ * To compensate, that delta is multiplied by this value.
+ * @const
+ * @package
+ */
+Blockly.LINE_SCROLL_MULTIPLIER = 15;
+
+/**
  * Prevent a sound from playing if another sound preceded it within this many
  * milliseconds.
  */
@@ -245,24 +255,11 @@ Blockly.OUTPUT_SHAPE_ROUND = 2;
 Blockly.OUTPUT_SHAPE_SQUARE = 3;
 
 /**
- * Radius of stack glow, in px.
- * @type {number}
- * @const
- */
-Blockly.STACK_GLOW_RADIUS = 1.3;
-
-/**
- * Radius of replacement glow, in px.
- * @type {number}
- * @const
- */
-Blockly.REPLACEMENT_GLOW_RADIUS = 2;
-
-/**
  * ENUM for categories.
  * @const
  */
-Blockly.Categories = {
+ Blockly.Categories = {
+   "quadcopter":"quadcopter", //modified_by_Yaroslav //quadcopter category
   "robot":"robot", //modified_by_Yaroslav //robot category
   "laboratory":"laboratory", //modified_by_Yaroslav //laboratory category
   "motion": "motion",
@@ -382,3 +379,12 @@ Blockly.PROCEDURES_PROTOTYPE_BLOCK_TYPE = 'procedures_prototype';
  * @const {string}
  */
 Blockly.PROCEDURES_CALL_BLOCK_TYPE = 'procedures_call';
+
+/**
+ * ENUM for flyout status button states.
+ * @const
+ */
+Blockly.StatusButtonState = {
+  "READY": "ready",
+  "NOT_READY": "not ready",
+};

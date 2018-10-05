@@ -26,13 +26,13 @@ Blockly.Colours = {
   // SVG colours: these must be specificed in #RRGGBB style
   // To add an opacity, this must be specified as a separate property (for SVG fill-opacity)
   "quadcopter": {
-    "primary": "#FF0000",    //modified_by_Yaroslav //quadcoptery category
+    "primary": "#383838",    //modified_by_Yaroslav //quadcoptery category
     "secondary": "#AAAAAA",
-    "tertiary": "#000000"
+    "tertiary": "#989898"
   },
   "laboratory": {
-    "primary": "#AAAAAA",    //modified_by_Yaroslav //laboratory category
-    "secondary": "#AAAAAA",
+    "primary": "#989898",    //modified_by_Yaroslav //laboratory category
+    "secondary": "#989898",
     "tertiary": "#000000"
   },
   "robot": {
@@ -110,9 +110,11 @@ Blockly.Colours = {
   "insertionMarker": "#000000",
   "insertionMarkerOpacity": 0.2,
   "dragShadowOpacity": 0.3,
-  "stackGlow":"#32FF00" , /*#FFF200 */
+  "stackGlow": "#FFF200",
+  "stackGlowSize": 4,
   "stackGlowOpacity": 1,
   "replacementGlow": "#FFFFFF",
+  "replacementGlowSize": 2,
   "replacementGlowOpacity": 1,
   "colourPickerStroke": "#FFFFFF",
   // CSS colours: support RGBA
@@ -124,4 +126,37 @@ Blockly.Colours = {
   "numPadText": "#FFFFFF",
   "valueReportBackground": "#FFFFFF",
   "valueReportBorder": "#AAAAAA"
+};
+
+/**
+ * Override the colours in Blockly.Colours with new values basded on the
+ * given dictionary.
+ * @param {!Object} colours Dictionary of colour properties and new values.
+ * @package
+ */
+Blockly.Colours.overrideColours = function(colours) {
+  // Colour overrides provided by the injection
+  if (colours) {
+    for (var colourProperty in colours) {
+      if (colours.hasOwnProperty(colourProperty) &&
+          Blockly.Colours.hasOwnProperty(colourProperty)) {
+        // If a property is in both colours option and Blockly.Colours,
+        // set the Blockly.Colours value to the override.
+        // Override Blockly category color object properties with those
+        // provided.
+        var colourPropertyValue = colours[colourProperty];
+        if (goog.isObject(colourPropertyValue)) {
+          for (var colourSequence in colourPropertyValue) {
+            if (colourPropertyValue.hasOwnProperty(colourSequence) &&
+              Blockly.Colours[colourProperty].hasOwnProperty(colourSequence)) {
+              Blockly.Colours[colourProperty][colourSequence] =
+                  colourPropertyValue[colourSequence];
+            }
+          }
+        } else {
+          Blockly.Colours[colourProperty] = colourPropertyValue;
+        }
+      }
+    }
+  }
 };
