@@ -14873,9 +14873,19 @@ Blockly.ScratchMsgs.locales["ru"] =
 
 
 "OTTO_MOVE_STYLE_WALK": "Otto move (walk) %1 steps %2 step duration %3",
-"OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 %2 steps duration %3 height %4 ",
-"OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 %2 steps duration %3 height %4 ",
+"OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 steps %2  duration %3 height %4 ",
+"OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 steps %2  duration %3 height %4 ",
 "OTTO_GET_DISTANCE":"Расстояние",
+"OTTO_MOONWALKER":          "Otto moonwalker %1 steps %2  duration %3 height %4 ",
+"OTTO_SHAKE_LEG":           "Otto shale leg %1 steps %2  duration %3",
+"OTTO_TURN":                "Otto turn %1 steps %2  duration %3",
+"OTTO_BEND":                "Otto bend %1 steps %2  duration %3",
+"OTTO_ASCENDING_TURN":      "Otto ascending turn steps %1  duration %2 height %3 ",
+"OTTO_JITTER":              "Otto jitter  steps %1  duration %2 height %3 ",
+"OTTO_TIPTOE_SWING":        "Otto tiptoe swing  steps %1  duration %2 height %3 ",
+"OTTO_SWING":               "Otto swing  steps %1  duration %2 height %3 ",
+"OTTO_UPDOWN":              "Otto updown  steps %1  duration %2 height %3 ",
+"OTTO_JUMP":                "Otto jump steps %1 step duration %2",
 
 "CONTROL_FOREVER":"всегда",
 "CONTROL_REPEAT":"повторить %1 раз",
