@@ -259,7 +259,9 @@ Blockly.OUTPUT_SHAPE_SQUARE = 3;
  * @const
  */
  Blockly.Categories = {
-   "quadcopter":"quadcopter", //modified_by_Yaroslav //quadcopter category
+
+  "otto":"otto", //modified_by_Yaroslav //otto category
+  "quadcopter":"quadcopter", //modified_by_Yaroslav //quadcopter category
   "robot":"robot", //modified_by_Yaroslav //robot category
   "laboratory":"laboratory", //modified_by_Yaroslav //laboratory category
   "motion": "motion",

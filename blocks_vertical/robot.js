@@ -18,9 +18,9 @@ Blockly.Blocks['robot_motors_on_for_seconds'] = {
    * @this Blockly.Block
    */
   init: function(locale) {
-  //  console.log("MOTORS_ON_FOR_SECONDS: " + Blockly.Msg.MOTORS_ON_FOR_SECONDS);
+  //  console.warn("MOTORS_ON_FOR_SECONDS: " + Blockly.Msg.MOTORS_ON_FOR_SECONDS);
     this.jsonInit({
-      "message0": /*"move %1 steps",*/ Blockly.Msg.MOTORS_ON_FOR_SECONDS,
+      "message0": /*"move %1 steps",*/  Blockly.Msg.MOTORS_ON_FOR_SECONDS,
       "args0": [
         {
           "type": "input_value",

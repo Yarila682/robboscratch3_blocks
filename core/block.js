@@ -1216,7 +1216,8 @@ Blockly.Block.prototype.appendDummyInput = function(opt_name) {
 Blockly.Block.prototype.jsonInit = function(json) {
   var warningPrefix = json['type'] ? 'Block "' + json['type'] + '": ' : '';
 
-  //console.log(`Block name: ${this.id}`);
+//  console.log(`Block name: ${this.id}`);
+//  console.log(`Block message: ${json['message0']}`);
 
   // Validate inputs.
   goog.asserts.assert(
@@ -1370,6 +1371,7 @@ Blockly.Block.prototype.setColourFromJson_ = function(json) {
  * @private
  */
 Blockly.Block.prototype.interpolate_ = function(message, args, lastDummyAlign) {
+  console.log(`Block message: ${message}`);
   var tokens = Blockly.utils.tokenizeInterpolation(message);
   // Interpolate the arguments.  Build a list of elements.
   var indexDup = [];

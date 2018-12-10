@@ -3520,6 +3520,13 @@ Blockly.ScratchMsgs.locales["en"] =
 "COPTER_DIRECTION_RIGHT":"Right",
 
 
+///////////////////////////////////////////
+//Otto
+//////////////////////////////////////////
+
+"OTTO_MOVE_STYLE_WALK": "otto move %1 steps: %2 step duration: %3",
+
+
 
 
   ///////////////////////////////////////////////////////////////////////////////
@@ -3527,6 +3534,7 @@ Blockly.ScratchMsgs.locales["en"] =
   "CATEGORY_QUADCOPTER": "Quadcopter",
   "CATEGORY_ROBOT": "Robot",
   "CATEGORY_LABORATORY": "Laboratory",
+  "CATEGORY_OTTO": "Otto",
 
 "CONTROL_FOREVER":"forever",
 "CONTROL_REPEAT":"repeat %1",
@@ -14862,7 +14870,13 @@ Blockly.ScratchMsgs.locales["ru"] =
 "COPTER_DIRECTION_LEFT":"Налево",
 "COPTER_DIRECTION_RIGHT":"Направо",
 "COPTER_FLY_UP":"Взлёт",
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+"OTTO_MOVE_STYLE_WALK": "Otto move (walk) %1 steps %2 step duration %3",
+"OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 %2 steps duration %3 height %4 ",
+"OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 %2 steps duration %3 height %4 ",
+"OTTO_GET_DISTANCE":"Расстояние",
+
 "CONTROL_FOREVER":"всегда",
 "CONTROL_REPEAT":"повторить %1 раз",
 "CONTROL_IF":"если %1 , то",
@@ -15088,6 +15102,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "SOUND_CHANGEVOLUMEBY":"изменить громкость на %1",
 "SOUND_SETVOLUMETO":"установить громкость %1%",
 "SOUND_VOLUME":"громкость звука",
+"CATEGORY_OTTO": "Отто",
 "CATEGORY_QUADCOPTER": "Квадрокоптер",
 "CATEGORY_ROBOT": "Робот",
 "CATEGORY_LABORATORY": "Лаборатория",

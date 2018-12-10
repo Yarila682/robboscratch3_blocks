@@ -20,7 +20,7 @@ Blockly.Blocks['copter_fly_up'] = {
 
 
 
-    console.log("copter_fly_up init: " + locale);
+  //  console.log("copter_fly_up init: " + locale);
 
     this.jsonInit({
       "message0":  Blockly.Msg.COPTER_FLY_UP,

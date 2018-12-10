@@ -651,4 +651,4 @@ if __name__ == "__main__":
   Gen_compressed(search_paths_vertical, search_paths_horizontal, closure_env).start()
 
   # This is run locally in a separate thread.
-  # Gen_langfiles().start()
+ # Gen_langfiles().start()
