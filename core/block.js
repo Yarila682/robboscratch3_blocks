@@ -1371,7 +1371,7 @@ Blockly.Block.prototype.setColourFromJson_ = function(json) {
  * @private
  */
 Blockly.Block.prototype.interpolate_ = function(message, args, lastDummyAlign) {
-  console.log(`Block message: ${message}`);
+  //console.log(`Block message: ${message}`); //modified_by_Yaroslav
   var tokens = Blockly.utils.tokenizeInterpolation(message);
   // Interpolate the arguments.  Build a list of elements.
   var indexDup = [];
