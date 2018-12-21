@@ -561,6 +561,9 @@ Blockly.Extensions.registerMixin('contextMenu_getVariableBlock',
  */
 Blockly.Constants.Data.VARIABLE_OPTION_CALLBACK_FACTORY = function(block, name) {
   return function() {
+
+  //  console.log(`VARIABLE_OPTION_CALLBACK_FACTORY name: ${name}`); //modified_by_Yaroslav
+
     var variableField = block.getField('VARIABLE');
     if (!variableField) {
       console.log("Tried to get a variable field on the wrong type of block.");
