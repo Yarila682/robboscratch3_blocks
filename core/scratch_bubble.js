@@ -212,8 +212,8 @@ Blockly.ScratchBubble.prototype.createCommentTopBar_ = function() {
   this.commentTopBar_ = Blockly.utils.createSvgElement('rect',
       {
         'class': 'blocklyDraggable scratchCommentTopBar',
-        'x': Blockly.ScratchBubble.BORDER_WIDTH,
-        'y': Blockly.ScratchBubble.BORDER_WIDTH,
+        'rx': Blockly.ScratchBubble.BORDER_WIDTH,
+        'ry': Blockly.ScratchBubble.BORDER_WIDTH,
         'height': Blockly.ScratchBubble.TOP_BAR_HEIGHT
       }, this.bubbleGroup_);
 
@@ -530,12 +530,12 @@ Blockly.ScratchBubble.prototype.setBubbleSize = function(width, height) {
   var doubleBorderWidth = 2 * Blockly.ScratchBubble.BORDER_WIDTH;
   // Minimum size of a bubble.
   width = Math.max(width, doubleBorderWidth + 50);
-  height = Math.max(height, doubleBorderWidth + Blockly.ScratchBubble.TOP_BAR_HEIGHT);
+  height = Math.max(height, Blockly.ScratchBubble.TOP_BAR_HEIGHT);
   this.width_ = width;
   this.height_ = height;
   this.bubbleBack_.setAttribute('width', width);
   this.bubbleBack_.setAttribute('height', height);
-  this.commentTopBar_.setAttribute('width', width - doubleBorderWidth);
+  this.commentTopBar_.setAttribute('width', width);
   this.commentTopBar_.setAttribute('height', Blockly.ScratchBubble.TOP_BAR_HEIGHT);
   if (this.workspace_.RTL) {
     this.minimizeArrow_.setAttribute('x', width -
@@ -590,6 +590,7 @@ Blockly.ScratchBubble.prototype.renderArrow_ = function() {
     var run = relAnchorX - relBubbleX;
     if (this.workspace_.RTL) {
       run *= -1;
+      run -= this.width_;
     }
 
     var baseX1 = relBubbleX;
@@ -638,8 +639,12 @@ Blockly.ScratchBubble.prototype.moveDuringDrag = function(dragSurface, newLoc) {
  * @private
  */
 Blockly.ScratchBubble.prototype.updatePosition_ = function(x, y) {
+  // Relative left is the distance *and* direction to get from the comment
+  // anchor position on the block to the starting edge of the comment (e.g.
+  // the left edge of the comment in LTR and the right edge of the comment in RTL)
   if (this.workspace_.RTL) {
-    this.relativeLeft_ = this.anchorXY_.x - x - this.width_;
+    // we want relativeLeft_ to actually be the distance from the anchor point to the *right* edge of the comment in RTL
+    this.relativeLeft_ = this.anchorXY_.x - x;
   } else {
     this.relativeLeft_ = x - this.anchorXY_.x;
   }

@@ -1161,14 +1161,15 @@ Blockly.WorkspaceSvg.prototype.deleteVariableById = function(id) {
  * @param {string=} opt_id The unique ID of the variable. This will default to
  *     a UUID.
  * @param {boolean=} opt_isLocal Whether the variable is locally scoped.
+ * @param {boolean=} opt_isCloud Whether the variable is a cloud variable.
  * @return {?Blockly.VariableModel} The newly created variable.
  * @package
  */
 Blockly.WorkspaceSvg.prototype.createVariable = function(name, opt_type, opt_id,
-    opt_isLocal) {
+    opt_isLocal, opt_isCloud) {
   var variableInMap = (this.getVariable(name, opt_type) != null);
   var newVar = Blockly.WorkspaceSvg.superClass_.createVariable.call(
-      this, name, opt_type, opt_id, opt_isLocal);
+      this, name, opt_type, opt_id, opt_isLocal, opt_isCloud);
   // For performance reasons, only refresh the the toolbox for new variables.
   // Variables that already exist should already be there.
   if (!variableInMap && (opt_type != Blockly.BROADCAST_MESSAGE_VARIABLE_TYPE)) {
@@ -2190,7 +2191,6 @@ Blockly.WorkspaceSvg.prototype.getGesture = function(e) {
   var gesture = this.currentGesture_;
   if (gesture) {
     if (isStart && gesture.hasStarted()) {
-      console.warn('tried to start the same gesture twice');
       // That's funny.  We must have missed a mouse up.
       // Cancel it, rather than try to retrieve all of the state we need.
       gesture.cancel();

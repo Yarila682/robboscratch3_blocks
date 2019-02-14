@@ -226,10 +226,10 @@ Blockly.Blocks['sensing_keyoptions'] = {
           "name": "KEY_OPTION",
           "options": [
             [Blockly.Msg.EVENT_WHENKEYPRESSED_SPACE, 'space'],
-            [Blockly.Msg.EVENT_WHENKEYPRESSED_LEFT, 'left arrow'],
-            [Blockly.Msg.EVENT_WHENKEYPRESSED_RIGHT, 'right arrow'],
-            [Blockly.Msg.EVENT_WHENKEYPRESSED_DOWN, 'down arrow'],
             [Blockly.Msg.EVENT_WHENKEYPRESSED_UP, 'up arrow'],
+            [Blockly.Msg.EVENT_WHENKEYPRESSED_DOWN, 'down arrow'],
+            [Blockly.Msg.EVENT_WHENKEYPRESSED_RIGHT, 'right arrow'],
+            [Blockly.Msg.EVENT_WHENKEYPRESSED_LEFT, 'left arrow'],
             [Blockly.Msg.EVENT_WHENKEYPRESSED_ANY, 'any'],
             ['a', 'a'],
             ['b', 'b'],
@@ -419,6 +419,7 @@ Blockly.Blocks['sensing_of_object_menu'] = {
           ]
         }
       ],
+      "category": Blockly.Categories.sensing,
       "extensions": ["colours_sensing", "output_string"]
     });
   }

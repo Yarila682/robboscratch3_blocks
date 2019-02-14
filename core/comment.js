@@ -199,6 +199,8 @@ Blockly.Comment.prototype.setVisible = function(visible) {
         /** @type {!Blockly.WorkspaceSvg} */ (this.block_.workspace),
         this.createEditor_(), this.block_.svgPath_,
         this.iconXY_, this.width_, this.height_);
+    // Expose this comment's block's ID on its top-level SVG group.
+    this.bubble_.setSvgId(this.block_.id);
     this.bubble_.registerResizeEvent(this.resizeBubble_.bind(this));
     this.updateColour();
   } else {
@@ -220,8 +222,9 @@ Blockly.Comment.prototype.setVisible = function(visible) {
  */
 Blockly.Comment.prototype.textareaFocus_ = function(_e) {
   // Ideally this would be hooked to the focus event for the comment.
-  // However doing so in Firefox swallows the cursor for unknown reasons.
-  // So this is hooked to mouseup instead.  No big deal.
+  // This is tied to mousedown, however doing so in Firefox swallows the cursor
+  // for unknown reasons.
+  // See https://github.com/LLK/scratch-blocks/issues/1631 for more history.
   if (this.bubble_.promote_()) {
     // Since the act of moving this node within the DOM causes a loss of focus,
     // we need to reapply the focus.

@@ -72,6 +72,7 @@ Blockly.Xml.variablesToDom = function(variableList) {
     element.setAttribute('type', variable.type);
     element.setAttribute('id', variable.getId());
     element.setAttribute('islocal', variable.isLocal);
+    element.setAttribute('isCloud', variable.isCloud);
     variables.appendChild(element);
   }
   return variables;
@@ -279,10 +280,6 @@ Blockly.Xml.scratchCommentToDom_ = function(block, element) {
     if (typeof block.comment == 'object') {
       commentElement.setAttribute('id', block.comment.id);
       commentElement.setAttribute('pinned', block.comment.isVisible());
-      var xy = block.comment.getXY();
-      commentElement.setAttribute('x', xy.x);
-      commentElement.setAttribute('y', xy.y);
-      commentElement.setAttribute('minimized', block.comment.isMinimized());
       var hw;
       if (block.comment instanceof Blockly.ScratchBlockComment) {
         hw = block.comment.getHeightWidth();
@@ -291,6 +288,13 @@ Blockly.Xml.scratchCommentToDom_ = function(block, element) {
       }
       commentElement.setAttribute('h', hw.height);
       commentElement.setAttribute('w', hw.width);
+      var xy = block.comment.getXY();
+      commentElement.setAttribute('x',
+          Math.round(block.workspace.RTL ? block.workspace.getWidth() - xy.x - hw.width :
+          xy.x));
+      commentElement.setAttribute('y', xy.y);
+      commentElement.setAttribute('minimized', block.comment.isMinimized());
+
     }
     element.appendChild(commentElement);
   }
@@ -462,6 +466,11 @@ Blockly.Xml.domToWorkspace = function(xml, workspace) {
             parseInt(xmlChild.getAttribute('y'), 10) : 10;
         if (!isNaN(blockX) && !isNaN(blockY)) {
           block.moveBy(workspace.RTL ? width - blockX : blockX, blockY);
+          if (block.comment && typeof block.comment === 'object') {
+            var commentXY = block.comment.getXY();
+            var commentWidth = block.comment.getBubbleSize().width;
+            block.comment.moveTo(block.workspace.RTL ? width - commentXY.x - commentWidth : commentXY.x, commentXY.y);
+          }
         }
         variablesFirst = false;
       } else if (name == 'shadow') {
@@ -630,12 +639,13 @@ Blockly.Xml.domToVariables = function(xmlVariables, workspace) {
     var type = xmlChild.getAttribute('type');
     var id = xmlChild.getAttribute('id');
     var isLocal = xmlChild.getAttribute('islocal') == 'true';
+    var isCloud = xmlChild.getAttribute('iscloud') == 'true';
     var name = xmlChild.textContent;
 
     if (typeof(type) === undefined || type === null) {
       throw Error('Variable with id, ' + id + ' is without a type');
     }
-    workspace.createVariable(name, type, id, isLocal);
+    workspace.createVariable(name, type, id, isLocal, isCloud);
   }
 };
 

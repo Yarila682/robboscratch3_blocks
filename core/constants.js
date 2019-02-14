@@ -258,8 +258,7 @@ Blockly.OUTPUT_SHAPE_SQUARE = 3;
  * ENUM for categories.
  * @const
  */
- Blockly.Categories = {
-
+Blockly.Categories = {
   "otto":"otto", //modified_by_Yaroslav //otto category
   "quadcopter":"quadcopter", //modified_by_Yaroslav //quadcopter category
   "robot":"robot", //modified_by_Yaroslav //robot category

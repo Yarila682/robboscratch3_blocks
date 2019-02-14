@@ -58,6 +58,7 @@ Blockly.FieldVariable = function(varname, opt_validator, opt_variableTypes) {
   var hasSingleVarType = opt_variableTypes && (opt_variableTypes.length == 1);
   this.defaultType_ = hasSingleVarType ? opt_variableTypes[0] : '';
   this.variableTypes = opt_variableTypes;
+  this.addArgType('variable');
 
   this.value_ = null;
 };
@@ -312,11 +313,20 @@ Blockly.FieldVariable.dropdownCreate = function() {
     options.unshift(
         [Blockly.Msg.NEW_BROADCAST_MESSAGE, Blockly.NEW_BROADCAST_MESSAGE_ID]);
   } else {
-    options.push([Blockly.Msg.RENAME_VARIABLE, Blockly.RENAME_VARIABLE_ID]);
-    if (Blockly.Msg.DELETE_VARIABLE) {
+    // Scalar variables and lists have the same backing action, but the option
+    // text is different.
+    if (this.defaultType_ == Blockly.LIST_VARIABLE_TYPE) {
+      var renameText = Blockly.Msg.RENAME_LIST;
+      var deleteText = Blockly.Msg.DELETE_LIST;
+    } else {
+      var renameText = Blockly.Msg.RENAME_VARIABLE;
+      var deleteText = Blockly.Msg.DELETE_VARIABLE;
+    }
+    options.push([renameText, Blockly.RENAME_VARIABLE_ID]);
+    if (deleteText) {
       options.push(
           [
-            Blockly.Msg.DELETE_VARIABLE.replace('%1', name),
+            deleteText.replace('%1', name),
             Blockly.DELETE_VARIABLE_ID
           ]);
     }

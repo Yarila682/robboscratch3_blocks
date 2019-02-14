@@ -515,6 +515,7 @@ Blockly.Gesture.prototype.doStart = function(e) {
   }
 
   this.mouseDownXY_ = new goog.math.Coordinate(e.clientX, e.clientY);
+  this.currentDragDeltaXY_ = new goog.math.Coordinate(0, 0);
 
   this.bindMouseEvents(e);
 };
@@ -570,7 +571,6 @@ Blockly.Gesture.prototype.handleUp = function(e) {
   Blockly.longStop_();
 
   if (this.isEnding_) {
-    console.log('Trying to end a gesture recursively.');
     return;
   }
   this.isEnding_ = true;

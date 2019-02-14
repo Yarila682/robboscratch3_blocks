@@ -257,14 +257,16 @@ Blockly.ContextMenu.blockHelpOption = function(block) {
 /**
  * Make a context menu option for duplicating the current block.
  * @param {!Blockly.BlockSvg} block The block where the right-click originated.
+ * @param {!Event} event Event that caused the context menu to open.
  * @return {!Object} A menu option, containing text, enabled, and a callback.
  * @package
  */
-Blockly.ContextMenu.blockDuplicateOption = function(block) {
+Blockly.ContextMenu.blockDuplicateOption = function(block, event) {
   var duplicateOption = {
     text: Blockly.Msg.DUPLICATE,
     enabled: true,
-    callback: Blockly.scratchBlocksUtils.duplicateAndDragCallback(block)
+    callback:
+        Blockly.scratchBlocksUtils.duplicateAndDragCallback(block, event)
   };
   return duplicateOption;
 };
@@ -290,7 +292,7 @@ Blockly.ContextMenu.blockCommentOption = function(block) {
     // If there's no comment, add an option to create a comment.
     commentOption.text = Blockly.Msg.ADD_COMMENT;
     commentOption.callback = function() {
-      block.setCommentText('');
+      block.setCommentText(Blockly.Msg.WORKSPACE_COMMENT_DEFAULT_TEXT);
     };
   }
   return commentOption;

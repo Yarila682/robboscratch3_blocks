@@ -246,7 +246,7 @@ Blockly.Css.CONTENT = [
     'box-shadow: 0px 0px 8px 1px ' + Blockly.Colours.dropDownShadow + ';',
     'padding: 4px;',
     '-webkit-user-select: none;',
-    'min-height: 26px',
+    'min-height: 15px',
   '}',
 
   '.blocklyDropDownContent {',
@@ -650,6 +650,7 @@ Blockly.Css.CONTENT = [
 
   '.scratchCommentBody {',
     'background-color: #fef49c;',
+    'border-radius: 4px;',
   '}',
 
   '.scratchCommentRect {',
@@ -794,6 +795,9 @@ Blockly.Css.CONTENT = [
     'cursor: pointer;',
   '}',
 
+  '.blocklyAngleDragArrow {',
+    'pointer-events: none',
+  '}',
 
   '.blocklyAngleMarks {',
     'stroke: #fff;',
@@ -815,6 +819,7 @@ Blockly.Css.CONTENT = [
 
   '.blocklyContextMenu {',
     'border-radius: 4px;',
+    'max-height: 100%;',
   '}',
 
   '.blocklyDropdownMenu {',
@@ -994,6 +999,13 @@ Blockly.Css.CONTENT = [
     'width: 50%;',
     'text-align: center;',
     'float: left;',
+  '}',
+
+  '.scratchNotePickerKeyLabel {',
+    'font-family: "Helvetica Neue", Helvetica, sans-serif;',
+    'font-size: 0.75rem;',
+    'fill: $colour_text;',
+    'pointer-events: none;',
   '}',
 
   /* Copied from: goog/css/menu.css */

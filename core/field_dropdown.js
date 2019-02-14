@@ -210,21 +210,6 @@ Blockly.FieldDropdown.prototype.showEditor_ = function() {
   }
   // Listen for mouse/keyboard events.
   goog.events.listen(menu, goog.ui.Component.EventType.ACTION, callback);
-  // Listen for touch events (why doesn't Closure handle this already?).
-  function callbackTouchStart(e) {
-    var control = this.getOwnerControl(/** @type {Node} */ (e.target));
-    // Highlight the menu item.
-    control.handleMouseDown(e);
-  }
-  function callbackTouchEnd(e) {
-    var control = this.getOwnerControl(/** @type {Node} */ (e.target));
-    // Activate the menu item.
-    control.performActionInternal(e);
-  }
-  menu.getHandler().listen(
-      menu.getElement(), goog.events.EventType.TOUCHSTART, callbackTouchStart);
-  menu.getHandler().listen(
-      menu.getElement(), goog.events.EventType.TOUCHEND, callbackTouchEnd);
 
   // Record windowSize and scrollOffset before adding menu.
   menu.render(contentDiv);
@@ -265,10 +250,7 @@ Blockly.FieldDropdown.prototype.showEditor_ = function() {
   // Update colour to look selected.
   if (!this.disableColourChange_) {
     if (this.sourceBlock_.isShadow()) {
-      this.savedPrimary_ = this.sourceBlock_.getColour();
-      this.sourceBlock_.setColour(this.sourceBlock_.getColourTertiary(),
-          this.sourceBlock_.getColourSecondary(),
-          this.sourceBlock_.getColourTertiary());
+      this.sourceBlock_.setShadowColour(this.sourceBlock_.getColourTertiary());
     } else if (this.box_) {
       this.box_.setAttribute('fill', this.sourceBlock_.getColourTertiary());
     }
@@ -283,9 +265,7 @@ Blockly.FieldDropdown.prototype.onHide = function() {
   // Update colour to look selected.
   if (!this.disableColourChange_ && this.sourceBlock_) {
     if (this.sourceBlock_.isShadow()) {
-      this.sourceBlock_.setColour(this.savedPrimary_,
-          this.sourceBlock_.getColourSecondary(),
-          this.sourceBlock_.getColourTertiary());
+      this.sourceBlock_.clearShadowColour();
     } else if (this.box_) {
       this.box_.setAttribute('fill', this.sourceBlock_.getColour());
     }
@@ -302,6 +282,11 @@ Blockly.FieldDropdown.prototype.onItemSelected = function(menu, menuItem) {
   if (this.sourceBlock_) {
     // Call any validation function, and allow it to override.
     value = this.callValidator(value);
+  }
+  // If the value of the menu item is a function, call it and do not select it.
+  if (typeof value == 'function') {
+    value();
+    return;
   }
   if (value !== null) {
     this.setValue(value);

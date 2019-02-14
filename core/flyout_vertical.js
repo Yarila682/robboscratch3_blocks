@@ -170,6 +170,50 @@ Blockly.VerticalFlyout.prototype.createDom = function(tagName) {
 };
 
 /**
+ * Calculate the bounding box of the flyout.
+ *
+ * @return {Object} Contains the position and size of the bounding
+ * box containing the elements (blocks, buttons, labels) in the flyout.
+ */
+Blockly.VerticalFlyout.prototype.getContentBoundingBox_ = function() {
+  var contentBounds = this.workspace_.getBlocksBoundingBox();
+  var bounds = {
+    xMin: contentBounds.x,
+    yMin: contentBounds.y,
+    xMax: contentBounds.x + contentBounds.width,
+    yMax: contentBounds.y + contentBounds.height
+  };
+
+  // Check if any of the buttons/labels are outside the blocks bounding box.
+  for (var i = 0; i < this.buttons_.length; i ++) {
+    var button = this.buttons_[i];
+    var buttonPosition = button.getPosition();
+    if (buttonPosition.x  < bounds.xMin) {
+      bounds.xMin = buttonPosition.x;
+    }
+    if (buttonPosition.y < bounds.yMin) {
+      bounds.yMin = buttonPosition.y;
+    }
+    // Button extends past the bounding box to the right.
+    if (buttonPosition.x + button.width > bounds.xMax) {
+      bounds.xMax = buttonPosition.x  + button.width;
+    }
+
+    // Button extends past the bounding box on the bottom
+    if (buttonPosition.y + button.height > bounds.yMax) {
+      bounds.yMax = buttonPosition.y + button.height;
+    }
+  }
+
+  return {
+    x: bounds.xMin,
+    y: bounds.yMin,
+    width: bounds.xMax - bounds.xMin,
+    height: bounds.yMax - bounds.yMin,
+  };
+};
+
+/**
  * Return an object with all the metrics required to size scrollbars for the
  * flyout.  The following properties are computed:
  * .viewHeight: Height of the visible rectangle,
@@ -191,12 +235,7 @@ Blockly.VerticalFlyout.prototype.getMetrics_ = function() {
     return null;
   }
 
-  try {
-    var optionBox = this.workspace_.getCanvas().getBBox();
-  } catch (e) {
-    // Firefox has trouble with hidden elements (Bug 528969).
-    var optionBox = {height: 0, y: 0, width: 0, x: 0};
-  }
+  var optionBox = this.getContentBoundingBox_();
 
   // Padding for the end of the scrollbar.
   var absoluteTop = this.SCROLLBAR_PADDING;
@@ -665,6 +704,11 @@ Blockly.VerticalFlyout.prototype.isDragTowardWorkspace = function(currentDragDel
 
 /**
  * Return the deletion rectangle for this flyout in viewport coordinates.
+ * Deletion area is the height of the flyout, but extends to the left (in LTR)
+ * by a lot in order to allow for deleting blocks when dragged beyond the left
+ * window edge. In RTL, the delete area extends off to the right.
+ * The top/bottom do not extend to allow dragging blocks outside of the workspace
+ * to be dropped (e.g. to the backpack).
  * @return {goog.math.Rect} Rectangle in which to delete.
  */
 Blockly.VerticalFlyout.prototype.getClientRect = function() {
@@ -678,13 +722,14 @@ Blockly.VerticalFlyout.prototype.getClientRect = function() {
   // but be smaller than half Number.MAX_SAFE_INTEGER (not available on IE).
   var BIG_NUM = 1000000000;
   var x = flyoutRect.left;
+  var y = flyoutRect.top;
   var width = flyoutRect.width;
+  var height = flyoutRect.height;
 
   if (this.toolboxPosition_ == Blockly.TOOLBOX_AT_LEFT) {
-    return new goog.math.Rect(x - BIG_NUM, -BIG_NUM, BIG_NUM + width,
-        BIG_NUM * 2);
+    return new goog.math.Rect(x - BIG_NUM, y, BIG_NUM + width, height);
   } else {  // Right
-    return new goog.math.Rect(x, -BIG_NUM, BIG_NUM + width, BIG_NUM * 2);
+    return new goog.math.Rect(x, y, BIG_NUM + width, height);
   }
 };
 
