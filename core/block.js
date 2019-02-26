@@ -1254,6 +1254,9 @@ Blockly.Block.prototype.appendDummyInput = function(opt_name) {
 Blockly.Block.prototype.jsonInit = function(json) {
   var warningPrefix = json['type'] ? 'Block "' + json['type'] + '": ' : '';
 
+//  console.log(`Block name: ${this.id}`); //modified_by_Yaroslav
+//  console.log(`Block message: ${json['message0']}`);
+
   // Validate inputs.
   goog.asserts.assert(
       json['output'] == undefined || json['previousStatement'] == undefined,

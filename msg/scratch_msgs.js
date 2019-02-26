@@ -4179,9 +4179,11 @@ Blockly.ScratchMsgs.locales["en"] =
 "OTTO_SWING":               "Otto swing  steps %1  duration %2 height %3 ",
 "OTTO_UPDOWN":              "Otto updown  steps %1  duration %2 height %3 ",
 "OTTO_JUMP":                "Otto jump steps %1 step duration %2",
+
 "OTTO_MOVE_SERVO":          "Otto turn %1 servo in %2 position %3",
 "OTTO_MOVE_SERVO_FOOT":     "Set LL:%1RL:%2LF:%3RF%4 position %5",
 "OTTO_MOVE_SERVO_HAND":     "Set LH:%1 RH:%2 position %3",
+"OTTO_TEXTT":               "display text %1 %2",
 "LEFT_LEG" :                "Left leg",
 "RIGHT_LEG" :               "Right leg",
 "LEFT_FOOT"  :              "Left foot",
@@ -12356,7 +12358,10 @@ Blockly.ScratchMsgs.locales["ru"] =
 
 
 
-"OTTO_GET_DISTANCE":        "Расстояние",
+"OTTO_MOVE_STYLE_WALK": "Otto move (walk) %1 steps %2 step duration %3",
+"OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 steps %2  duration %3 height %4 ",
+"OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 steps %2  duration %3 height %4 ",
+"OTTO_GET_DISTANCE":"Расстояние",
 "OTTO_MOONWALKER":          "Otto moonwalker %1 steps %2  duration %3 height %4 ",
 "OTTO_SHAKE_LEG":           "Otto shale leg %1 steps %2  duration %3",
 "OTTO_TURN":                "Otto turn %1 steps %2  duration %3",
@@ -12371,6 +12376,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "OTTO_MOVE_SERVO":          "Отто повернуть %1 серву в %2 позицию %3",
 "OTTO_MOVE_SERVO_FOOT":     "Установить ЛН:%1ПН:%2ЛС:%3ПС%4 в позицию %5",
 "OTTO_MOVE_SERVO_HAND":     "Установить ЛР:%1 ПР:%2 в позицию %3",
+"OTTO_TEXTT":               "Отобразить текст %1 %2",
 "LEFT_LEG" :                "Левая нога",
 "RIGHT_LEG" :               "Правая нога",
 "LEFT_FOOT"  :              "Левая стопа",

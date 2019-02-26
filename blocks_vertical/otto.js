@@ -44,7 +44,7 @@ Blockly.Blocks['otto_dura'] = {
   }
 };
 
-Blockly.Blocks['on_off'] = {
+Blockly.Blocks['otto_on_off'] = {
   init: function(locale) {
     this.jsonInit({
       "message0": "%1",
@@ -107,6 +107,30 @@ Blockly.Blocks['otto_servo_speed'] = {
             [Blockly.Msg.NORMALLY,    '2'],
             [Blockly.Msg.FAST,        '1'],
             [Blockly.Msg.VERY_FAST,   '0']]
+        }
+      ],
+      "colour": Blockly.Colours.otto.secondary,
+      "colourSecondary": Blockly.Colours.otto.secondary,
+      "colourTertiary": Blockly.Colours.otto.tertiary,
+      "extensions": ["output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['otto_text_speed'] = {
+  init: function(locale) {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "SERVO_SPEED",
+          "options": [
+            [Blockly.Msg.VERY_SLOW,   '15'],
+            [Blockly.Msg.SLOW,        '10'],
+            [Blockly.Msg.NORMALLY,    '7'],
+            [Blockly.Msg.FAST,        '5'],
+            [Blockly.Msg.VERY_FAST,   '3']]
         }
       ],
       "colour": Blockly.Colours.otto.secondary,
@@ -229,6 +253,26 @@ Blockly.Blocks['otto_matrix_all_pix'] = {
         {
           "type": "input_value",
           "name": "MATRIX"
+        }
+      ],
+      "category": Blockly.Categories.otto,
+      "extensions": ["colours_otto", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['otto_text'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OTTO_TEXTT,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "OTTO_TEXT"
+        },
+        {
+          "type": "input_value",
+          "name": "TEXT_SPEED"
         }
       ],
       "category": Blockly.Categories.otto,
