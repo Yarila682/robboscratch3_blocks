@@ -4168,7 +4168,7 @@ Blockly.ScratchMsgs.locales["en"] =
 "OTTO_MOVE_STYLE_WALK": "Otto move (walk) %1 steps %2 step duration %3",
 "OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 steps %2  duration %3 height %4 ",
 "OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 steps %2  duration %3 height %4 ",
-"OTTO_GET_DISTANCE":"Расстояние",
+"OTTO_GET_DISTANCE":"Distance",
 "OTTO_MOONWALKER":          "Otto moonwalker %1 steps %2  duration %3 height %4 ",
 "OTTO_SHAKE_LEG":           "Otto shale leg %1 steps %2  duration %3",
 "OTTO_TURN":                "Otto turn %1 steps %2  duration %3",
