@@ -93,7 +93,7 @@ Blockly.Blocks['copter_fly_distance'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "CENTIMETERS"
+          "name": "METERS"
         }
       ],
       "category": Blockly.Categories.quadcopter,
