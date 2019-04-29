@@ -12275,8 +12275,8 @@ Blockly.ScratchMsgs.locales["ru"] =
 "ROBOT_POSITION5":"Позиция5",
 "ROBOT_CLAW_STATE":"Клешня %1",
 
-"LAB_LED_TURN_ON":"Вкл светодиод на Лабаратории %1",
-"LAB_LED_TURN_OFF":"Выкл светодиод на Лабаратории %1",
+"LAB_LED_TURN_ON":"Вкл светодиод на Лаборатории %1",
+"LAB_LED_TURN_OFF":"Выкл светодиод на Лаборатории %1",
 "LAB_LED_NUM_0":"0",
 "LAB_LED_NUM_1":"1",
 "LAB_LED_NUM_2":"2",
@@ -12285,8 +12285,8 @@ Blockly.ScratchMsgs.locales["ru"] =
 "LAB_LED_NUM_5":"5",
 "LAB_LED_NUM_6":"6",
 "LAB_LED_NUM_7":"7",
-"LAB_COLOR_LED_TURN_ON":"Вкл цветной светодиод на Лабаратории %1",
-"LAB_COLOR_LED_TURN_OFF":"Выкл цветной светодиод на Лабаратории %1",
+"LAB_COLOR_LED_TURN_ON":"Вкл цветной светодиод на Лаборатории %1",
+"LAB_COLOR_LED_TURN_OFF":"Выкл цветной светодиод на Лаборатории %1",
 "LAB_COLOR_LED_RED":"красный",
 "LAB_COLOR_LED_YELLOW":"жёлтый",
 "LAB_COLOR_LED_GREEN":"зелёный",
@@ -12328,7 +12328,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "LAB_DIGITAL_PIN_STATE_ON":"включить",
 "LAB_DIGITAL_PIN_STATE_OFF":"выключить",
 "LAB_DIGITAL_PIN_SET_PWM_VALUE":"Уст выход Лаборатории %1 в ШИМ значение %2",
-"LAB_PLAY_NOTE":"Играть ноту на Лабаратории %1",
+"LAB_PLAY_NOTE":"Играть ноту на Лаборатории %1",
 
 
 "COPTER_LAND":"Посадка",
