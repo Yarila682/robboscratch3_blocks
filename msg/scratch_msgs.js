@@ -4208,12 +4208,35 @@ Blockly.ScratchMsgs.locales["en"] =
 "OTTO_NOTE_NUM_7":          "7/8",
 "OTTO_NOTE_NUM_8":          "1",
 "OTTO_ALL_PIX":             "display %1",
+
+////////////////////////////////////////////////////////////////////////////////
+//Arduino cat
+////////////////////////////////////////////////////////////////////////////////
+
+"NEWCAT_SET_DIG":           "Set digital pin %1 output as %2",
+"NEWCAT_SET_ANA":           "Set analog pin %1 output as %2",
+"NEWCAT_READ_DIG":           "Read digital pin %1",
+"NEWCAT_READ_ANA":           "Read analog pin %1",
+"NEWCAT_HIGH":              "HIGH",
+"NEWCAT_LOW":               "LOW",
+"NEWCAT_PLAY_SOUND":        "Play tone pin %1 note %2 dur %3",
+"NEWCAT_SERVO":               "Move servo on pin %1 on angle %2",
+"NEWCAT_GO_ANAL":             "Make pin %1 analog",
+"NEWCAT_GO_DIG":             "Make pin %1 digital",
+"NEWCAT_GO_SONIC":             "Make pins %1 echo %2 trig for sonic",
+"NEWCAT_SET_CURSE":           "Set cursor in %1 %2",
+"NEWCAT_SET_TEXT":            "Set text %1",
+"NEWCAT_INIT_LCD":            "Init or clear LCD display",
+"NEWCAT_SET_HUM":             "Set humidity %1 pin, temperature %2 pin",
+"NEWCAT_SET_PULT":            "Set pin %1 for pult",
+
   ///////////////////////////////////////////////////////////////////////////////
 
   "CATEGORY_QUADCOPTER": "Quadcopter",
   "CATEGORY_ROBOT": "Robot",
   "CATEGORY_LABORATORY": "Laboratory",
-  "CATEGORY_OTTO": "Otto"
+  "CATEGORY_OTTO": "Otto",
+  "CATEGORY_ARDUINO": "Arduino"
 };
 
 Blockly.ScratchMsgs.locales["es"] =
@@ -12402,10 +12425,32 @@ Blockly.ScratchMsgs.locales["ru"] =
 "OTTO_NOTE_NUM_8":          "1",
 "OTTO_ALL_PIX":             "Оттобразить %1",
 
+////////////////////////////////////////////////////////////////////////////////
+//Arduino cat
+////////////////////////////////////////////////////////////////////////////////
+
+"NEWCAT_SET_DIG":           "Установить цифровой пин %1 на выход %2",
+"NEWCAT_SET_ANA":           "Установить аналог пин %1 на выход %2",
+"NEWCAT_READ_DIG":           "Считать цифровой пин %1",
+"NEWCAT_READ_ANA":           "Считать аналоговый пин %1",
+"NEWCAT_HIGH":              "HIGH",
+"NEWCAT_LOW":               "LOW",
+"NEWCAT_PLAY_SOUND":        "Играть ноту на %1 пине, нота %2 длительность %3",
+"NEWCAT_SERVO":               "Установить серву на %1 пине на угол %2",
+"NEWCAT_GO_ANAL":             "Сделать пин %1 аналоговым",
+"NEWCAT_GO_DIG":             "Сделать пин %1 цифровым",
+"NEWCAT_GO_SONIC":             "Установить пины %1 echo %2 trig для ультрасоника",
+"NEWCAT_SET_CURSE":           "Установить курсор в %1 %2",
+"NEWCAT_SET_TEXT":            "Установить текст %1",
+"NEWCAT_INIT_LCD":            "Инициализировать или очистить дисплей",
+"NEWCAT_SET_HUM":             "Установть влажность %1 пин, тепмература %2 пин",
+"NEWCAT_SET_PULT":            "Установить пин %1 для пульта",
+
 "CATEGORY_OTTO": "Отто",
 "CATEGORY_QUADCOPTER": "Квадрокоптер",
 "CATEGORY_ROBOT": "Робот",
-"CATEGORY_LABORATORY": "Лаборатория"
+"CATEGORY_LABORATORY": "Лаборатория",
+"CATEGORY_ARDUINO":"Ардуино"
 };
 
 Blockly.ScratchMsgs.locales["sr"] =
