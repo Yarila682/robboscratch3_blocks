@@ -4061,7 +4061,7 @@ Blockly.ScratchMsgs.locales["en"] =
 "ROBOT_POSITION4":"position4",
 "ROBOT_POSITION5":"position5",
 "ROBOT_CLAW_STATE":"Claw %1",
-
+"ROBOT_SET_WALL_COLOR":"Set wall color %1",
 "LAB_LED_TURN_ON":"turn Lab led %1 on",
 "LAB_LED_TURN_OFF":"turn Lab led %1 off",
 
@@ -4229,7 +4229,8 @@ Blockly.ScratchMsgs.locales["en"] =
 "NEWCAT_INIT_LCD":            "Init or clear LCD display",
 "NEWCAT_SET_HUM":             "Set humidity %1 pin, temperature %2 pin",
 "NEWCAT_SET_PULT":            "Set pin %1 for pult",
-
+"NEWCAT_SET_SHAG":            "Set speed %1 and %2 steps",
+"NEWCAT_SHAG_INIT":           "Set pins %1 %2 %3 %4 for %5 step motor",
   ///////////////////////////////////////////////////////////////////////////////
 
   "CATEGORY_QUADCOPTER": "Quadcopter",
@@ -12461,6 +12462,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "ROBOT_POSITION4":"Позиция4",
 "ROBOT_POSITION5":"Позиция5",
 "ROBOT_CLAW_STATE":"Клешня %1",
+"ROBOT_SET_WALL_COLOR":"Установить цвет стены %1",
 
 "LAB_LED_TURN_ON":"Вкл светодиод на Лаборатории %1",
 "LAB_LED_TURN_OFF":"Выкл светодиод на Лаборатории %1",
@@ -12596,7 +12598,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "NEWCAT_SET_DIG":           "Установить цифровой пин %1 на выход %2",
 "NEWCAT_SET_ANA":           "Установить аналог пин %1 на выход %2",
 "NEWCAT_READ_DIG":           "Считать цифровой пин %1",
-"NEWCAT_READ_ANA":           "Считать аналоговый пин %1",
+"NEWCAT_READ_ANA":           "Считать значение с %1 пина",
 "NEWCAT_HIGH":              "HIGH",
 "NEWCAT_LOW":               "LOW",
 "NEWCAT_PLAY_SOUND":        "Играть ноту на %1 пине, нота %2 длительность %3",
@@ -12609,6 +12611,8 @@ Blockly.ScratchMsgs.locales["ru"] =
 "NEWCAT_INIT_LCD":            "Инициализировать или очистить дисплей",
 "NEWCAT_SET_HUM":             "Установть влажность %1 пин, тепмература %2 пин",
 "NEWCAT_SET_PULT":            "Установить пин %1 для пульта",
+"NEWCAT_SET_SHAG":            "Установить скорость %1 на %2 шагов",
+"NEWCAT_SHAG_INIT":           "Установить пины %1 %2 %3 %4 для %5 шагового двигателя",
 
 "CATEGORY_OTTO": "Отто",
 "CATEGORY_QUADCOPTER": "Квадрокоптер",

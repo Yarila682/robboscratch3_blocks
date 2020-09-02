@@ -68,6 +68,82 @@ Blockly.Blocks['newcat_firstblock'] = {
   }
 };
 
+
+Blockly.Blocks['shag_type'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "SHAG_TYPE",
+          "options": [
+            ["полу-",                               '2'],
+            ["полно-",                               '1']
+          ]
+        }
+      ],
+      "colour": Blockly.Colours.laboratory.secondary,
+      "colourSecondary": Blockly.Colours.laboratory.secondary,
+      "colourTertiary": Blockly.Colours.laboratory.tertiary,
+      "extensions": ["output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['newcat_shag_init'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.NEWCAT_SHAG_INIT,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "PIN1"
+        },
+        {
+          "type": "input_value",
+          "name": "PIN2"
+        },
+        {
+          "type": "input_value",
+          "name": "PIN3"
+        },
+        {
+          "type": "input_value",
+          "name": "PIN4"
+        },
+        {
+          "type": "input_value",
+          "name": "SHAG_TYPE"
+        }
+      ],
+      "category": Blockly.Categories.newcat,
+      "extensions": ["colours_newcat", "shape_statement"]
+    });
+  }
+};
+
+
+Blockly.Blocks['newcat_set_shag'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.NEWCAT_SET_SHAG,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "SPEED"
+        },
+        {
+          "type": "input_value",
+          "name": "SHAG"
+        }
+      ],
+      "category": Blockly.Categories.newcat,
+      "extensions": ["colours_newcat", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['newcat_set_dig'] = {
   init: function() {
     this.jsonInit({
@@ -157,6 +233,20 @@ Blockly.Blocks['pin_anal'] = {
           "type": "field_dropdown",
           "name": "PIN_ANAL",
           "options": [
+    //        ["d0",                               '0'],
+  //          ["d1",                               '1'],
+    //        ["d2",                               '2'],
+      //      ["d3",                               '3'],
+        //    ["d4",                               '4'],
+          //  ["d5",                               '5'],
+//            ["d6",                               '6'],
+  //          ["d7",                               '7'],
+    //        ["d8",                               '8'],
+      //      ["d9",                               '9'],
+        //    ["d10",                               '10'],
+          //  ["d11",                               '11'],
+            //["d12",                               '12'],
+          //  ["d13",                               '13'],
             ["a0",                               '14'],
             ["a1",                               '15'],
             ["a2",                               '16'],
