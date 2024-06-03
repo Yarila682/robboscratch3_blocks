@@ -3150,7 +3150,244 @@ Blockly.ScratchMsgs.locales["de"] =
     "NEW_BROADCAST_MESSAGE": "Neue Nachricht",
     "NEW_BROADCAST_MESSAGE_TITLE": "Neue Nachricht name:",
     "BROADCAST_MODAL_TITLE": "Neue Nachricht",
-    "DEFAULT_BROADCAST_MESSAGE_NAME": "Nachricht1"
+    "DEFAULT_BROADCAST_MESSAGE_NAME": "Nachricht1",
+
+"MOTORS_ON_FOR_SECONDS":"Motoren für %1 Sekunden an",
+"MOTORS_ON":"Motoren an",
+"MOTORS_OFF":"Motoren aus",
+"SET_ROBOT_DIRECTION":"Richtung von Roboter einst %1",
+"DIRECTION_FORWARD":"vorwärts",
+"DIRECTION_BACKWARD":"zurück",
+"DIRECTION_LEFT":"links",
+"DIRECTION_RIGHT":"rechts",
+"SET_ROBOT_MOTORS_ON_FOR_STEPS":"Motoren auf %1 Schritte an",
+"ROBOT_RESET_TRIP_METERS":"Schrittzähler zurücksetzen",
+"ROBOT_TURN_RIGHT":"%1 um %2 Grad drehen",
+"ROBOT_TURN_LEFT":"%1 um %2 Grad drehen",
+"ROBOT_SET_MOTORS_POWER":"Motorleistung %1 % einst",
+"ROBOT_SET_MOTORS_POWER_LEFT_RIGHT_SEPARATELY":"Leistung der Motoren L %1 % R %2 % einst",
+"ROBOT_SET_MOTORS_LEFT_RIGHT_POWER_AND_DIRECTION_SEPARATELY":"L %1 R %2 Leistung einst. L %3 % R %4 %",
+"ROBOT_GET_SENSOR_DATA":"Roboter %1",
+"ROBOT_SENSOR1":"sensor1",
+"ROBOT_SENSOR2":"sensor2",
+"ROBOT_SENSOR3":"sensor3",
+"ROBOT_SENSOR4":"sensor4",
+"ROBOT_SENSOR5":"sensor5",
+"ROBOT_SENSOR_TRIP_METER_LEFT":"Schrittzähler L",
+"ROBOT_SENSOR_TRIP_METER_RIGHT":"Schrittzähler R",
+"ROBOT_RGB_RED":"rot",
+"ROBOT_RGB_GREEN":"grün",
+"ROBOT_RGB_BLUE":"blau",
+"ROBOT_GET_RGB_SENSOR_DATA":"RGB-Farbsensor %1 %2",
+"ROBOT_IS_CURRENT_COLOR":"Farbsensor %1 %2",
+"ROBOT_RED"                     :"Rot",
+"ROBOT_MAGENTA":"Magenta",
+"ROBOT_YELLOW":"Gelb",
+"ROBOT_GREEN":"Grün",
+"ROBOT_BLUE":"Blau",
+"ROBOT_CYAN":"Cyan",
+"ROBOT_BLACK":"Schwarz",
+"ROBOT_GRAY":"Grau",
+"ROBOT_WHITE":"Weiß",
+"ROBOT_UNKNOWN":"Unbekannt",
+"ROBOT_START_BUTTON_PRESSED":"Ist der Knopf start am Roboter gedrückt?",
+"ROBOT_TURN_LED_ON":"LED am Roboter %1 ein",
+"ROBOT_TURN_LED_OFF":"LED am Roboter %1 aus",
+"ROBOT_CLAW_CLOSED":"Greifarm geschlossen bei %1 %",
+"ROBOT_CLAW_OPEN_STATE":"Offen",
+"ROBOT_CLAW_HALF_OPEN_STATE":"Halb offen",
+"ROBOT_CLAW_CLOSED_STATE":"Geschlossen",
+"ROBOT_POSITION1":"position1",
+"ROBOT_POSITION2":"position2",
+"ROBOT_POSITION3":"position3",
+"ROBOT_POSITION4":"position4",
+"ROBOT_POSITION5":"position5",
+"ROBOT_CLAW_STATE":"Greifarm %1",
+"ROBOT_SET_WALL_COLOR":"Set wall color %1",
+
+////////////////////////////////////////////
+
+"LAB_LED_TURN_ON":"LED am Labor %1 ein",
+"LAB_LED_TURN_OFF":"LED am Labor %1 aus",
+
+"LAB_LED_NUM_0":"0",
+"LAB_LED_NUM_1":"1",
+"LAB_LED_NUM_2":"2",
+"LAB_LED_NUM_3":"3",
+"LAB_LED_NUM_4":"4",
+"LAB_LED_NUM_5":"5",
+"LAB_LED_NUM_6":"6",
+"LAB_LED_NUM_7":"7",
+
+"LAB_COLOR_LED_TURN_ON":"Farb-LED am Labor %1 ein",
+"LAB_COLOR_LED_TURN_OFF":"Farb-LED am Labor %1 aus",
+
+"LAB_COLOR_LED_RED":"rot",
+"LAB_COLOR_LED_YELLOW":"gelb",
+"LAB_COLOR_LED_GREEN":"grün",
+
+"LAB_SENSOR":"Labor %1",
+
+"LAB_SENSOR_LIGHT":"Licht sensor",
+"LAB_SENSOR_SOUND":"Ton sensor",
+"LAB_SENSOR_SLIDER":"Hebel",
+
+"LAB_BUTTON_PRESSED":"Ist der Knopf am Labor %1 gedrückt?",
+
+"LAB_BUTTON_NUM_0":"0",
+"LAB_BUTTON_NUM_1":"1",
+"LAB_BUTTON_NUM_2":"2",
+"LAB_BUTTON_NUM_3":"3",
+"LAB_BUTTON_NUM_4":"4",
+"LAB_BUTTON_NUM_5":"5",
+
+"LAB_EXTERNAL_SENSOR":"Laboreingang %1",
+
+"LAB_EXTERNAL_SENSOR_A0":"A0",
+"LAB_EXTERNAL_SENSOR_A1":"A1",
+
+"LAB_ANALOG_PIN":"Laborausgang %1",
+
+"LAB_ANALOG_PIN_NUM_0":"A0",
+"LAB_ANALOG_PIN_NUM_1":"A1",
+"LAB_ANALOG_PIN_NUM_2":"A2",
+"LAB_ANALOG_PIN_NUM_3":"A3",
+"LAB_ANALOG_PIN_NUM_4":"A4",
+"LAB_ANALOG_PIN_NUM_5":"A5",
+
+"LAB_DIGITAL_PIN":"Laborausgang %1",
+
+"LAB_DIGITAL_PIN_NUM_8":"D8",
+"LAB_DIGITAL_PIN_NUM_9":"D9",
+"LAB_DIGITAL_PIN_NUM_10":"D10",
+"LAB_DIGITAL_PIN_NUM_11":"D11",
+"LAB_DIGITAL_PIN_NUM_12":"D12",
+"LAB_DIGITAL_PIN_NUM_13":"D13",
+
+"LAB_DIGITAL_PIN_SET_ON_OFF":"Einst. Laborausgang %1 %2",
+
+"LAB_DIGITAL_PIN_NUM_2":"D2",
+"LAB_DIGITAL_PIN_NUM_3":"D3",
+"LAB_DIGITAL_PIN_NUM_4":"D4",
+"LAB_DIGITAL_PIN_NUM_5":"D5",
+"LAB_DIGITAL_PIN_NUM_6":"D6",
+"LAB_DIGITAL_PIN_NUM_7":"D7",
+
+"LAB_DIGITAL_PIN_STATE_ON":"einschalten",
+"LAB_DIGITAL_PIN_STATE_OFF":"ausschalten",
+
+"LAB_DIGITAL_PIN_SET_PWM_VALUE":"Laborausgang %1 auf den PWM-Wert %2 einst",
+
+"LAB_PLAY_NOTE":"Eine Note am Labor %1 spielen",
+
+
+//////////////////////////////////////////////////
+
+"COPTER_FLY_UP":"Hochfliegen",
+"COPTER_LAND":"Land",
+"COPTER_STATUS":"Status",
+"COPTER_FLY_DISTANCE":"%1 Meter fliegen",
+"COPTER_FLY_BACKWARD":"%1 Meter zurückfliegen",
+"COPTER_FLY_TIME":"Fliege %1 Sekunden",
+"COPTER_FLY_FOR_TIME_WITH_SPEED":"Fly %1 seconds with vx %2  speed vy %3  speed (m/s)",
+"COPTER_CHANGE_X_BY":"Change x by %1 meters",
+"COPTER_CHANGE_Y_BY":"Change y by %1 meters",
+"COPTER_CHANGE_Z_BY":"Change z by %1 meters",
+"COPTER_X_COORD":"x position (meters)",
+"COPTER_Y_COORD":"y position (meters)",
+"COPTER_Z_COORD":"z position (meters)",
+"COPTER_YAW":"Yaw (degrees)",
+"COPTER_FLY_FOR_SECONDS_TO_COORDS":"Fly %1 seconds to x: %2 y: %3 z: %4 (meters)",
+"COPTER_FLY_TO_COORDS":"Fly to x: %1 y: %2 z: %3 (meters)",
+"COPTER_ROTATE":"Rotate %1 degrees",
+"COPTER_SET_DIRECTION":"Set direction to %1",
+"COPTER_DIRECTION":"direction",
+"COPTER_STOP":"Stop!",
+"COPTER_DIRECTION_FORWARD":"Forward",
+"COPTER_DIRECTION_BACKWARD":"Backward",
+"COPTER_DIRECTION_LEFT":"Left",
+"COPTER_DIRECTION_RIGHT":"Right",
+
+
+///////////////////////////////////////////
+//Otto
+//////////////////////////////////////////
+
+"OTTO_MOVE_STYLE_WALK": "Otto move (walk) %1 steps %2 step duration %3",
+"OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 steps %2  duration %3 height %4 ",
+"OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 steps %2  duration %3 height %4 ",
+"OTTO_GET_DISTANCE":"Entfernung",
+"OTTO_MOONWALKER":          "Otto moonwalker %1 steps %2  duration %3 height %4 ",
+"OTTO_SHAKE_LEG":           "Otto shale leg %1 steps %2  duration %3",
+"OTTO_TURN":                "Otto turn %1 steps %2  duration %3",
+"OTTO_BEND":                "Otto bend %1 steps %2  duration %3",
+"OTTO_ASCENDING_TURN":      "Otto ascending turn steps %1  duration %2 height %3 ",
+"OTTO_JITTER":              "Otto jitter  steps %1  duration %2 height %3 ",
+"OTTO_TIPTOE_SWING":        "Otto tiptoe swing  steps %1  duration %2 height %3 ",
+"OTTO_SWING":               "Otto swing  steps %1  duration %2 height %3 ",
+"OTTO_UPDOWN":              "Otto updown  steps %1  duration %2 height %3 ",
+"OTTO_JUMP":                "Otto jump steps %1 step duration %2",
+
+"OTTO_MOVE_SERVO":          "Otto dreht %1 Servo in %2 Position %3",
+"OTTO_MOVE_SERVO_FOOT":     "LB:%1RB:%2LF:%3RF%4 in  position %5 bringen",
+"OTTO_MOVE_SERVO_HAND":     "LH:%1 RH:%2 in  position %3 bringen",
+"OTTO_TEXTT":               "Text anzeigen %1 %2",
+"LEFT_LEG" :                "Linkes Bein",
+"RIGHT_LEG" :               "Rechtes Bein",
+"LEFT_FOOT"  :              "Linker Fuß",
+"RIGHT_FOOT"  :             "Rechter Fuß",
+"LEFT_HAND"    :            "Linke Hand",
+"RIGHT_HAND"    :           "Rechte Hand",
+"VERY_SLOW":                "sehr langsam",
+"SLOW":                     "langsam",
+"NORMALLY":                 "normalerweise",
+"FAST":                     "schnell",
+"VERY_FAST":                "sehr schnell",
+"OTTO_MATRIX_PIX":          "Pixelmatrix einstellen %1 %2 %3",
+"OTTO_LED":                 "Nase R:%1 G:%2 B:%3",
+"OTTO_GET_HEAR":            "Schallpegel",
+"OTTO_PLAY_SOUND":          "Note %1 für %2 spielen",
+"OTTO_NOTE_NUM_1":          "1/8",
+"OTTO_NOTE_NUM_2":          "1/4",
+"OTTO_NOTE_NUM_3":          "3/8",
+"OTTO_NOTE_NUM_4":          "1/2",
+"OTTO_NOTE_NUM_5":          "5/8",
+"OTTO_NOTE_NUM_6":          "3/4",
+"OTTO_NOTE_NUM_7":          "7/8",
+"OTTO_NOTE_NUM_8":          "1",
+"OTTO_ALL_PIX":             "%1 anzeigen",
+
+////////////////////////////////////////////////////////////////////////////////
+//Arduino cat
+////////////////////////////////////////////////////////////////////////////////
+
+"NEWCAT_SET_DIG":           "Setzen Sie den Ausgang des digitalen Pins %1 auf %2",
+"NEWCAT_SET_ANA":           "Legen Sie den Ausgang von Analog-Pin %1 als %2 fest",
+"NEWCAT_READ_DIG":          "Lesen Sie den digitalen Pin %1",
+"NEWCAT_READ_ANA":          "Analog-Pin %1 lesen",
+"NEWCAT_HIGH":              "HOCH",
+"NEWCAT_LOW":               "NIEDRIG",
+"NEWCAT_PLAY_SOUND":        "Spiel Note auf %1 Pin, Note %2 Dauer %3",
+"NEWCAT_SERVO":             "Stellen Sie das Servo an Pin %1 auf Winkel %2 ein",
+"NEWCAT_GO_ANAL":           "Pin %1 analog machen",
+"NEWCAT_GO_DIG":            "Pin %1 digitalisieren",
+"NEWCAT_GO_SONIC":          "Stellen Sie Pins %1 Echo %2 Trig für Ultraschallsensor",
+"NEWCAT_SET_CURSE":         "Setzen Sie den Cursor auf %1 %2",
+"NEWCAT_SET_TEXT":          "Setze Text %1",
+"NEWCAT_INIT_LCD":          "LCD-Anzeige initialisieren oder löschen",
+"NEWCAT_SET_HUM":           "Stellen Sie Feuchtigkeit %1 Pin, Temperatur %2 Pin ein",
+"NEWCAT_SET_PULT":          "Pin %1 für Pult setzen",
+"NEWCAT_SET_SHAG":          "Stellen Sie die Geschwindigkeit %1 und %2 Schritte ein",
+"NEWCAT_SHAG_INIT":         "Setzen Sie Pins %1 %2 %3 %4 für %5 Schrittmotor",
+  ///////////////////////////////////////////////////////////////////////////////
+
+ "CATEGORY_QUADCOPTER": "Quadcopter",
+ "CATEGORY_ROBOT": "Roboter",
+ "CATEGORY_LABORATORY": "Labor",
+ "CATEGORY_OTTO": "Otto",
+ "CATEGORY_ARDUINO": "Arduino"
+
+
 };
 
 Blockly.ScratchMsgs.locales["et"] =
@@ -4233,11 +4470,43 @@ Blockly.ScratchMsgs.locales["en"] =
 "NEWCAT_SHAG_INIT":           "Set pins %1 %2 %3 %4 for %5 step motor",
   ///////////////////////////////////////////////////////////////////////////////
 
+
+  //////////////////////////
+// IOT
+/////////////////////////
+
+"IOT_SET_BROKER_ADDR_AND_PORT": "Set broker protocol %1 address %2 and port %3",
+"IOT_MESSAGE_TO_TOPIC": "Topic name: %1; Message: %2",
+"IOT_SUBSCRIBE_TO_TOPIC": "Subscribe to %1 topic",
+"IOT_RECEIVE_MESSAGE": "Get message from %1 topic",
+"IOT_SET_LOGPASS": "Login: %1; Password: %2",
+"IOT_SET_CLIENT_ID": 'Set client id: %1',
+"IOT_SET_DELAY": 'Set recieve period %1 for %2 topic',
+"IOT_TRIGGER_ON_TOPIC": 'trigger of %1 topic',
+"IOT_PARSE_DATA":'Parse data from %1 topic',
+"IOT_SET_WIFI": 'Set wifi SSID: %1 PASS: %2',
+
+"IOT_EVENT_LESS":'When topic %1 under treshold',
+"IOT_EVENT_MORE":'When topic %1 upper treshold',
+"IOT_SET_TRESH_UND":'Set under bound %1 for topic %2',
+"IOT_SET_TRESH_UPP":'Set upper bound %1 for topic %2',
+"IOT_SET_TRESH_BOTH":'Set under %1 and upper %2 bounds for topic %3',
+"IOT_SET_PREFIX":'Set prefix for topic %1',
+"IOT_CONNECTION_STATUS":'Connection status',
+"IOT_CONNECTION_LOG":'Connection log',
+"IOT_SET_DELAY_FOR_PUBLISH": "Set publishing delay %1 for topic %2 ",
+
+
+  ///////////////////////////////////////////////////////////////////////////////
+
+
   "CATEGORY_QUADCOPTER": "Quadcopter",
   "CATEGORY_ROBOT": "Robot",
   "CATEGORY_LABORATORY": "Laboratory",
   "CATEGORY_OTTO": "Otto",
-  "CATEGORY_ARDUINO": "Arduino"
+  "CATEGORY_ARDUINO": "Arduino",
+  "CATEGORY_IOT": "Internet of things",
+  
 };
 
 Blockly.ScratchMsgs.locales["es"] =
@@ -12614,11 +12883,42 @@ Blockly.ScratchMsgs.locales["ru"] =
 "NEWCAT_SET_SHAG":            "Установить скорость %1 на %2 шагов",
 "NEWCAT_SHAG_INIT":           "Установить пины %1 %2 %3 %4 для %5 шагового двигателя",
 
+
+//////////////////////////
+//IOT
+//////////////////////////
+
+"IOT_SET_BROKER_ADDR_AND_PORT": "Установить протокол %1 адрес %2 и порт брокера %3",
+"IOT_MESSAGE_TO_TOPIC": "Имя топика: %1; Сообщение: %2",
+"IOT_SUBSCRIBE_TO_TOPIC": "Подписаться на %1 топик",
+"IOT_RECEIVE_MESSAGE": "Последнее сообщение из %1 топика",
+"IOT_SET_LOGPASS": "Логин: %1; Пароль: %2",
+"IOT_SET_CLIENT_ID": 'Установить id клиента: %1',
+"IOT_SET_DELAY": 'Период получения значения %1 для %2 топика',
+"IOT_TRIGGER_ON_TOPIC": 'триггер %1 топика',
+"IOT_PARSE_DATA": 'получить значения датчиков из %1 топика',
+"IOT_SET_WIFI": 'Установить Wi-Fi SSID: %1 Пароль: %2',
+
+"IOT_EVENT_LESS":'Когда топик %1 ниже порогового значения',
+"IOT_EVENT_MORE":'Когда топик %1 выше порогового значения',
+"IOT_SET_TRESH_UND":'Установить нижнюю границу  %1 для топика %2',
+"IOT_SET_TRESH_UPP":'Установить верхнюю границу %1 для топика %2',
+"IOT_SET_TRESH_BOTH":'Установить нижнюю %1 и верхнюю %2 границы для топика %3',
+"IOT_SET_PREFIX":'Установить префикс для топика %1',
+"IOT_CONNECTION_STATUS":'Статус подключения',
+"IOT_CONNECTION_LOG":'Лог подключения',
+"IOT_SET_DELAY_FOR_PUBLISH": "Установить задержку %1 для отправки значения в топик %2",
+
+
+
 "CATEGORY_OTTO": "Отто",
 "CATEGORY_QUADCOPTER": "Квадрокоптер",
 "CATEGORY_ROBOT": "Робот",
 "CATEGORY_LABORATORY": "Лаборатория",
-"CATEGORY_ARDUINO":"Ардуино"
+"CATEGORY_ARDUINO":"Ардуино",
+"CATEGORY_IOT": "Интернет вещей"
+
+
 };
 
 Blockly.ScratchMsgs.locales["sr"] =
@@ -15412,7 +15712,248 @@ Blockly.ScratchMsgs.locales["zh-cn"] =
     "NEW_BROADCAST_MESSAGE": "新消息",
     "NEW_BROADCAST_MESSAGE_TITLE": "新消息的名称：",
     "BROADCAST_MODAL_TITLE": "新消息",
-    "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1"
+    "DEFAULT_BROADCAST_MESSAGE_NAME": "消息1",
+    
+    //zh_cn/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    "MOTORS_ON_FOR_SECONDS":"电机启动 %1 秒",
+    "MOTORS_ON":"电机启动",
+    "MOTORS_OFF":"电机关闭",
+    "SET_ROBOT_DIRECTION":"设置机器人方向 %1",
+    "DIRECTION_FORWARD":"向前",
+    "DIRECTION_BACKWARD":"后退",
+    "DIRECTION_LEFT":"向左",
+    "DIRECTION_RIGHT":"向右",
+    "SET_ROBOT_MOTORS_ON_FOR_STEPS":"以 %1 步数启动电机",
+    "ROBOT_RESET_TRIP_METERS":"重置计步器",
+    "ROBOT_TURN_RIGHT":"将 %1 旋转 %2 度",
+    "ROBOT_TURN_LEFT":"将 %1 旋转 %2 度",
+    "ROBOT_SET_MOTORS_POWER":"设定电机功率 %1 %",
+    "ROBOT_SET_MOTORS_POWER_LEFT_RIGHT_SEPARATELY":"设定电机功率 L %1 % R %2 %",
+    "ROBOT_SET_MOTORS_LEFT_RIGHT_POWER_AND_DIRECTION_SEPARATELY":"L %1 R %2 设定功率 L %3 % R %4 %",
+    "ROBOT_GET_SENSOR_DATA":"机器人 %1",
+    "ROBOT_SENSOR1":"传感器1",
+    "ROBOT_SENSOR2":"传感器2",
+    "ROBOT_SENSOR3":"传感器3",
+    "ROBOT_SENSOR4":"传感器4",
+    "ROBOT_SENSOR5":"传感器5",
+    "ROBOT_SENSOR_TRIP_METER_LEFT":"计步器 L",
+    "ROBOT_SENSOR_TRIP_METER_RIGHT":"计步器 R",
+    "ROBOT_RGB_RED":"红色",
+    "ROBOT_RGB_GREEN":"绿色",
+    "ROBOT_RGB_BLUE":"蓝色",
+    "ROBOT_GET_RGB_SENSOR_DATA":"RGB 颜色传感器 %1 %2",
+    "ROBOT_IS_CURRENT_COLOR":"颜色传感器 %1 %2",
+    "ROBOT_RED":"红色",
+    "ROBOT_MAGENTA":"紫色",
+    "ROBOT_YELLOW":"黄色",
+    "ROBOT_GREEN":"绿色",
+    "ROBOT_BLUE":"蓝色",
+    "ROBOT_CYAN":"绿蓝",
+    "ROBOT_BLACK":"黑色",
+    "ROBOT_GRAY":"灰色",
+    "ROBOT_WHITE":"白色",
+    "ROBOT_UNKNOWN":"未知",
+    "ROBOT_START_BUTTON_PRESSED":"是否按下了机器人上的启动按键？",
+    "ROBOT_TURN_LED_ON":"开机器人上的 LED %1",
+    "ROBOT_TURN_LED_OFF":"关机器人上的 LED %1",
+    "ROBOT_CLAW_CLOSED":"爪闭合 %1 %",
+    "ROBOT_CLAW_OPEN_STATE":"张开",
+    "ROBOT_CLAW_HALF_OPEN_STATE":"半开",
+    "ROBOT_CLAW_CLOSED_STATE":"闭合",
+    "ROBOT_POSITION1":"位置1",
+    "ROBOT_POSITION2":"位置2",
+    "ROBOT_POSITION3":"位置3",
+    "ROBOT_POSITION4":"位置4",
+    "ROBOT_POSITION5":"位置5",
+    "ROBOT_CLAW_STATE":"爪 %1",
+    "ROBOT_SET_WALL_COLOR":"设置墙壁颜色 %1",
+    
+    "LAB_LED_TURN_ON":"开实验室 LED %1",
+    "LAB_LED_TURN_OFF":"关实验室 LED %1",
+    "LAB_LED_NUM_0":"0",
+    "LAB_LED_NUM_1":"1",
+    "LAB_LED_NUM_2":"2",
+    "LAB_LED_NUM_3":"3",
+    "LAB_LED_NUM_4":"4",
+    "LAB_LED_NUM_5":"5",
+    "LAB_LED_NUM_6":"6",
+    "LAB_LED_NUM_7":"7",
+    "LAB_COLOR_LED_TURN_ON":"开实验室彩色 LED %1",
+    "LAB_COLOR_LED_TURN_OFF":"关实验室彩色 LED %1",
+    "LAB_COLOR_LED_RED":"红色",
+    "LAB_COLOR_LED_YELLOW":"黄色",
+    "LAB_COLOR_LED_GREEN":"绿色",
+    "LAB_SENSOR":"实验室 %1",
+    "LAB_SENSOR_LIGHT":"光",
+    "LAB_SENSOR_SOUND":"声音",
+    "LAB_SENSOR_SLIDER":"杠杆",
+    "LAB_BUTTON_PRESSED":"实验室 %1 上的按键是否被按下？",
+    "LAB_BUTTON_NUM_0":"0",
+    "LAB_BUTTON_NUM_1":"1",
+    "LAB_BUTTON_NUM_2":"2",
+    "LAB_BUTTON_NUM_3":"3",
+    "LAB_BUTTON_NUM_4":"4",
+    "LAB_BUTTON_NUM_5":"5",
+    "LAB_EXTERNAL_SENSOR":"实验室输入 %1",
+    "LAB_EXTERNAL_SENSOR_A0":"A0",
+    "LAB_EXTERNAL_SENSOR_A1":"A1",
+    "LAB_ANALOG_PIN":"实验室输入 %1",
+    "LAB_ANALOG_PIN_NUM_0":"A0",
+    "LAB_ANALOG_PIN_NUM_1":"A1",
+    "LAB_ANALOG_PIN_NUM_2":"A2",
+    "LAB_ANALOG_PIN_NUM_3":"A3",
+    "LAB_ANALOG_PIN_NUM_4":"A4",
+    "LAB_ANALOG_PIN_NUM_5":"A5",
+    "LAB_DIGITAL_PIN":"实验室输入 %1",
+    "LAB_DIGITAL_PIN_NUM_8":"D8",
+    "LAB_DIGITAL_PIN_NUM_9":"D9",
+    "LAB_DIGITAL_PIN_NUM_10":"D10",
+    "LAB_DIGITAL_PIN_NUM_11":"D11",
+    "LAB_DIGITAL_PIN_NUM_12":"D12",
+    "LAB_DIGITAL_PIN_NUM_13":"D13",
+    "LAB_DIGITAL_PIN_SET_ON_OFF":"设置实验室输出 %1 %2",
+    "LAB_DIGITAL_PIN_NUM_2":"D2",
+    "LAB_DIGITAL_PIN_NUM_3":"D3",
+    "LAB_DIGITAL_PIN_NUM_4":"D4",
+    "LAB_DIGITAL_PIN_NUM_5":"D5",
+    "LAB_DIGITAL_PIN_NUM_6":"D6",
+    "LAB_DIGITAL_PIN_NUM_7":"D7",
+    "LAB_DIGITAL_PIN_STATE_ON":"打开",
+    "LAB_DIGITAL_PIN_STATE_OFF":"关掉",
+    "LAB_DIGITAL_PIN_SET_PWM_VALUE":"将实验室输出 %1 设置为 PWM 值 %2",
+    "LAB_PLAY_NOTE":"在实验室播放音符 %1",
+    
+    
+    "COPTER_LAND":"降落",
+    "COPTER_STATUS":"状态",
+    "COPTER_FLY_DISTANCE":"飞行 %1 米",
+    "COPTER_FLY_BACKWARD":"飞回 %1 厘米",
+    "COPTER_FLY_TIME":"飞行 %1 秒",
+    "COPTER_FLY_FOR_TIME_WITH_SPEED":"在 VX%2 VY %3 (米/秒) 飞行 %1 秒",
+    "COPTER_CHANGE_X_BY":"将 X 坐标更改为 %1 米",
+    "COPTER_CHANGE_Y_BY":"将 Y 坐标更改为 %1 米",
+    "COPTER_CHANGE_Z_BY":"将 Z 坐标更改为 %1 米",
+    "COPTER_X_COORD":"X坐标（米）",
+    "COPTER_Y_COORD":"Y坐标（米）",
+    "COPTER_Z_COORD":"高度（米）",
+    "COPTER_YAW":"旋转角度（度）",
+    "COPTER_FLY_FOR_SECONDS_TO_COORDS":"飞 %1 秒到 X: %2 Y: %3 Z: %4 (米)",
+    "COPTER_FLY_TO_COORDS":"飞到 X: %1 Y: %2 Z: %3 (米)",
+    "COPTER_ROTATE":"旋转 %1 度",
+    "COPTER_SET_DIRECTION":"设置方向 %1",
+    "COPTER_DIRECTION":"方向",
+    "COPTER_STOP":"停止",
+    "COPTER_DIRECTION_FORWARD":"向前",
+    "COPTER_DIRECTION_BACKWARD":"后退",
+    "COPTER_DIRECTION_LEFT":"向左",
+    "COPTER_DIRECTION_RIGHT":"向右",
+    "COPTER_FLY_UP":"起飞",
+    
+    
+    
+    "OTTO_MOVE_STYLE_WALK": "Otto move (walk) %1 steps %2 step duration %3",
+    "OTTO_MOVE_STYLE_FLAPPING": "Otto move (flapping) %1 steps %2  duration %3 height %4 ",
+    "OTTO_MOVE_STYLE_CRUSAITO": "Otto move (crusaito) %1 steps %2  duration %3 height %4 ",
+    "OTTO_GET_DISTANCE": "Distance",
+    "OTTO_MOONWALKER":          "Otto moonwalker %1 steps %2  duration %3 height %4 ",
+    "OTTO_SHAKE_LEG":           "Otto shale leg %1 steps %2  duration %3",
+    "OTTO_TURN":                "Otto turn %1 steps %2  duration %3",
+    "OTTO_BEND":                "Otto bend %1 steps %2  duration %3",
+    "OTTO_ASCENDING_TURN":      "Otto ascending turn steps %1  duration %2 height %3 ",
+    "OTTO_JITTER":              "Otto jitter  steps %1  duration %2 height %3 ",
+    "OTTO_TIPTOE_SWING":        "Otto tiptoe swing  steps %1  duration %2 height %3 ",
+    "OTTO_SWING":               "Otto swing  steps %1  duration %2 height %3 ",
+    "OTTO_UPDOWN":              "Otto updown  steps %1  duration %2 height %3 ",
+    "OTTO_JUMP":                "Otto jump steps %1 step duration %2",
+    
+    "OTTO_MOVE_SERVO":          "Otto 将 %1 伺服旋转到 %2 位置 %3",
+    "OTTO_MOVE_SERVO_FOOT":     "将左腿 %1 右腿 %2 左脚 %3 右脚 %4 设置为位置 %5",
+    "OTTO_MOVE_SERVO_HAND":     "将左手 :%1 右手 :%2 设置为位置 %3",
+    "OTTO_TEXTT":               "显示文本 %1 %2",
+    "LEFT_LEG" :                "左腿",
+    "RIGHT_LEG" :               "右腿",
+    "LEFT_FOOT"  :              "左脚",
+    "RIGHT_FOOT"  :             "右脚",
+    "LEFT_HAND"    :            "左手",
+    "RIGHT_HAND"    :           "右手",
+    "VERY_SLOW":                "非常慢",
+    "SLOW":                     "慢",
+    "NORMALLY":                 "正常",
+    "FAST":                     "快",
+    "VERY_FAST":                "非常快",
+    "OTTO_MATRIX_PIX":          "设置矩阵像素 %1 %2 %3",
+    "OTTO_LED":                 "鼻子 R:%1 G:%2 B:%3",
+    "OTTO_GET_HEAR":            "声音",
+    "OTTO_PLAY_SOUND":          "播放音符 %1 %2 秒",
+    "OTTO_NOTE_NUM_1":          "1/8",
+    "OTTO_NOTE_NUM_2":          "1/4",
+    "OTTO_NOTE_NUM_3":          "3/8",
+    "OTTO_NOTE_NUM_4":          "1/2",
+    "OTTO_NOTE_NUM_5":          "5/8",
+    "OTTO_NOTE_NUM_6":          "3/4",
+    "OTTO_NOTE_NUM_7":          "7/8",
+    "OTTO_NOTE_NUM_8":          "1",
+    "OTTO_ALL_PIX":             "显示 %1",
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    //Arduino cat
+    ////////////////////////////////////////////////////////////////////////////////
+    
+    "NEWCAT_SET_DIG":           "将数字引脚 %1 设置为输出 %2",
+    "NEWCAT_SET_ANA":           "将模拟引脚 %1 设置为输出 %2",
+    "NEWCAT_READ_DIG":           "读取数字引脚 %1",
+    "NEWCAT_READ_ANA":           "从 %1 引脚读取值",
+    "NEWCAT_HIGH":              "HIGH",
+    "NEWCAT_LOW":               "LOW",
+    "NEWCAT_PLAY_SOUND":        "在 %1 引脚上播放音符，音符 %2 持续时间 %3",
+    "NEWCAT_SERVO":               "将 %1 引脚上的伺服设置为角度 %2",
+    "NEWCAT_GO_ANAL":             "引脚 %1 设置为模拟的",
+    "NEWCAT_GO_DIG":             "引脚 %1 设置为数字的",
+    "NEWCAT_GO_SONIC":             "为超声信号装置引脚 %1 echo %2 trig",
+    "NEWCAT_SET_CURSE":           "将光标设置为 %1 %2",
+    "NEWCAT_SET_TEXT":            "设置文本 %1",
+    "NEWCAT_INIT_LCD":            "初始化或清除显示",
+    "NEWCAT_SET_HUM":             "设置湿度 %1 引脚，温度 %2 引脚",
+    "NEWCAT_SET_PULT":            "为控制台设置引脚 %1",
+    "NEWCAT_SET_SHAG":            "将速度 %1 设置为 %2 步",
+    "NEWCAT_SHAG_INIT":           "为 %5 步进电机设置引脚 %1 %2 %3 %4",
+    
+    
+    //////////////////////////
+    //IOT
+    //////////////////////////
+    
+    "IOT_SET_BROKER_ADDR_AND_PORT": "Set broker protocol %1 address %2 and port %3",
+    "IOT_MESSAGE_TO_TOPIC": "Topic name: %1; Message: %2",
+    "IOT_SUBSCRIBE_TO_TOPIC": "Subscribe to %1 topic",
+    "IOT_RECEIVE_MESSAGE": "Get message from %1 topic",
+    "IOT_SET_LOGPASS": "Login: %1; Password: %2",
+    "IOT_SET_CLIENT_ID": 'Set client id: %1',
+    "IOT_SET_DELAY": 'Set recieve period %1 for %2 topic',
+    "IOT_TRIGGER_ON_TOPIC": 'trigger of %1 topic',
+    "IOT_PARSE_DATA":'Parse data from %1 topic',
+    "IOT_SET_WIFI": 'Set wifi SSID: %1 PASS: %2',
+
+    "IOT_EVENT_LESS":'When topic %1 under treshold',
+    "IOT_EVENT_MORE":'When topic %1 upper treshold',
+    "IOT_SET_TRESH_UND":'Set under bound %1 for topic %2',
+    "IOT_SET_TRESH_UPP":'Set upper bound %1 for topic %2',
+    "IOT_SET_TRESH_BOTH":'Set under %1 and upper %2 bounds for topic %3',
+    "IOT_SET_PREFIX":'Set prefix for topic %1',
+    "IOT_CONNECTION_STATUS":'Connection status',
+    "IOT_CONNECTION_LOG":'Connection log',
+    "IOT_SET_DELAY_FOR_PUBLISH": "Set publishing delay %1 for topic %2 ",
+    
+    
+    
+    "CATEGORY_OTTO": "Otto",
+    "CATEGORY_QUADCOPTER": "四轴飞行器",
+    "CATEGORY_ROBOT": "机器人",
+    "CATEGORY_LABORATORY": "实验室",
+    "CATEGORY_ARDUINO":"Arduino",
+    "CATEGORY_IOT": "IOT"
+  
 };
 
 Blockly.ScratchMsgs.locales["zh-tw"] =
