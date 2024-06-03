@@ -259,6 +259,7 @@ Blockly.OUTPUT_SHAPE_SQUARE = 3;
  * @const
  */
 Blockly.Categories = {
+  "iot":"iot",  //modified_by_Yaroslav //IoT category
   "newcat":"newcat", //modified_by_Yaroslav //arduino category
   "otto":"otto", //modified_by_Yaroslav //otto category
   "quadcopter":"quadcopter", //modified_by_Yaroslav //quadcopter category

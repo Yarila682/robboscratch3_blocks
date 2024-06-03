@@ -25,6 +25,11 @@ goog.provide('Blockly.Colours');
 Blockly.Colours = {
   // SVG colours: these must be specificed in #RRGGBB style
   // To add an opacity, this must be specified as a separate property (for SVG fill-opacity)
+  "iot": {
+    "primary": "#383838",    //modified_by_Yaroslav //iot category
+    "secondary": "#AAAAAA",
+    "tertiary": "#989898"
+  },
   "newcat": {
     "primary": "#5F9EA0",    //modified_by_Yaroslav //arduino category
     "secondary": "#AAAAAA",
