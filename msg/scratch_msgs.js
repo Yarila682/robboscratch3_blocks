@@ -4417,10 +4417,10 @@ Blockly.ScratchMsgs.locales["en"] =
 "OTTO_UPDOWN":              "Otto updown  steps %1  duration %2 height %3 ",
 "OTTO_JUMP":                "Otto jump steps %1 step duration %2",
 
-"OTTO_MOVE_SERVO":          "Otto turn %1 servo in %2 position %3",
+"OTTO_MOVE_SERVO":          "Dancing robot turn %1 servo in %2 position %3",
 "OTTO_MOVE_SERVO_FOOT":     "Set LL:%1RL:%2LF:%3RF%4 position %5",
 "OTTO_MOVE_SERVO_HAND":     "Set LH:%1 RH:%2 position %3",
-"OTTO_TEXTT":               "display text %1 %2",
+"OTTO_TEXTT":               "Display text %1 %2",
 "LEFT_LEG" :                "Left leg",
 "RIGHT_LEG" :               "Right leg",
 "LEFT_FOOT"  :              "Left foot",
@@ -4432,7 +4432,7 @@ Blockly.ScratchMsgs.locales["en"] =
 "NORMALLY":                 "normally",
 "FAST":                     "fast",
 "VERY_FAST":                "very fast",
-"OTTO_MATRIX_PIX":          "Otto matrix set pixel %1 %2 %3",
+"OTTO_MATRIX_PIX":          "Dancing robot matrix set pixel %1 %2 %3",
 "OTTO_LED":                 "Nose R:%1 G:%2 B:%3",
 "OTTO_GET_HEAR":            "Sound",
 "OTTO_PLAY_SOUND":          "Play note %1 for %2",
@@ -4444,7 +4444,7 @@ Blockly.ScratchMsgs.locales["en"] =
 "OTTO_NOTE_NUM_6":          "3/4",
 "OTTO_NOTE_NUM_7":          "7/8",
 "OTTO_NOTE_NUM_8":          "1",
-"OTTO_ALL_PIX":             "display %1",
+"OTTO_ALL_PIX":             "Display %1",
 
 ////////////////////////////////////////////////////////////////////////////////
 //Arduino cat
@@ -4503,7 +4503,7 @@ Blockly.ScratchMsgs.locales["en"] =
   "CATEGORY_QUADCOPTER": "Quadcopter",
   "CATEGORY_ROBOT": "Robot",
   "CATEGORY_LABORATORY": "Laboratory",
-  "CATEGORY_OTTO": "Otto",
+  "CATEGORY_OTTO": "Dancing robot",
   "CATEGORY_ARDUINO": "Arduino",
   "CATEGORY_IOT": "Internet of things",
   
@@ -12831,7 +12831,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "OTTO_UPDOWN":              "Otto updown  steps %1  duration %2 height %3 ",
 "OTTO_JUMP":                "Otto jump steps %1 step duration %2",
 
-"OTTO_MOVE_SERVO":          "Отто повернуть %1 серву в %2 позицию %3",
+"OTTO_MOVE_SERVO":          "Танцующий робот повернуть %1 серво в %2 позицию %3",
 "OTTO_MOVE_SERVO_FOOT":     "Установить ЛН:%1ПН:%2ЛС:%3ПС%4 в позицию %5",
 "OTTO_MOVE_SERVO_HAND":     "Установить ЛР:%1 ПР:%2 в позицию %3",
 "OTTO_TEXTT":               "Отобразить текст %1 %2",
@@ -12858,7 +12858,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 "OTTO_NOTE_NUM_6":          "3/4",
 "OTTO_NOTE_NUM_7":          "7/8",
 "OTTO_NOTE_NUM_8":          "1",
-"OTTO_ALL_PIX":             "Оттобразить %1",
+"OTTO_ALL_PIX":             "Отобразить %1",
 
 ////////////////////////////////////////////////////////////////////////////////
 //Arduino cat
@@ -12911,7 +12911,7 @@ Blockly.ScratchMsgs.locales["ru"] =
 
 
 
-"CATEGORY_OTTO": "Отто",
+"CATEGORY_OTTO": "Танцующий робот",
 "CATEGORY_QUADCOPTER": "Квадрокоптер",
 "CATEGORY_ROBOT": "Робот",
 "CATEGORY_LABORATORY": "Лаборатория",
